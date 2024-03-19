@@ -1,4 +1,4 @@
-# TP1
+# Técnicas de Programação 1
 Repositorio para trabalhos da materia Topicos de Programação 1(CIC0197)
 
 # Datas:
