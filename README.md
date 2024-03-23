@@ -40,7 +40,7 @@ senha dos arquivos: __CIC0197UNB__
 | Código de pagamento | Formato XXXXXXXX X é dígito (0-9). Primeiro dígito é diferente de zero (1-9).                                |
 | Código de título   | CDBXXXXXXXX CRAXXXXXXXX CRIXXXXXXXX LCAXXXXXXXX LCIXXXXXXXX DEBXXXXXXXX. X - Letra maiúscula (A-Z) ou dígito (0-9). |
 | CPF               | Formato XXX.XXX.XXX-CC. X - Dígito (0-9). Pontos usados para separar sequências de três dígitos. Hífen usado para separar sequências de dígitos de caracteres de validação. CC - Caracteres de validação calculados segundo algoritmo de validação de CPF. |
-| Data              | Formato DD-MM-AAAA. DD - 00 a 31. MM - 01 a 12. AAAA - 2000 a 2100. Hífens usados para separar dias, meses e anos. Levar em consideração anos bissextos. |
+| Data              | Formato DD-MM-AAAA. DD - 01 a 31. MM - 01 a 12. AAAA - 2000 a 2100. Hífens usados para separar dias, meses e anos. Levar em consideração anos bissextos. |
 | Dinheiro          | Valor 0 a 1.000.000,00.                                                                                      |
 | Estado            | Previsto Liquidado Inadimplente.                                                                             |
 | Nome              | Composto por um ou dois termos. Cada termo tem 3 a 10 caracteres. Cada caractere é letra (A-Z, a-z). Termos são separados por um espaço em branco. Primeiro caractere de cada termo é letra maiúscula. |
