@@ -19,6 +19,8 @@ senha dos arquivos: __CIC0197UNB__
 
 ![image](https://github.com/mariosantos-05/TP1/assets/76963308/240bf9a9-f162-4620-ae33-7a62d8885e57)
 
+__(OBS) PK = Primary Key__
+
 ## Requisitos Não Funcionais
 
 1. Adotar o estilo de arquitetura em camadas (*layers*).
