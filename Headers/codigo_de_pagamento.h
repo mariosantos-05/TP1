@@ -1,5 +1,3 @@
-#ifndef CPF_H
-#define CPF_H
 #include <string>     /**< For string manipulation. */
 #include <regex>      /**< For regular expressions. */
 
