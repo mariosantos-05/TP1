@@ -1,4 +1,4 @@
-#include "../Headers/Percentual.h"
+#include "Percentual.h"
 
 bool Percentual::validar(int percentual){ //Method implementation
     if(percentual<0 || percentual>100){ //Verifies format

@@ -1,5 +1,6 @@
 #ifndef PERCENTUAL_H_INCLUDED
 #define PERCENTUAL_H_INCLUDED
+
 #include <iostream>
 using namespace std;
 class Percentual{ //Creates the class

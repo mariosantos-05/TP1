@@ -1,5 +1,8 @@
 #include <iostream>
-#include "../Headers/valor.h"
+#include "Dinheiro.h"
+#include "Percentual.h"
+#include "CPF.h"
+#include "Codigo_de_pagamento.h"
 
 //For now this file only gonna be used for us to test our classes
 
@@ -9,3 +12,5 @@ int main() {
     return 0;
     
 }
+
+//how to test compile (g++ -o main main.cpp + hearders and Sources)
