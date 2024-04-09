@@ -5,7 +5,7 @@
 
 
 /**
- * @brief Class representing a CPF (Cadastro de Pessoas Físicas) number.
+ * @brief Class representing a CPF (Cadastro de Pessoas Fï¿½sicas) number.
  */
 class CPF{
 private:
