@@ -11,4 +11,5 @@ class Percentual{ //Creates the class
         void set(int); //Defines the percentage value
         int get(); //Returns the percentage value
 };
+
 #endif // PERCENTUAL_H_INCLUDED
