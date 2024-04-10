@@ -1,6 +1,6 @@
 #include "Setor.h"
 
-bool validar(string setor){
+bool Setor::validar(string setor){
     string setores[10] = {"Agricultura", "Construção civil", "Energia", "Finanças", "Imobiliário", "Papel e celulose", 
     "Pecuária", "Química e petroquímica,", "Metalurgia e siderurgia", "Mineração"}; //Valid sectors
     for(int i=0;i<10;i++){ //Loops through each valid sector
@@ -16,6 +16,3 @@ string Setor::get(){ //Returns the sector value
 void Setor::set(string setor){ //Determines the sector to be stored
     this->setor = setor;
 };
-Setor::Setor(string setor){
-    set(setor);
-}
