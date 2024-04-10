@@ -8,6 +8,7 @@ class Percentual{ //Creates the class
         int percentual; //Stored percentage value
         bool validar(int); //Checks the format
     public:
+        Percentual(int);
         void set(int); //Defines the percentage value
         int get(); //Returns the percentage value
 };

@@ -14,3 +14,6 @@ void Percentual::set(int percentual){ //Method implementation
 int Percentual::get(){ //Method implementation
     return percentual; //Gets the percentage value
 };
+Percentual::Percentual(int percentual){
+    set(percentual);
+}
