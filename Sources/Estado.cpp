@@ -1,4 +1,4 @@
-#include "estado.h"
+#include "Estado.h"
 
 bool Estado::validar(string estado){
     string estados[3] = {"Previsto","Liquidado","Inadimplente"}; //Valid states

@@ -11,7 +11,8 @@ senha dos arquivos: __CIC0197UNB__
 
 # Instruções de configuração do projeto
 <p>O repositório inicialmente será dividido em 2 pastas (Header, Sources). Podem fazer os seus domínios em qualquer IDE, apenas mantenham o padrão de dividir o header e o source em suas respectivas pastas.</p>
-Para os que forem utilizar o Code::blocks, podem dentro da pasta do repositório criar um projeto vazio do Code::blocks e adicionar as pastas do projeto recursivamente! 
+Para os que forem utilizar o Code::blocks, podem dentro da pasta do repositório criar um projeto vazio do Code::blocks e adicionar as pastas do projeto recursivamente!
+Para os que forem utilizar o vsCode e quiserem um jeito simples de compilar os codigos apenas mantenham os arquivos em suas determinadas pastas(Headers e Sources) e dentro da pasta "build" digitem: make > ./dominios  A cada nova alterção é necessario "Fazer" novamente o projeto. 
 
 
 
