@@ -10,7 +10,7 @@ int main() {
     Valor dinheiro = Valor(10);
     std::cout << dinheiro.getValor() << std::endl;
     return 0;
-    
+
 }
 
 //how to test compile (g++ -o main main.cpp + hearders and Sources)
