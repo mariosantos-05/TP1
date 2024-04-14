@@ -3,6 +3,7 @@
 #include "Percentual.h"
 #include "CPF.h"
 #include "Codigo_de_pagamento.h"
+#include "Data.h"
 
 //For now this file only gonna be used for us to test our classes
 
