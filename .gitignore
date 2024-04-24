@@ -1,4 +1,5 @@
 *.cbp
 **/obj/
 **/bin/
-**/vscode/
+**/.vscode/
+**/build/
