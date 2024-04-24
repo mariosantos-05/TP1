@@ -1,19 +1,22 @@
 #include "Setor.h"
 
-bool validar(string setor){
+void validar(string setor){
+    bool valid = false;
     string setores[10] = {"Agricultura", "Construção civil", "Energia", "Finanças", "Imobiliário", "Papel e celulose", 
     "Pecuária", "Química e petroquímica,", "Metalurgia e siderurgia", "Mineração"}; //Valid sectors
-    for(int i=0;i<10;i++){ //Loops through each valid sector
-        if (setor == setores[i]){ //Verifies correspondence
-            return true; //If valid
+
+    for(int i=0 ; i<10 ; i++){ 
+        if (setor == setores[i]){ 
+            valid = true; //Valid sector
         };
     };
-    return false; //If not valid
+    
+    if (!valid) {throw invalid_argument("Formato invalido, favor inserir um dos setores solicitados");} //If not valid
 };
-string Setor::get(){ //Returns the sector value
+string Setor::get(){ 
     return setor;
 };
-void Setor::set(string setor){ //Determines the sector to be stored
+void Setor::set(string setor){ 
     this->setor = setor;
 };
 Setor::Setor(string setor){

@@ -1,21 +1,23 @@
 #include "estado.h"
 
-bool Estado::validar(string estado){
+void Estado::validar(string estado){
+    bool valid = false; //Indicates format validity
     string estados[3] = {"Previsto","Liquidado","Inadimplente"}; //Valid states
-    for(string elem : estados){ //Loops through each valid state
-        if (elem == estado){ //Verifies correspondence
-            return true; //If valid
+
+    for(string elem : estados){ 
+        if (elem == estado){ 
+            valid = true; //Valid format
         };
     };
-    return false; //If not valid
+    
+    if(!valid) {throw invalid_argument("Formato invalido, favor inserir Previsto, Liquidado ou Inadimplente");}
 };
-string Estado::get(){ //Returns the state value
+string Estado::get(){ 
     return estado;
 };
-void Estado::set(string estado){ //Determines the state to be stored
-    if(validar(estado)){
-        this->estado = estado;
-    };
+void Estado::set(string estado){ 
+    validar(estado);
+    this->estado = estado;
 };
 Estado::Estado(string estado){
     set(estado);

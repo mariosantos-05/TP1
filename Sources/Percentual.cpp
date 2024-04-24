@@ -1,18 +1,16 @@
 #include "Percentual.h"
 
-bool Percentual::validar(int percentual){ //Method implementation
+void Percentual::validar(int percentual){ 
     if(percentual<0 || percentual>100){ //Verifies format
-        return false; //If invalid
-    };
-    return true; //If not invalid
+        throw invalid_argument("Tamanho invalido, favor escolher numero de 0 a 100"); 
+    }
 };
-void Percentual::set(int percentual){ //Method implementation
-    if (validar(percentual)){ //Verifies validity
-        this->percentual = percentual; //Sets the percentage value
-    };
+void Percentual::set(int percentual){ 
+    validar(percentual); 
+    this->percentual = percentual; 
 };
-int Percentual::get(){ //Method implementation
-    return percentual; //Gets the percentage value
+int Percentual::get(){ 
+    return percentual; 
 };
 Percentual::Percentual(int percentual){
     set(percentual);
