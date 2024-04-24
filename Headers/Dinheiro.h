@@ -1,5 +1,5 @@
-#ifndef VALOR_H
-#define VALOR_H
+#ifndef DINHEIRO_H
+#define DINHEIRO_H
 #include <string>
 #include <iostream>
 

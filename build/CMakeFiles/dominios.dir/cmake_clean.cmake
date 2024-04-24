@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dominios.dir/Sources/CPF.cpp.o"
   "CMakeFiles/dominios.dir/Sources/CPF.cpp.o.d"
-  "CMakeFiles/dominios.dir/Sources/Codigo_de_pagamento.cpp.o"
-  "CMakeFiles/dominios.dir/Sources/Codigo_de_pagamento.cpp.o.d"
+  "CMakeFiles/dominios.dir/Sources/Data.cpp.o"
+  "CMakeFiles/dominios.dir/Sources/Data.cpp.o.d"
   "CMakeFiles/dominios.dir/Sources/Dinheiro.cpp.o"
   "CMakeFiles/dominios.dir/Sources/Dinheiro.cpp.o.d"
   "CMakeFiles/dominios.dir/Sources/Estado.cpp.o"
