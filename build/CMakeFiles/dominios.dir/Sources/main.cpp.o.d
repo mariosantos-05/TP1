@@ -184,4 +184,6 @@ CMakeFiles/dominios.dir/Sources/main.cpp.o: \
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc \
- /home/mario/TP1/Sources/../TUD/TUCPF.h
+ /home/mario/TP1/Sources/../TUD/TUCPF.h \
+ /home/mario/TP1/Sources/../TUD/TUNome.h /home/mario/TP1/Headers/Nome.h \
+ /usr/include/c++/13/algorithm

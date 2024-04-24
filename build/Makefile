@@ -417,6 +417,30 @@ TUD/TUCPF.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dominios.dir/build.make CMakeFiles/dominios.dir/TUD/TUCPF.cpp.s
 .PHONY : TUD/TUCPF.cpp.s
 
+TUD/TUNome.o: TUD/TUNome.cpp.o
+.PHONY : TUD/TUNome.o
+
+# target to build an object file
+TUD/TUNome.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dominios.dir/build.make CMakeFiles/dominios.dir/TUD/TUNome.cpp.o
+.PHONY : TUD/TUNome.cpp.o
+
+TUD/TUNome.i: TUD/TUNome.cpp.i
+.PHONY : TUD/TUNome.i
+
+# target to preprocess a source file
+TUD/TUNome.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dominios.dir/build.make CMakeFiles/dominios.dir/TUD/TUNome.cpp.i
+.PHONY : TUD/TUNome.cpp.i
+
+TUD/TUNome.s: TUD/TUNome.cpp.s
+.PHONY : TUD/TUNome.s
+
+# target to generate assembly for a file
+TUD/TUNome.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dominios.dir/build.make CMakeFiles/dominios.dir/TUD/TUNome.cpp.s
+.PHONY : TUD/TUNome.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -462,6 +486,9 @@ help:
 	@echo "... TUD/TUCPF.o"
 	@echo "... TUD/TUCPF.i"
 	@echo "... TUD/TUCPF.s"
+	@echo "... TUD/TUNome.o"
+	@echo "... TUD/TUNome.i"
+	@echo "... TUD/TUNome.s"
 .PHONY : help
 
 

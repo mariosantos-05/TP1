@@ -18,8 +18,8 @@ void Name::validateName(std::string name){
         else
             throw std::invalid_argument("Formato inválido. Nome deve começar com letra Maiúscula.");
     }
-    else if (space > 2){
-        throw "Formato inválido. Apenas 2 nomes aceitos.";
+    else if (spaces > 2){
+        throw std::invalid_argument("Formato inválido. Apenas 2 nomes aceitos");
     }
     // If there are more than 0 spaces, indicating the presence of a surname
     else {

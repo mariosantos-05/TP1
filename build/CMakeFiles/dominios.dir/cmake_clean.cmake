@@ -23,6 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dominios.dir/Sources/main.cpp.o.d"
   "CMakeFiles/dominios.dir/TUD/TUCPF.cpp.o"
   "CMakeFiles/dominios.dir/TUD/TUCPF.cpp.o.d"
+  "CMakeFiles/dominios.dir/TUD/TUNome.cpp.o"
+  "CMakeFiles/dominios.dir/TUD/TUNome.cpp.o.d"
   "dominios"
   "dominios.pdb"
 )

@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mario/TP1/Sources/Setor.cpp" "CMakeFiles/dominios.dir/Sources/Setor.cpp.o" "gcc" "CMakeFiles/dominios.dir/Sources/Setor.cpp.o.d"
   "/home/mario/TP1/Sources/main.cpp" "CMakeFiles/dominios.dir/Sources/main.cpp.o" "gcc" "CMakeFiles/dominios.dir/Sources/main.cpp.o.d"
   "/home/mario/TP1/TUD/TUCPF.cpp" "CMakeFiles/dominios.dir/TUD/TUCPF.cpp.o" "gcc" "CMakeFiles/dominios.dir/TUD/TUCPF.cpp.o.d"
+  "/home/mario/TP1/TUD/TUNome.cpp" "CMakeFiles/dominios.dir/TUD/TUNome.cpp.o" "gcc" "CMakeFiles/dominios.dir/TUD/TUNome.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

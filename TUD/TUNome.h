@@ -1,15 +1,15 @@
-#ifndef TESTE_CPF
-#define TESTE_CPF
+#ifndef TESTE_Nome
+#define TESTE_Nome
 
 #include <string>
-#include "CPF.h"
+#include "Nome.h"
 #include <stdexcept>
 
-class TUCPF {
+class TUName {
 private:
-    const std::string VALOR_VALIDO   = "039.347.231-84";   
-    const std::string VALOR_INVALIDO = "03233681194";   
-    CPF *codigo;                         
+    const std::string VALOR_VALIDO   = "Mario Santos";   
+    const std::string VALOR_INVALIDO = "Mario augusto";   
+    Name *codigo;                         
     int estado;                          
     void setUp();                       
     void tearDown();                        
