@@ -1,18 +1,19 @@
 #include <iostream>
-#include "Percentual.h"
 #include "CPF.h"
-#include "Data.h"
-#include "Dinheiro.h"
+#include "../TUD/TUCPF.h"
+#define RESET   "\033[0m"
+#define RED     "\033[31m"
+#define GREEN   "\033[32m"
 
-//For now this file only gonna be used for us to test our classes
 
 int main() {
-
-    Data nova_data("30-05-2100");
-    std::cout << nova_data.get() << std::endl;
-    nova_data.set("30-06-2000");
-    std::cout << nova_data.get() << std::endl;
-    
+    TUCPF testecpf;
+    switch(testecpf.run()){
+        case TUCPF::SUCESSO: std::cout << RED << "SUCESSO - CPF" << RESET << std::endl;
+                                break;
+        case TUCPF::FALHA  : std::cout << RED << "FALHA   - CPF" << RESET << std::endl;
+                                break;
+    }
+    return 0;
 }
 
-//how to test compile (g++ -o main main.cpp + hearders and Sources)
