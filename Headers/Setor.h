@@ -5,7 +5,7 @@ using namespace std;
 class Setor{ //Class definition
     private:
         string setor; //Stored sector
-        bool validar(string); //Verifies the format
+        void validar(string); //Verifies the format
     public:
         Setor(string);
         void set(string); //Defines the sector to be stored

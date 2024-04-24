@@ -5,7 +5,7 @@ using namespace std;
 class Estado{ //Class definition
     private:
         string estado; //Stored state
-        bool validar(string); //Verifies the format
+        void validar(string); //Verifies the format
     public:
         Estado(string);
         void set(string); //Defines the state to be stored

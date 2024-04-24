@@ -6,7 +6,7 @@ using namespace std;
 class Percentual{ //Creates the class
     private:
         int percentual; //Stored percentage value
-        bool validar(int); //Checks the format
+        void validar(int); //Checks the format
     public:
         Percentual(int);
         void set(int); //Defines the percentage value

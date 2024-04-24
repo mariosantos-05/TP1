@@ -5,7 +5,7 @@ using namespace std;
 class Senha{ //Class definition
     private:
         string senha; //Stored password
-        bool validar(string); //Verifies the format
+        void validar(string); //Verifies the format
     public:
         Senha(string);
         void set(string); //Defines the password to be stored
