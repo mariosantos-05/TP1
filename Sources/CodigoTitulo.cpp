@@ -19,7 +19,7 @@ void CodigoTitulo::validatetitleCode(std::string code){
     };
      std::regex pattern("(CDB|CRI|LC[AI]|DEB)[A-Z0-9]{9}");
      if (!std::regex_match(uppercaseCode,pattern)){
-        throw std::invalid_argument("Formato inválido. Certifique-se de inserir um formato valido para o codigo de titulo");
+        throw std::invalid_argument("Formato invï¿½lido. Certifique-se de inserir um formato valido para o codigo de titulo");
      };
 
 };
@@ -36,16 +36,15 @@ std::string CodigoTitulo::getPaycode(){
 };
 
 std::string CodigoTitulo::getCategoria(){
+    std::string code = this->getPaycode();
     enum class Categoria { CDB, CRI, LCA, DEB};
-    code = this->getPaycode;
     if (code.substr(0, 3) == "CDB") {
-        return Categoria::CDB;
+        return "CDB";
     } else if (code.substr(0, 3) == "CRI") {
-        return Categoria::CRI;
-    } else if (code.substr(0, 2) == "LC" && (entrada[2] == 'A' || entrada[2] == 'I')) {
-        return Categoria::LCA;
+        return "CRI";
+    } else if (code.substr(0, 2) == "LC" && (code[2] == 'A' || code[2] == 'I')) {
+        return "LCA";
     } else if (code.substr(0, 3) == "DEB") {
-        return Categoria::DEB;
+        return "DEB";
     }
-
 };

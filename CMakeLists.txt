@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Include directories
-include_directories(Headers)
+include_directories(Headers TUD)
 
 # Add all source files
-file(GLOB SOURCES "Sources/*.cpp")
+file(GLOB SOURCES "Sources/*.cpp" "TUD/*.cpp")
 
 # Add executable
 add_executable(dominios ${SOURCES})

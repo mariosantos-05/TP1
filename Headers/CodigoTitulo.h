@@ -10,7 +10,7 @@ class CodigoTitulo {
     private:
         std::string titleCode;
         void validatetitleCode(std::string code);
-        std::string categoria
+        std::string categoria;
     public:
         /**
      * @brief Constructor for the title code.
@@ -22,7 +22,7 @@ class CodigoTitulo {
      * @param  code number string.
      * @throw Throws an exception if the format is invalid.
      */
-     void setTitlecode(std::string)
+     void setTitlecode(std::string);
      /**
      * @brief Getter for the title code number.
      * @return The title code string.
