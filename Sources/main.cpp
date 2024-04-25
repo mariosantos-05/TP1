@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../Headers/CPF.h"
+#include "CPF.h"
 #include "../TUD/TUCPF.h"
 #include "../TUD/TUNome.h"
 #define RESET   "\033[0m"
