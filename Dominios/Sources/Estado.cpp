@@ -1,4 +1,5 @@
-#include "Estado.h"
+#include "../Headers/Estado.h"
+using std::string;
 
 bool Estado::validar(string estado){
     string estados[3] = {"Previsto","Liquidado","Inadimplente"}; //Valid states

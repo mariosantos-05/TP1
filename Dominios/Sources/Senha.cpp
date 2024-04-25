@@ -1,4 +1,5 @@
-#include "Senha.h"
+#include "../Headers/Senha.h"
+using std::string;
 
 bool Senha::validar(string senha){ //The password must consist of 6 non sequential numbers
     int password_lenght = senha.length(); //Gets the password lenght

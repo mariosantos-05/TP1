@@ -1,4 +1,5 @@
-#include "Nome.h"
+#include "../Headers/Nome.h"
+using std::string;
 #include <stdexcept>
 
 Name::Name(std::string name){
