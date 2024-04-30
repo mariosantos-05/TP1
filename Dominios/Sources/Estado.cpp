@@ -1,4 +1,4 @@
-#include "Estado.h"
+#include "../Headers/Estado.h"
 
 void Estado::validar(string estado){
     bool valid = false; //Indicates format validity

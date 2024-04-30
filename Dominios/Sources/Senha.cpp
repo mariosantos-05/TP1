@@ -1,4 +1,4 @@
-#include "Senha.h"
+#include "../Headers/Senha.h"
 
 void Senha::validar(string senha){ //The password must consist of 6 non sequential numbers
     int password_lenght = senha.length(); 

@@ -1,4 +1,4 @@
-#include "Setor.h"
+#include "../Headers/Setor.h"
 
 void Setor::validar(string setor){
     bool valid = false;
