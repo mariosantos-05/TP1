@@ -1,5 +1,5 @@
 #include "../Headers/Codigo_de_pagamento.h" //<header file that give us the interface of codigo de pagamento>
-#include <stdexcept>
+
 
 
 // Codigo de pagamento constructor

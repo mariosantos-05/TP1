@@ -2,7 +2,7 @@
 #define CPF_H
 #include <string>     /**< For string manipulation. */
 #include <regex>      /**< For regular expressions. */
-
+#include <stdexcept>
 
 /**
  * @brief Class representing a CPF (Cadastro de Pessoas F�sicas) number.

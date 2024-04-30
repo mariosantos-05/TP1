@@ -2,7 +2,7 @@
 
 void Percentual::validar(int percentual){ 
     if(percentual<0 || percentual>100){ //Verifies format
-        throw invalid_argument("Tamanho invalido, favor escolher numero de 0 a 100"); 
+        throw std::invalid_argument("Tamanho invalido, favor escolher numero de 0 a 100"); 
     }
 };
 void Percentual::set(int percentual){ 

@@ -2,7 +2,7 @@
 #define CODIGO_DE_PAGAMENTO_H
 #include <string>     /**< For string manipulation. */
 #include <regex>      /**< For regular expressions. */
-
+#include <stdexcept>
 /**
 * @brief Class representing the payment code (codigo de pagamento)
 */

@@ -3,7 +3,7 @@
 void Senha::validar(string senha){ //The password must consist of 6 non sequential numbers
     int password_lenght = senha.length(); 
     if ( password_lenght != 6){ //Verifies valid lenght
-        throw invalid_argument("Tamanho invalido, favor inserir 6 caracteres"); 
+        throw std::invalid_argument("Tamanho invalido, favor inserir 6 caracteres"); 
     };
 
     string invalid_formats[8] = {"123456","234567","345678","456789",
@@ -11,7 +11,7 @@ void Senha::validar(string senha){ //The password must consist of 6 non sequenti
 
     for(string elem : invalid_formats){ //Checks for sequence passwords
         if (elem == senha){ 
-            throw invalid_argument("Formato invalido, favor nao utilizar sequencias crescentes/decrescentes"); 
+            throw std::invalid_argument("Formato invalido, favor nao utilizar sequencias crescentes/decrescentes"); 
         };
     };
 };

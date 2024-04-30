@@ -1,5 +1,5 @@
 #include "../Headers/Nome.h"
-#include <stdexcept>
+
 
 Name::Name(std::string name){
     Names = name;

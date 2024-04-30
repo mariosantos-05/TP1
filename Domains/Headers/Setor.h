@@ -1,8 +1,11 @@
 #include <iostream>
 #include <string>
+#include <stdexcept> 
 using std::string;
 
-
+/**
+* @brief Class representing the Field
+*/
 class Setor {
 private:
     std::string setor;

@@ -4,6 +4,9 @@
 #include <iostream>
 #include <stdexcept> 
 
+/**
+* @brief Class representing the Monetary Value
+*/
 class Valor {
 private:
     float valor;

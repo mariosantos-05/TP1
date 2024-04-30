@@ -2,7 +2,11 @@
 #define NAME_H
 #include <string>       /**< For string manipulation. */
 #include <algorithm>    /**< For algorithms like std::count and std::remove. */
+#include <stdexcept>
 
+/**
+* @brief Class representing the Name
+*/
 class Name{
 private:
     std::string Names;  /**< The name string. */

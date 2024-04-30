@@ -2,7 +2,8 @@
 #define CODIGOTITULO_H
 #include <string>     /**< For string manipulation. */
 #include <regex>      /**< For regular expressions. */
-
+#include <stdexcept>
+#include <cctype>
 /**
 * @brief Class representing the title code
 */

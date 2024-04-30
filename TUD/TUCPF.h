@@ -1,8 +1,7 @@
 #ifndef TESTE_CPF
 #define TESTE_CPF
-
 #include <string>
-#include "CPF.h"
+#include "../Domains/Headers/CPF.h"
 #include <stdexcept>
 
 class TUCPF {

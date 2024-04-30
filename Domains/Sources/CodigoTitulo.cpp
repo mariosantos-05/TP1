@@ -1,8 +1,5 @@
 #include "../Headers/CodigoTitulo.h" //<header file that give us the interface of the title code>
-#include <stdexcept>
-#include <regex>
-#include <string>
-#include <cctype>
+
 
 
 //Title code constructor
@@ -44,7 +41,8 @@ std::string CodigoTitulo::getCategoria(){
         return "CRI";
     } else if (code.substr(0, 2) == "LC" && (code[2] == 'A' || code[2] == 'I')) {
         return "LCA";
-    } else if (code.substr(0, 3) == "DEB") {
+    } /*else if (code.substr(0, 3) == "DEB") {
         return "DEB";
-    }
+    }*/
+    return "DEB";
 };

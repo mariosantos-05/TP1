@@ -1,8 +1,7 @@
 #ifndef TESTE_Nome
 #define TESTE_Nome
-
+#include "../Domains/Headers/Nome.h"
 #include <string>
-#include "Nome.h"
 #include <stdexcept>
 
 class TUName {

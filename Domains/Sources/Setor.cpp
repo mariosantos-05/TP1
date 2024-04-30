@@ -11,7 +11,7 @@ void Setor::validar(string setor){
         };
     };
     
-    if (!valid) {throw invalid_argument("Formato invalido, favor inserir um dos setores solicitados");} //If not valid
+    if (!valid) {throw std::invalid_argument("Formato invalido, favor inserir um dos setores solicitados");} //If not valid
 };
 string Setor::get(){ 
     return setor;
