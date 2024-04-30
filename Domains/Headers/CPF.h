@@ -5,7 +5,7 @@
 #include <stdexcept>
 
 /**
- * @brief Class representing a CPF (Cadastro de Pessoas F�sicas) number.
+ * @brief Class representing a CPF (Cadastro de Pessoas Fisicas) number.
  */
 class CPF{
 private:
