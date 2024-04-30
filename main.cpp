@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../Domains/Headers/Nome.h"
 #include "../Domains/Headers/CPF.h"
-#include "../TUD/TUCPF.h"
+#include "../TUD/TUCPF.cpp"
 #include "../TUD/TUNome.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"

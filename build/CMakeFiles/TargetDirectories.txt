@@ -1,3 +1,0 @@
-/home/mario/TP1/build/CMakeFiles/dominios.dir
-/home/mario/TP1/build/CMakeFiles/edit_cache.dir
-/home/mario/TP1/build/CMakeFiles/rebuild_cache.dir
