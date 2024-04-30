@@ -1,6 +1,6 @@
 #include "Setor.h"
 
-void validar(string setor){
+void Setor::validar(string setor){
     bool valid = false;
     string setores[10] = {"Agricultura", "Construção civil", "Energia", "Finanças", "Imobiliário", "Papel e celulose", 
     "Pecuária", "Química e petroquímica,", "Metalurgia e siderurgia", "Mineração"}; //Valid sectors
