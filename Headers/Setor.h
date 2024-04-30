@@ -1,14 +1,30 @@
 #include <iostream>
 #include <string>
-using namespace std;
+using std::string;
 
-class Setor{ //Class definition
-    private:
-        string setor; //Stored sector
-        void validar(string); //Verifies the format
-    public:
-        Setor(string);
-        void set(string); //Defines the sector to be stored
-        string get(); //Returns the stored sector
 
+class Setor {
+private:
+    std::string setor;
+    void validar(std::string setor);
+
+public:
+    /**
+     * @brief Constructor for the Setor class.
+     * @param setor The initial sector to be stored.
+     */
+    Setor(std::string setor);
+
+    /**
+     * @brief Sets the sector to be stored.
+     * @param setor The sector to be stored.
+     * @throw Throws an exception if the format is invalid.
+     */
+    void set(std::string setor);
+
+    /**
+     * @brief Gets the stored sector.
+     * @return The stored sector.
+     */
+    std::string get();
 };

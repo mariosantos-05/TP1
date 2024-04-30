@@ -2,17 +2,31 @@
 #define DINHEIRO_H
 #include <string>
 #include <iostream>
+#include <stdexcept> 
 
-class Valor
-{
-    private:
-        float valor;
-        bool validateValor( float valor);
+class Valor {
+private:
+    float valor;
+    bool validateValor(float valor);
+public:
+    /**
+     * @brief Constructor for the Valor class.
+     * @param valor The monetary value to initialize.
+     */
+    Valor(float valor);
 
-    public:
-        Valor(float valor);
-        float getValor();
-        void setValor(float valor);
+    /**
+     * @brief Sets the monetary value.
+     * @param valor The new monetary value.
+     * @throw invalid_argument If the value is in the wrong format.
+     */
+    void setValor(float valor);
+
+    /**
+     * @brief Gets the monetary value.
+     * @return The monetary value.
+     */
+    float getValor();
 };
 
 #endif

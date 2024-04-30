@@ -1,14 +1,33 @@
 #include <iostream>
 #include <string>
-using namespace std;
+#include <stdexcept> 
+using std::string;
 
-class Senha{ //Class definition
-    private:
-        string senha; //Stored password
-        void validar(string); //Verifies the format
-    public:
-        Senha(string);
-        void set(string); //Defines the password to be stored
-        string get(); //Returns the stored password
+/**
+* @brief Class representing the Password
+*/
+class Senha {
+private:
+    string senha; 
+    void validar(string senha);
 
+public:
+    /**
+     * @brief Constructor for the Senha class.
+     * @param senha The initial password to be stored.
+     */
+    Senha(string senha);
+
+    /**
+     * @brief Sets the password to be stored.
+     * @param senha The password to be stored.
+     * @throw std::invalid_argument If the password is invalid.
+     */
+    void set(string senha);
+
+    /**
+     * @brief Gets the stored password.
+     * @return The stored password.
+     */
+    string get();
 };
