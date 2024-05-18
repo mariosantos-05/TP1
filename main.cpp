@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../TUD/TUCPF.h"
 #include "../TUD/TUNome.h"
+#include "../Domains/Headers/Dinheiro.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -23,5 +24,17 @@ int main() {
                                 break;
     }
 
+
+    Valor valor1 = 10.0;
+    std::cout << valor1.getValor() << std::endl;
+
+    try{
+        valor1.setValor(-14);
+        std::cout << valor1.getValor() << std::endl;
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Exceção capturada: " << e.what() << std::endl;
+    }
+
     return 0;
+
 }
