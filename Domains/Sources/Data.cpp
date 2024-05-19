@@ -63,12 +63,12 @@ bool Data::validate(std::string data) {
     return true;
 }
 
-void Data::set(std::string data) {
+void Data::setData(std::string data) {
     validate(data);
     this->data = data;
 
 }
 
-std::string Data::get() {return data;}
+std::string Data::getData() {return data;}
 
-Data::Data(std::string data) {set(data);}
+Data::Data(std::string data) {setData(data);}

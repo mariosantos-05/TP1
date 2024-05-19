@@ -40,8 +40,8 @@ int main() {
     
     try {
         Data data1 = Data("30-19-2023");
-        data1.set("30-06-2023");
-        std::cout << data1.get() << std::endl;
+        data1.setData("30-06-2023");
+        std::cout << data1.getData() << std::endl;
     } catch (const std::invalid_argument&  e) {
         std::cerr << "Exceção capturada: " << e.what() << std::endl;
     }
