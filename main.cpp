@@ -2,6 +2,7 @@
 #include "../TUD/TUCPF.h"
 #include "../TUD/TUNome.h"
 #include "../Domains/Headers/Dinheiro.h"
+#include "../Domains/Headers/Data.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -32,6 +33,16 @@ int main() {
         valor1.setValor(-14);
         std::cout << valor1.getValor() << std::endl;
     } catch (const std::invalid_argument& e) {
+        std::cerr << "Exceção capturada: " << e.what() << std::endl;
+    }
+
+    
+    
+    try {
+        Data data1 = Data("30-19-2023");
+        data1.set("30-06-2023");
+        std::cout << data1.get() << std::endl;
+    } catch (const std::invalid_argument&  e) {
         std::cerr << "Exceção capturada: " << e.what() << std::endl;
     }
 
