@@ -26,12 +26,12 @@ class Data{
         * @param data The new data value.
         * @throw invalid_argument If the value is in the wrong format.
         */
-        void set( std::string );
+        void setData(std::string );
         /**
         * @brief Gets the data value.
         * @return The data value.
         */
-        std::string get();
+        std::string getData();
 
 };
 

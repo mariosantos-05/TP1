@@ -48,18 +48,27 @@ bool Data::validateDateRanges(std::string data) {
 
 bool Data::validate(std::string data) {
 
-    if (data.length() != 10) {return false;}
-    if (validadeHyphenPlacement(data) == false) {return false;}
-    if (validateDateRanges(data) == false) {return false;}
+    if (data.length() != 10) {
+        throw std::invalid_argument("Argumento inválido. Certifique-se de que a data tenha o formato dd-mm-yyyy");
+    }
+    
+    if (validadeHyphenPlacement(data) == false) {
+        throw std::invalid_argument("Argumento inválido. Certifique-se de que a data tenha o formato dd-mm-yyyy");
+    }
+    
+    if (validateDateRanges(data) == false) {
+        throw std::invalid_argument("Argumento inválido. A data possui valores impossíveis ou fora do intervalo esperado");
+    }
 
     return true;
 }
 
-void Data::set(std::string data) {
-    if (validate(data)) {this->data = data;}
-    else {this->data = "data invalida";}
+void Data::setData(std::string data) {
+    validate(data);
+    this->data = data;
+
 }
 
-std::string Data::get() {return data;}
+std::string Data::getData() {return data;}
 
-Data::Data(std::string data) {set(data);}
+Data::Data(std::string data) {setData(data);}
