@@ -3,7 +3,7 @@
 #include <stdexcept>
 
 void TUPercentual::setUp(){
-    valor = new Percentual("");
+    valor = new Percentual(0);
     estado = SUCESSO;
 }
 
