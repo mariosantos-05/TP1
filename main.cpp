@@ -1,6 +1,7 @@
 #include <iostream>
 #include "../TUD/TUCPF.h"
 #include "../TUD/TUNome.h"
+#include "../TUD/TUPercentual.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -25,9 +26,9 @@ int main() {
 
     TUPercentual testepercentual;
     switch(testepercentual.run()){
-        case TUPercentual::SUCESSO: std::cout << GREEN << "SUCESSO - Nome" << RESET << std::endl;
+        case TUPercentual::SUCESSO: std::cout << GREEN << "SUCESSO - Percentual" << RESET << std::endl;
                                 break;
-        case TUPercentual::FALHA  : std::cout << RED << "FALHA   - Nome" << RESET << std::endl;
+        case TUPercentual::FALHA  : std::cout << RED << "FALHA   - Percentual" << RESET << std::endl;
                                 break;
     }
 
