@@ -2,7 +2,7 @@
 #include "../TUD/TUCPF.h"
 #include "../TUD/TUNome.h"
 #include "../TUD/TUPercentual.h"
-#include "../TUD/TUDinheiro.h"
+#include "../TUD/TUValorMonetario.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
