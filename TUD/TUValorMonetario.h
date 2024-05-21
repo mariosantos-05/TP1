@@ -1,5 +1,5 @@
-#ifndef TESTE_Dinheiro
-#define TESTE_Dinheiro
+#ifndef TESTE_ValorMonetario
+#define TESTE_ValorMonetario
 #include "../Domains/Headers/ValorMonetario.h"
 #include <string>
 #include <stdexcept>
