@@ -3,16 +3,16 @@
 #include <iostream>
 #include <stdexcept>
 
-void TUDinheiro::setUp() {
+void TUValorMonetario::setUp() {
     codigo = new ValorMonetario(0);
     estado = SUCESSO;
 }
 
-void TUDinheiro::tearDown() {
+void TUValorMonetario::tearDown() {
     delete codigo;
 }
 
-void TUDinheiro::testarCenarioValido() {
+void TUValorMonetario::testarCenarioValido() {
 
     try {
         codigo -> setValorMonetario(VALOR_VALIDO);
@@ -22,7 +22,7 @@ void TUDinheiro::testarCenarioValido() {
     } catch (std::invalid_argument &excecao) {estado = FALHA;}
 }
 
-void TUDinheiro::testarCenarioInvalido() {
+void TUValorMonetario::testarCenarioInvalido() {
 
     try {
         codigo -> setValorMonetario(VALOR_INVALIDO);
@@ -33,7 +33,7 @@ void TUDinheiro::testarCenarioInvalido() {
     }
 }
 
-int TUDinheiro::run() {
+int TUValorMonetario::run() {
     setUp();
     testarCenarioValido();
     testarCenarioInvalido();

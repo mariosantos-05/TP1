@@ -4,7 +4,7 @@
 #include <string>
 #include <stdexcept>
 
-class TUDinheiro {
+class TUValorMonetario {
 private:
     const float VALOR_VALIDO   = 4321.0;   
     const float VALOR_INVALIDO = 78945623425365364561233.0;   
