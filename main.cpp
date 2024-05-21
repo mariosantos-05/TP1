@@ -3,6 +3,7 @@
 #include "../TUD/TUNome.h"
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUValorMonetario.h"
+#include "../TUD/TUData.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -35,14 +36,24 @@ int main() {
     }
 
 
-    TUDinheiro testedinheiro;
+    TUValorMonetario testedinheiro;
     switch(testedinheiro.run()){
-        case TUName::SUCESSO: std::cout << GREEN << "SUCESSO - Dinheiro" << RESET << std::endl;
+        case TUValorMonetario::SUCESSO: std::cout << GREEN << "SUCESSO - Valor Monetario" << RESET << std::endl;
                                 break;
-        case TUName::FALHA  : std::cout << RED << "FALHA   - Dinheiro" << RESET << std::endl;
+        case TUValorMonetario::FALHA  : std::cout << RED << "FALHA   - Valor Monetario" << RESET << std::endl;
                                 break;
     }
   
+
+    TUData testedata;
+    switch(testedata.run()){
+        case TUData::SUCESSO: std::cout << GREEN << "SUCESSO - Data" << RESET << std::endl;
+                                break;
+        case TUData::FALHA  : std::cout << RED << "FALHA   - Data" << RESET << std::endl;
+                                break;
+    }
+  
+
     return 0;
 
 }
