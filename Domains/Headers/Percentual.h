@@ -8,7 +8,10 @@
 */
 class Percentual {
 private:
-    int percentual; 
+    int percentual;
+    /**
+     * @throw invalid_argument if the value is invalid.
+    */
     void validar(int percentual);
 
 public:
@@ -21,7 +24,6 @@ public:
     /**
      * @brief Sets the percentage value.
      * @param percentual The percentage value to be stored.
-     * @throw invalid_argument If the value is invalid.
      */
     void set(int percentual);
 

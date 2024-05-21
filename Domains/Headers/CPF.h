@@ -10,6 +10,9 @@
 class CPF{
 private:
     std::string CadastroPF;  /**< The CPF number string. */
+    /**
+     * @throw Throws an exception if the format is invalid.
+    */
     void validateCPFFormat(std::string cpf);
 public:
 
@@ -23,7 +26,6 @@ public:
     /**
      * @brief Setter for the CPF number.
      * @param cpf The CPF number string.
-     * @throw Throws an exception if the format is invalid.
      */
     void setCPF(std::string cpf);
 

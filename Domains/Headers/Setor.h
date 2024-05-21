@@ -9,6 +9,9 @@ using std::string;
 class Setor {
 private:
     std::string setor;
+    /**
+     * @throw Throws an exception if the format is invalid.
+    */
     void validar(std::string setor);
 
 public:
@@ -21,7 +24,6 @@ public:
     /**
      * @brief Sets the sector to be stored.
      * @param setor The sector to be stored.
-     * @throw Throws an exception if the format is invalid.
      */
     void set(std::string setor);
 

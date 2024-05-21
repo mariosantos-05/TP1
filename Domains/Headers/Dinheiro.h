@@ -10,6 +10,9 @@
 class Valor {
 private:
     float valor;
+    /**
+     * @throw invalid_argument if the value is in the wrong format.
+     */
     bool validateValor(float valor);
 public:
     /**
@@ -21,7 +24,6 @@ public:
     /**
      * @brief Sets the monetary value.
      * @param valor The new monetary value.
-     * @throw invalid_argument If the value is in the wrong format.
      */
     void setValor(float valor);
 

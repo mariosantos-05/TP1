@@ -8,7 +8,10 @@ using std::string;
 */
 class Senha {
 private:
-    string senha; 
+    string senha;
+    /**
+     * @throw std::invalid_argument If the password is invalid.
+     */
     void validar(string senha);
 
 public:
@@ -21,7 +24,6 @@ public:
     /**
      * @brief Sets the password to be stored.
      * @param senha The password to be stored.
-     * @throw std::invalid_argument If the password is invalid.
      */
     void set(string senha);
 

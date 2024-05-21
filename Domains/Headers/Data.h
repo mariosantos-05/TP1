@@ -9,6 +9,9 @@
 class Data{
     private:
         std::string data;
+        /**
+         * @throw invalid_argument if the value is in the wrong format.
+        */
         bool validate(std::string data);
         bool validadeHyphenPlacement(std::string data);
         bool validateDateRanges(std::string data);

@@ -10,6 +10,9 @@
 class CodigoTitulo {
     private:
         std::string titleCode;
+        /**
+         * @throw Throws an exception if the format is invalid.
+        */
         void validatetitleCode(std::string code);
         std::string categoria;
     public:
@@ -21,7 +24,6 @@ class CodigoTitulo {
      /**
      * @brief Setter for the title code number.
      * @param  code number string.
-     * @throw Throws an exception if the format is invalid.
      */
      void setTitlecode(std::string);
      /**

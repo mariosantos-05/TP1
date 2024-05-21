@@ -8,6 +8,9 @@ using std::string;
 class Estado {
 private:
     std::string estado; /**< Stored state */
+    /**
+     * @throw Throws an exception if the format is invalid.
+    */
     void validar(std::string estado);
 public:
     /**
@@ -18,7 +21,6 @@ public:
     /**
      * @brief Sets the state to be stored.
      * @param estado The state to be stored.
-     * @throw Throws an exception if the format is invalid.
      */
     void set(std::string estado);
     /**

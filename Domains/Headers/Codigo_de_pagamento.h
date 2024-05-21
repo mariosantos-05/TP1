@@ -9,6 +9,9 @@
 class Codigo_de_pagamento{
     private:
         std::string paymentCode;
+        /**
+         * @throw Throws an exception if the format is invalid.
+        */
         void validatepaymentCode(std::string pc_number);
     public:
         /**
@@ -19,7 +22,6 @@ class Codigo_de_pagamento{
         /**
          * @brief Setter for the payment code number.
          * @param payment code number string.
-         * @throw Throws an exception if the format is invalid.
          */
         void setPaymentcode(std::string paycode);
         /**

@@ -10,6 +10,9 @@
 class Name{
 private:
     std::string Names;  /**< The name string. */
+    /** 
+     * @throw Throws an exception if the format is invalid.
+     */
     void validateName(std::string name);
 public:
     /**
@@ -21,7 +24,6 @@ public:
     /**
      * @brief Setter for the name.
      * @param name The name string.
-     * @throw Throws an exception if the format is invalid.
      */
     void setName(std::string name);
 
