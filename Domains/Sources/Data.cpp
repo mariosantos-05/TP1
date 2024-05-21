@@ -46,7 +46,7 @@ bool Data::validateDateRanges(std::string data) {
     return true;
 }
 
-bool Data::validate(std::string data) {
+void Data::validate(std::string data) {
 
     if (data.length() != 10) {
         throw std::invalid_argument("Argumento inválido. Certifique-se de que a data tenha o formato dd-mm-yyyy");
@@ -59,8 +59,6 @@ bool Data::validate(std::string data) {
     if (validateDateRanges(data) == false) {
         throw std::invalid_argument("Argumento inválido. A data possui valores impossíveis ou fora do intervalo esperado");
     }
-
-    return true;
 }
 
 void Data::setData(std::string data) {

@@ -10,7 +10,7 @@
 class Valor {
 private:
     float valor;
-    bool validateValor(float valor);
+    void validateValor(float valor);
 public:
     /**
      * @brief Constructor for the Valor class.

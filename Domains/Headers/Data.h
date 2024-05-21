@@ -9,7 +9,7 @@
 class Data{
     private:
         std::string data;
-        bool validate(std::string data);
+        void validate(std::string data);
         bool validadeHyphenPlacement(std::string data);
         bool validateDateRanges(std::string data);
         int month_lenth(int month, int year);

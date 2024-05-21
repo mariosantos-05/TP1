@@ -1,7 +1,7 @@
 #include "../Headers/Dinheiro.h"
 
 
-bool Valor::validateValor(float valor) 
+void Valor::validateValor(float valor) 
 {
     if (valor < 0 || valor > 1000000) 
     {
