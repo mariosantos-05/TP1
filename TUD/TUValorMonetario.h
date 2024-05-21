@@ -1,14 +1,14 @@
-#ifndef TESTE_Dinheiro
-#define TESTE_Dinheiro
-#include "../Domains/Headers/Dinheiro.h"
+#ifndef TESTE_ValorMonetario
+#define TESTE_ValorMonetario
+#include "../Domains/Headers/ValorMonetario.h"
 #include <string>
 #include <stdexcept>
 
-class TUDinheiro {
+class TUValorMonetario {
 private:
     const float VALOR_VALIDO   = 4321.0;   
     const float VALOR_INVALIDO = 78945623425365364561233.0;   
-    Valor *codigo;                         
+    ValorMonetario *codigo;                         
     int estado;                          
     void setUp();                       
     void tearDown();                        
