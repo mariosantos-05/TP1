@@ -28,12 +28,12 @@ void CodigoTitulo::setTitlecode(std::string code){
 };
 
 //Getter for the title code
-std::string CodigoTitulo::getPaycode(){
+std::string CodigoTitulo::getTitlecode(){
     return titleCode;
 };
 
 std::string CodigoTitulo::getCategoria(){
-    std::string code = this->getPaycode();
+    std::string code = this->getTitlecode();
     enum class Categoria { CDB, CRI, LCA, DEB};
     if (code.substr(0, 3) == "CDB") {
         return "CDB";
