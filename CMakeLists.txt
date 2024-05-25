@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(Domains/Headers TUD)
 
 # Add all source files
-file(GLOB SOURCES "Domains/Sources/*.cpp" "main.cpp" "TUD/*.cpp")
+file(GLOB SOURCES "Domains/Sources/*.cpp" "main.cpp" "TUD/*.cpp" "Entities/Sources/*.cpp")
 
 # Add executable
 add_executable(dominios ${SOURCES})
