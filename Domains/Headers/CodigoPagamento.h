@@ -1,12 +1,12 @@
-#ifndef CODIGO_DE_PAGAMENTO_H
-#define CODIGO_DE_PAGAMENTO_H
+#ifndef CODIGOPAGAMENTO_H
+#define CODIGOPAGAMENTO_H
 #include <string>     /**< For string manipulation. */
 #include <regex>      /**< For regular expressions. */
 #include <stdexcept>
 /**
 * @brief Class representing the payment code (codigo de pagamento)
 */
-class Codigo_de_pagamento{
+class CodigoPagamento{
     private:
         std::string paymentCode;
         void validatepaymentCode(std::string pc_number);
@@ -15,7 +15,7 @@ class Codigo_de_pagamento{
          * @brief Constructor for the payment Code.
          * @param paymentcode: number string.
          */
-        Codigo_de_pagamento(std::string paycode);
+        CodigoPagamento(std::string paycode);
         /**
          * @brief Setter for the payment code number.
          * @param payment code number string.
