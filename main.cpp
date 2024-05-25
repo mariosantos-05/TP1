@@ -5,6 +5,8 @@
 #include "../TUD/TUValorMonetario.h"
 #include "../TUD/TUData.h"
 #include "../TUD/TUCodigoPagamento.h"
+#include "../TUD/TUCodigoTitulo.h"
+
 
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
@@ -60,6 +62,14 @@ int main() {
         case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
                                 break;
         case TUCodigoPagamento::FALHA  : std::cout << RED << "FALHA   - Codigo de pagamento" << RESET << std::endl;
+                                break;
+    }
+
+    TUCodigoTitulo testecodigotitulo;
+    switch(testecodigotitulo.run()){
+        case TUCodigoTitulo::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Titulo" << RESET << std::endl;
+                                break;
+        case TUCodigoTitulo::FALHA  : std::cout << RED << "FALHA   - Codigo de Titulo" << RESET << std::endl;
                                 break;
     }
 
