@@ -4,6 +4,7 @@
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUValorMonetario.h"
 #include "../TUD/TUData.h"
+#include "../Entities/Headers/Titulo.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -54,6 +55,39 @@ int main() {
     }
   
 
+    Titulo novo_titulo(
+        "CDB123456789",
+        "Lucas Adeodato",
+        "Agricultura",
+        "30-06-2024",
+        "30-06-2025",
+        10.0
+    );
+
+    std::cout << novo_titulo.getCodigo() << std::endl;
+    std::cout << novo_titulo.getEmissor() << std::endl;
+    std::cout << novo_titulo.getSetor() << std::endl;
+    std::cout << novo_titulo.getValor() << std::endl;
+    std::cout << novo_titulo.getEmissao() << std::endl;
+    std::cout << novo_titulo.getVencimento() << std::endl;
+
+
+    novo_titulo.setCodigo("DEB123456789");
+    novo_titulo.setEmissor("Chacon");
+    novo_titulo.setVencimento("30-06-2026");
+
+    std::cout << "--------------------" << std::endl;
+
+    std::cout << novo_titulo.getCodigo() << std::endl;
+    std::cout << novo_titulo.getEmissor() << std::endl;
+    std::cout << novo_titulo.getSetor() << std::endl;
+    std::cout << novo_titulo.getValor() << std::endl;
+    std::cout << novo_titulo.getEmissao() << std::endl;
+    std::cout << novo_titulo.getVencimento() << std::endl;
+
+
     return 0;
+
+
 
 }
