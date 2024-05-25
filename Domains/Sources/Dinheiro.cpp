@@ -1,13 +1,16 @@
 #include "../Headers/Dinheiro.h"
 
 
-bool Valor::validateValor(float valor)
+bool Valor::validateValor(float valor) 
 {
-    if (valor < 0 && valor > 1000000) {return false;}
-    return true;
+    if (valor < 0 || valor > 1000000) 
+    {
+        throw std::invalid_argument("Argumento inválido. Certifique-se de que valor está no intervalo suportado");   
+    }
 }
 
 Valor::Valor(float valor) {
+    validateValor(valor);
     this->valor = valor;
 }
 
@@ -16,9 +19,7 @@ float Valor::getValor() {
 }
 
 void Valor::setValor(float valor){
-    if(validateValor(valor)){
-        this->valor = valor;
-    }
-    else{ std::cout << "Valor Inválido" << std::endl;}
+    validateValor(valor);
+    this->valor = valor;
 }
 

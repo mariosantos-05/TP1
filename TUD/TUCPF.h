@@ -7,7 +7,7 @@
 class TUCPF {
 private:
     const std::string VALOR_VALIDO   = "039.347.231-84";   
-    const std::string VALOR_INVALIDO = "03233681194";   
+    const std::string VALOR_INVALIDO = "0323368";   
     CPF *codigo;                         
     int estado;                          
     void setUp();                       
