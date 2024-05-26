@@ -39,7 +39,7 @@ void Titulo::setValor(float valor) {
 }
 
 std::string Titulo::getCodigo() {
-    return this->codigo.getCategoria() + codigo.getPaycode();
+    return this->codigo.getCategoria() + codigo.getTitlecode();
 }
 
 std::string Titulo::getEmissor()  {

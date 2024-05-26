@@ -57,7 +57,7 @@ int main() {
                                 break;
     }
   
-  TUCodigoPagamento testecodigopagamento;
+    TUCodigoPagamento testecodigopagamento;
     switch(testecodigopagamento.run()){
         case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
                                 break;
