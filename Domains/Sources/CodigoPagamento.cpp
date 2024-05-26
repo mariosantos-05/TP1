@@ -1,15 +1,15 @@
-#include "../Headers/Codigo_de_pagamento.h" //<header file that give us the interface of codigo de pagamento>
+#include "../Headers/CodigoPagamento.h" //<header file that give us the interface of codigo de pagamento>
 
 
 
 // Codigo de pagamento constructor
-Codigo_de_pagamento::Codigo_de_pagamento(std::string pc_number){
+CodigoPagamento::CodigoPagamento(std::string pc_number){
     paymentCode = pc_number;
 };
 
 //Validation method
-void Codigo_de_pagamento::validatepaymentCode(std::string pc_number){
-    std::regex pattern("^[1-9]\\d{8} \\d{2}$");
+void CodigoPagamento::validatepaymentCode(std::string pc_number){
+    std::regex pattern("^[1-9]\\d{8} \\d{1}$");
     std::string digitsOnly = pc_number;
     digitsOnly.erase(std::remove(digitsOnly.begin(), digitsOnly.end(), ' '), digitsOnly.end());
 
@@ -22,14 +22,14 @@ void Codigo_de_pagamento::validatepaymentCode(std::string pc_number){
     };
 };
 //Seter for the payment code
-void Codigo_de_pagamento::setPaymentcode(std::string paycode){
+void CodigoPagamento::setPaymentcode(std::string paycode){
     //Validate the format
     validatepaymentCode(paycode);
     paymentCode = paycode;
 };
 
 //Getter for the payment code
-std::string Codigo_de_pagamento::getPaycode(){
+std::string CodigoPagamento::getPaycode(){
     return paymentCode;
 };
 

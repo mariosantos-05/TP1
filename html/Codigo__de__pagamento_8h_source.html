@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Domain and Entity Classes: Domains/Headers/Codigo_de_pagamento.h Source File</title>
+<title>Domain and Entity Classes: Domains/Headers/CodigoPagamento.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,28 +67,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Codigo_de_pagamento.h</div>  </div>
+<div class="title">CodigoPagamento.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CODIGO_DE_PAGAMENTO_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CODIGO_DE_PAGAMENTO_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CodigoPagamento_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CodigoPagamento_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span>     </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;regex&gt;</span>      </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classCodigo__de__pagamento.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCodigo__de__pagamento.html">Codigo_de_pagamento</a>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classCodigo__de__pagamento.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCodigo__de__pagamento.html">CodigoPagamento</a>{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        std::string paymentCode;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> validatepaymentCode(std::string pc_number);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classCodigo__de__pagamento.html#a4f2eed8ccaa7144f4cd12fb0f8f8a434">Codigo_de_pagamento</a>(std::string paycode);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classCodigo__de__pagamento.html#a4f2eed8ccaa7144f4cd12fb0f8f8a434">CodigoPagamento</a>(std::string paycode);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCodigo__de__pagamento.html#af6f72b787e60a893e41048aff3b0dc1e">setPaymentcode</a>(std::string paycode);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::string <a class="code" href="classCodigo__de__pagamento.html#ae85f9735b8310df369e6991d21c1330e">getPaycode</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassCodigo__de__pagamento_html"><div class="ttname"><a href="classCodigo__de__pagamento.html">Codigo_de_pagamento</a></div><div class="ttdoc">Class representing the payment code (codigo de pagamento)</div><div class="ttdef"><b>Definition:</b> Codigo_de_pagamento.h:9</div></div>
-<div class="ttc" id="aclassCodigo__de__pagamento_html_a4f2eed8ccaa7144f4cd12fb0f8f8a434"><div class="ttname"><a href="classCodigo__de__pagamento.html#a4f2eed8ccaa7144f4cd12fb0f8f8a434">Codigo_de_pagamento::Codigo_de_pagamento</a></div><div class="ttdeci">Codigo_de_pagamento(std::string paycode)</div><div class="ttdoc">Constructor for the payment Code.</div><div class="ttdef"><b>Definition:</b> Codigo_de_pagamento.cpp:6</div></div>
-<div class="ttc" id="aclassCodigo__de__pagamento_html_ae85f9735b8310df369e6991d21c1330e"><div class="ttname"><a href="classCodigo__de__pagamento.html#ae85f9735b8310df369e6991d21c1330e">Codigo_de_pagamento::getPaycode</a></div><div class="ttdeci">std::string getPaycode()</div><div class="ttdoc">Getter for the payment code number.</div><div class="ttdef"><b>Definition:</b> Codigo_de_pagamento.cpp:32</div></div>
-<div class="ttc" id="aclassCodigo__de__pagamento_html_af6f72b787e60a893e41048aff3b0dc1e"><div class="ttname"><a href="classCodigo__de__pagamento.html#af6f72b787e60a893e41048aff3b0dc1e">Codigo_de_pagamento::setPaymentcode</a></div><div class="ttdeci">void setPaymentcode(std::string paycode)</div><div class="ttdoc">Setter for the payment code number.</div><div class="ttdef"><b>Definition:</b> Codigo_de_pagamento.cpp:25</div></div>
+<div class="ttc" id="aclassCodigo__de__pagamento_html"><div class="ttname"><a href="classCodigo__de__pagamento.html">CodigoPagamento</a></div><div class="ttdoc">Class representing the payment code (codigo de pagamento)</div><div class="ttdef"><b>Definition:</b> CodigoPagamento.h:9</div></div>
+<div class="ttc" id="aclassCodigo__de__pagamento_html_a4f2eed8ccaa7144f4cd12fb0f8f8a434"><div class="ttname"><a href="classCodigo__de__pagamento.html#a4f2eed8ccaa7144f4cd12fb0f8f8a434">CodigoPagamento::CodigoPagamento</a></div><div class="ttdeci">CodigoPagamento(std::string paycode)</div><div class="ttdoc">Constructor for the payment Code.</div><div class="ttdef"><b>Definition:</b> CodigoPagamento.cpp:6</div></div>
+<div class="ttc" id="aclassCodigo__de__pagamento_html_ae85f9735b8310df369e6991d21c1330e"><div class="ttname"><a href="classCodigo__de__pagamento.html#ae85f9735b8310df369e6991d21c1330e">CodigoPagamento::getPaycode</a></div><div class="ttdeci">std::string getPaycode()</div><div class="ttdoc">Getter for the payment code number.</div><div class="ttdef"><b>Definition:</b> CodigoPagamento.cpp:32</div></div>
+<div class="ttc" id="aclassCodigo__de__pagamento_html_af6f72b787e60a893e41048aff3b0dc1e"><div class="ttname"><a href="classCodigo__de__pagamento.html#af6f72b787e60a893e41048aff3b0dc1e">CodigoPagamento::setPaymentcode</a></div><div class="ttdeci">void setPaymentcode(std::string paycode)</div><div class="ttdoc">Setter for the payment code number.</div><div class="ttdef"><b>Definition:</b> CodigoPagamento.cpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
