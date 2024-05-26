@@ -6,8 +6,8 @@
 #include "../TUD/TUData.h"
 #include "../TUD/TUCodigoPagamento.h"
 #include "../TUD/TUCodigoTitulo.h"
+#include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Conta.h"
-
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -56,8 +56,8 @@ int main() {
         case TUData::FALHA  : std::cout << RED << "FALHA   - Data" << RESET << std::endl;
                                 break;
     }
-
-    TUCodigoPagamento testecodigopagamento;
+  
+  TUCodigoPagamento testecodigopagamento;
     switch(testecodigopagamento.run()){
         case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
                                 break;
@@ -72,6 +72,37 @@ int main() {
         case TUCodigoTitulo::FALHA  : std::cout << RED << "FALHA   - Codigo de Titulo" << RESET << std::endl;
                                 break;
     }
+
+    Titulo novo_titulo(
+        "CDB123456789",
+        "Lucas Adeodato",
+        "Agricultura",
+        "30-06-2024",
+        "30-06-2025",
+        10.0
+    );
+
+    std::cout << novo_titulo.getCodigo() << std::endl;
+    std::cout << novo_titulo.getEmissor() << std::endl;
+    std::cout << novo_titulo.getSetor() << std::endl;
+    std::cout << novo_titulo.getValor() << std::endl;
+    std::cout << novo_titulo.getEmissao() << std::endl;
+    std::cout << novo_titulo.getVencimento() << std::endl;
+
+
+    novo_titulo.setCodigo("DEB123456789");
+    novo_titulo.setEmissor("Chacon");
+    novo_titulo.setVencimento("30-06-2026");
+
+    std::cout << "--------------------" << std::endl;
+
+    std::cout << novo_titulo.getCodigo() << std::endl;
+    std::cout << novo_titulo.getEmissor() << std::endl;
+    std::cout << novo_titulo.getSetor() << std::endl;
+    std::cout << novo_titulo.getValor() << std::endl;
+    std::cout << novo_titulo.getEmissao() << std::endl;
+    std::cout << novo_titulo.getVencimento() << std::endl;
+
 
     Conta nova_conta("Daniel Campos Silva", "081.749.421-90", "941727");
 
@@ -90,7 +121,8 @@ int main() {
     std::cout << nova_conta.getCodigocpf() << std::endl;
 
       
-    
     return 0;
+
+
 
 }
