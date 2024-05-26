@@ -6,7 +6,7 @@
 #include "../TUD/TUData.h"
 #include "../TUD/TUCodigoPagamento.h"
 #include "../TUD/TUCodigoTitulo.h"
-
+#include "../Entities/Headers/Conta.h"
 
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
@@ -73,10 +73,24 @@ int main() {
                                 break;
     }
 
+    Conta nova_conta("Daniel Campos Silva", "081.749.421-90", "941727");
 
+    std::cout << nova_conta.getNome() << std::endl;
+    std::cout << nova_conta.getSenha() << std::endl;
+    std::cout << nova_conta.getCodigocpf() << std::endl;
+
+    nova_conta.setCodigocpf("081.723.773-23");
+    nova_conta.setNome("Lucas");
+    nova_conta.setSenha("894367");
+
+    std::cout << "--------------------" << std::endl;
+
+    std::cout << nova_conta.getNome() << std::endl;
+    std::cout << nova_conta.getSenha() << std::endl;
+    std::cout << nova_conta.getCodigocpf() << std::endl;
+
+      
     
-  
-
     return 0;
 
 }
