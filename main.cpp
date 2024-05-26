@@ -4,7 +4,10 @@
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUValorMonetario.h"
 #include "../TUD/TUData.h"
+#include "../TUD/TUCodigoPagamento.h"
+#include "../TUD/TUCodigoTitulo.h"
 #include "../Entities/Headers/Titulo.h"
+#include "../Entities/Headers/Conta.h"
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -54,6 +57,21 @@ int main() {
                                 break;
     }
   
+  TUCodigoPagamento testecodigopagamento;
+    switch(testecodigopagamento.run()){
+        case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
+                                break;
+        case TUCodigoPagamento::FALHA  : std::cout << RED << "FALHA   - Codigo de pagamento" << RESET << std::endl;
+                                break;
+    }
+
+    TUCodigoTitulo testecodigotitulo;
+    switch(testecodigotitulo.run()){
+        case TUCodigoTitulo::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Titulo" << RESET << std::endl;
+                                break;
+        case TUCodigoTitulo::FALHA  : std::cout << RED << "FALHA   - Codigo de Titulo" << RESET << std::endl;
+                                break;
+    }
 
     Titulo novo_titulo(
         "CDB123456789",
@@ -86,6 +104,23 @@ int main() {
     std::cout << novo_titulo.getVencimento() << std::endl;
 
 
+    Conta nova_conta("Daniel Campos Silva", "081.749.421-90", "941727");
+
+    std::cout << nova_conta.getNome() << std::endl;
+    std::cout << nova_conta.getSenha() << std::endl;
+    std::cout << nova_conta.getCodigocpf() << std::endl;
+
+    nova_conta.setCodigocpf("081.723.773-23");
+    nova_conta.setNome("Lucas");
+    nova_conta.setSenha("894367");
+
+    std::cout << "--------------------" << std::endl;
+
+    std::cout << nova_conta.getNome() << std::endl;
+    std::cout << nova_conta.getSenha() << std::endl;
+    std::cout << nova_conta.getCodigocpf() << std::endl;
+
+      
     return 0;
 
 

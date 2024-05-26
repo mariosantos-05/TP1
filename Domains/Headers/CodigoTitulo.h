@@ -28,7 +28,7 @@ class CodigoTitulo {
      * @brief Getter for the title code number.
      * @return The title code string.
      */
-     std::string getPaycode();
+     std::string getTitlecode();
      std::string getCategoria();
 };
 #endif
