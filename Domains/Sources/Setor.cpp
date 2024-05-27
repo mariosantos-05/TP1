@@ -16,9 +16,9 @@ void Setor::validar(string setor){
 string Setor::get(){ 
     return setor;
 };
-void Setor::set(string setor){ 
+void Setor::setSetor(string setor){ 
     this->setor = setor;
 };
 Setor::Setor(string setor){
-    set(setor);
+    setSetor(setor);
 }

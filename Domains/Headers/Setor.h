@@ -23,7 +23,7 @@ public:
      * @param setor The sector to be stored.
      * @throw Throws an exception if the format is invalid.
      */
-    void set(std::string setor);
+    void setSetor(std::string setor);
 
     /**
      * @brief Gets the stored sector.

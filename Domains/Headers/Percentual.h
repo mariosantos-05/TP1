@@ -23,7 +23,7 @@ public:
      * @param percentual The percentage value to be stored.
      * @throw invalid_argument If the value is invalid.
      */
-    void set(int percentual);
+    void setPercentual(int percentual);
 
     /**
      * @brief Gets the stored percentage value.

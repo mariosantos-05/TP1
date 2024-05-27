@@ -15,11 +15,11 @@ void Estado::validar(string estado){
 string Estado::get(){ 
     return estado;
 };
-void Estado::set(string estado){ 
+void Estado::setEstado(string estado){ 
     validar(estado);
     this->estado = estado;
 };
 Estado::Estado(string estado){
-    set(estado);
+    setEstado(estado);
 };
 

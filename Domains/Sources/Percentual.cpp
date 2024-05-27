@@ -5,7 +5,7 @@ void Percentual::validar(int percentual){
         throw std::invalid_argument("Tamanho invalido, favor escolher numero de 0 a 100"); 
     }
 };
-void Percentual::set(int percentual){ 
+void Percentual::setPercentual(int percentual){ 
     validar(percentual); 
     this->percentual = percentual; 
 };
@@ -13,5 +13,5 @@ int Percentual::get(){
     return percentual; 
 };
 Percentual::Percentual(int percentual){
-    set(percentual);
+    setPercentual(percentual);
 }

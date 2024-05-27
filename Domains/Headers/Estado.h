@@ -20,7 +20,7 @@ public:
      * @param estado The state to be stored.
      * @throw Throws an exception if the format is invalid.
      */
-    void set(std::string estado);
+    void setEstado(std::string estado);
     /**
      * @brief Gets the stored state.
      * 

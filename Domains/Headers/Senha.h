@@ -23,7 +23,7 @@ public:
      * @param senha The password to be stored.
      * @throw std::invalid_argument If the password is invalid.
      */
-    void set(string senha);
+    void setSenha(string senha);
 
     /**
      * @brief Gets the stored password.

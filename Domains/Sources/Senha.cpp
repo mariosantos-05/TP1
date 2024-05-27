@@ -20,13 +20,13 @@ string Senha::get(){
     return senha;
 };
 
-void Senha::set(string senha){ 
+void Senha::setSenha(string senha){ 
     validar(senha);
     this->senha = senha;
 };
 
 Senha::Senha(string senha){
-    set(senha);
+    setSenha(senha);
 }
 
 
