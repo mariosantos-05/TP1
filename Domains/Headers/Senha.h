@@ -29,5 +29,5 @@ public:
      * @brief Gets the stored password.
      * @return The stored password.
      */
-    string get();
+    string getSenha();
 };

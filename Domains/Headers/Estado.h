@@ -26,5 +26,5 @@ public:
      * 
      * @return The stored state.
      */
-    std::string get();
+    std::string getEstado();
 };

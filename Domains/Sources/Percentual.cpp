@@ -9,7 +9,7 @@ void Percentual::setPercentual(int percentual){
     validar(percentual); 
     this->percentual = percentual; 
 };
-int Percentual::get(){ 
+int Percentual::getPercentual(){ 
     return percentual; 
 };
 Percentual::Percentual(int percentual){
