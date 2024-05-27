@@ -23,7 +23,7 @@ void Titulo::setEmissor(std::string emissor) {
 }
 
 void Titulo::setSetor(std::string setor) {
-    this->setor.set(setor);
+    this->setor.setSetor(setor);
 }
 
 void Titulo::setEmissao(std::string emissao) {

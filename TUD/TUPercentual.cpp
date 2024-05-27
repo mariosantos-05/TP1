@@ -13,7 +13,7 @@ void TUPercentual::tearDown(){
 
 void TUPercentual::testarCenariovalido(){
     try{
-        valor->set(VALOR_VALIDO);
+        valor->setPercentual(VALOR_VALIDO);
         if (valor->get() != VALOR_VALIDO)
             estado = FALHA;
     }
@@ -24,7 +24,7 @@ void TUPercentual::testarCenariovalido(){
 
 void TUPercentual::testarCenarioinvalido(){
     try{
-        valor->set(VALOR_INVALIDO);
+        valor->setPercentual(VALOR_INVALIDO);
         estado = FALHA;
     }
     catch(std::invalid_argument &excecao){

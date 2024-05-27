@@ -12,7 +12,7 @@ void Conta::setNome(std::string nome) {
 }
 
 void Conta::setSenha(std::string senha) {
-    this->senha.set(senha);
+    this->senha.setSenha(senha);
 }
 
 std::string Conta::getCodigocpf() {
