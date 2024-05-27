@@ -6,18 +6,18 @@
 #include "../../Domains/Headers/Estado.h"
 #include "../../Domains/Headers/Percentual.h"
 
-class Conta {
+class Pagamento {
 private:
     Data data;
     Estado estado;
     Percentual percentual;
 
 public:
-    Percentual(std::string data, std::string estado, int percentual);
+    Pagamento(std::string data, std::string estado, int percentual);
 
     void setData(std::string nome);
     void setEstado(std::string senha);
-    void setPercentual(std::string cpf);
+    void setPercentual(int percentual);
 
     std::string getData();
     std::string getEstado();

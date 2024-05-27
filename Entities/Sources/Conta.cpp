@@ -20,7 +20,7 @@ std::string Conta::getCodigocpf() {
 }
 
 std::string Conta::getSenha() {
-    return this->senha.get();
+    return this->senha.getSenha();
 }
 
 std::string Conta::getNome() {

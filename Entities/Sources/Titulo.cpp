@@ -47,7 +47,7 @@ std::string Titulo::getEmissor()  {
 }
 
 std::string Titulo::getSetor()  {
-    return this->setor.get();
+    return this->setor.getSetor();
 }
 
 std::string Titulo::getEmissao()  {

@@ -1,12 +1,6 @@
 #include "../Headers/Pagamento.h"
-
-Pagamento::Pagamento(std::string data, std::string estado, int percentual) {
-
-    this->data.setData(data);
-    this->estado.setEstado(estado);
-    this->percentual.setPercentual(percentual);
-
-}
+Pagamento::Pagamento(std::string data, std::string estado, int percentual)
+    : data(data), estado(estado), percentual(percentual) {}
 
 void Pagamento::setData(std::string data) {
     this->data.setData(data);
@@ -28,6 +22,6 @@ std::string Pagamento::getEstado() {
     return estado.getEstado();
 }
 
-std::string Pagamento::getPercentual() {
+int Pagamento::getPercentual() {
     return percentual.getPercentual();
 }
