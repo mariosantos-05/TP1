@@ -16,7 +16,7 @@ void Senha::validar(string senha){ //The password must consist of 6 non sequenti
     };
 };
 
-string Senha::get(){ 
+string Senha::getSenha(){ 
     return senha;
 };
 

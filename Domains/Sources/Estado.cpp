@@ -12,7 +12,7 @@ void Estado::validar(string estado){
     
     if(!valid) {throw std::invalid_argument("Formato invalido, favor inserir Previsto, Liquidado ou Inadimplente");}
 };
-string Estado::get(){ 
+string Estado::getEstado(){ 
     return estado;
 };
 void Estado::setEstado(string estado){ 

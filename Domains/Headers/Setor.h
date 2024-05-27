@@ -29,5 +29,5 @@ public:
      * @brief Gets the stored sector.
      * @return The stored sector.
      */
-    std::string get();
+    std::string getSetor();
 };

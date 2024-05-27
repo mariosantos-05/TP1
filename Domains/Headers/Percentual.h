@@ -29,7 +29,7 @@ public:
      * @brief Gets the stored percentage value.
      * @return The stored percentage value.
      */
-    int get();
+    int getPercentual();
 };
 
 #endif // PERCENTUAL_H_INCLUDED
