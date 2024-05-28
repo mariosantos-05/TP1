@@ -35,7 +35,7 @@ void Titulo::setVencimento(std::string vencimento) {
 }
 
 void Titulo::setValor(float valor) {
-    this->valor.setValorMonetario(valor);
+    this->valor.setDinheiro(valor);
 }
 
 std::string Titulo::getCodigo() {
@@ -59,5 +59,5 @@ std::string Titulo::getVencimento() {
 }
 
 float Titulo::getValor() {
-    return this->valor.getValorMonetario();
+    return this->valor.getDinheiro();
 }

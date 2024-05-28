@@ -5,7 +5,7 @@
 #include "../../Domains/Headers/Nome.h"
 #include "../../Domains/Headers/Setor.h"
 #include "../../Domains/Headers/Data.h"
-#include "../../Domains/Headers/ValorMonetario.h"
+#include "../../Domains/Headers/Dinheiro.h"
 
 class Titulo {
 
@@ -15,7 +15,7 @@ class Titulo {
         Setor setor;
         Data emissao;
         Data vencimento;
-        ValorMonetario valor;
+        Dinheiro valor;
 
     public:
 

@@ -3,12 +3,12 @@
 #include "../TUD/TUCodigoTitulo.h"
 #include "../TUD/TUCPF.h"
 #include "../TUD/TUData.h"
+#include "../TUD/TUDinheiro.h"
 #include "../TUD/TUEstado.h"
 #include "../TUD/TUNome.h"
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUSenha.h"
 #include "../TUD/TUSetor.h"
-#include "../TUD/TUValorMonetario.h"
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Conta.h"
 #define RESET   "\033[0m"
@@ -72,11 +72,20 @@ int main() {
                                 break;
     }
 
+
+    TUDinheiro testedinheiro;
+    switch(testedinheiro.run()){
+        case TUDinheiro::SUCESSO: std::cout << GREEN << "SUCESSO - Dinheiro" << RESET << std::endl;
+                                break;
+        case TUDinheiro::FALHA  : std::cout << RED << "FALHA   - Dinheiro" << RESET << std::endl;
+    }
+
     TUSenha testesenha;
     switch(testesenha.run()){
         case TUSenha::SUCESSO: std::cout << GREEN << "SUCESSO - Senha" << RESET << std::endl;
                                 break;
         case TUSenha::FALHA  : std::cout << RED << "FALHA   - Senha" << RESET << std::endl;
+
                                 break;
     }
 
@@ -85,14 +94,6 @@ int main() {
         case TUSenha::SUCESSO: std::cout << GREEN << "SUCESSO - Setor" << RESET << std::endl;
                                 break;
         case TUSenha::FALHA  : std::cout << RED << "FALHA   - Setor" << RESET << std::endl;
-                                break;
-    }
-
-    TUValorMonetario testedinheiro;
-    switch(testedinheiro.run()){
-        case TUValorMonetario::SUCESSO: std::cout << GREEN << "SUCESSO - Valor Monetario" << RESET << std::endl;
-                                break;
-        case TUValorMonetario::FALHA  : std::cout << RED << "FALHA   - Valor Monetario" << RESET << std::endl;
                                 break;
     }
 
