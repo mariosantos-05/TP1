@@ -1,11 +1,14 @@
 #include <iostream>
-#include "../TUD/TUCPF.h"
-#include "../TUD/TUNome.h"
-#include "../TUD/TUPercentual.h"
-#include "../TUD/TUValorMonetario.h"
-#include "../TUD/TUData.h"
 #include "../TUD/TUCodigoPagamento.h"
 #include "../TUD/TUCodigoTitulo.h"
+#include "../TUD/TUCPF.h"
+#include "../TUD/TUData.h"
+#include "../TUD/TUEstado.h"
+#include "../TUD/TUNome.h"
+#include "../TUD/TUPercentual.h"
+#include "../TUD/TUSenha.h"
+#include "../TUD/TUSetor.h"
+#include "../TUD/TUValorMonetario.h"
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Conta.h"
 #define RESET   "\033[0m"
@@ -14,11 +17,41 @@
 
 
 int main() {
+    TUCodigoPagamento testecodigopagamento;
+    switch(testecodigopagamento.run()){
+        case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
+                                break;
+        case TUCodigoPagamento::FALHA  : std::cout << RED << "FALHA   - Codigo de pagamento" << RESET << std::endl;
+                                break;
+    }
+
+    TUCodigoTitulo testecodigotitulo;
+    switch(testecodigotitulo.run()){
+        case TUCodigoTitulo::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Titulo" << RESET << std::endl;
+                                break;
+        case TUCodigoTitulo::FALHA  : std::cout << RED << "FALHA   - Codigo de Titulo" << RESET << std::endl;
+                                break;
+    }
     TUCPF testecpf;
     switch(testecpf.run()){
         case TUCPF::SUCESSO: std::cout << GREEN << "SUCESSO - CPF" << RESET << std::endl;
                                 break;
         case TUCPF::FALHA  : std::cout << RED << "FALHA   - CPF" << RESET << std::endl;
+                                break;
+    }
+    TUData testedata;
+    switch(testedata.run()){
+        case TUData::SUCESSO: std::cout << GREEN << "SUCESSO - Data" << RESET << std::endl;
+                                break;
+        case TUData::FALHA  : std::cout << RED << "FALHA   - Data" << RESET << std::endl;
+                                break;
+    }
+
+    TUEstado teste_estado;
+    switch(teste_estado.run()){
+        case TUEstado::SUCESSO: std::cout << GREEN << "SUCESSO - Estado" << RESET << std::endl;
+                                break;
+        case TUEstado::FALHA  : std::cout << RED << "FALHA   - Estado" << RESET << std::endl;
                                 break;
     }
     
@@ -39,37 +72,27 @@ int main() {
                                 break;
     }
 
+    TUSenha testesenha;
+    switch(testesenha.run()){
+        case TUSenha::SUCESSO: std::cout << GREEN << "SUCESSO - Senha" << RESET << std::endl;
+                                break;
+        case TUSenha::FALHA  : std::cout << RED << "FALHA   - Senha" << RESET << std::endl;
+                                break;
+    }
+
+    TUSetor testesetor;
+    switch(testesetor.run()){
+        case TUSenha::SUCESSO: std::cout << GREEN << "SUCESSO - Setor" << RESET << std::endl;
+                                break;
+        case TUSenha::FALHA  : std::cout << RED << "FALHA   - Setor" << RESET << std::endl;
+                                break;
+    }
 
     TUValorMonetario testedinheiro;
     switch(testedinheiro.run()){
         case TUValorMonetario::SUCESSO: std::cout << GREEN << "SUCESSO - Valor Monetario" << RESET << std::endl;
                                 break;
         case TUValorMonetario::FALHA  : std::cout << RED << "FALHA   - Valor Monetario" << RESET << std::endl;
-                                break;
-    }
-  
-
-    TUData testedata;
-    switch(testedata.run()){
-        case TUData::SUCESSO: std::cout << GREEN << "SUCESSO - Data" << RESET << std::endl;
-                                break;
-        case TUData::FALHA  : std::cout << RED << "FALHA   - Data" << RESET << std::endl;
-                                break;
-    }
-  
-    TUCodigoPagamento testecodigopagamento;
-    switch(testecodigopagamento.run()){
-        case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
-                                break;
-        case TUCodigoPagamento::FALHA  : std::cout << RED << "FALHA   - Codigo de pagamento" << RESET << std::endl;
-                                break;
-    }
-
-    TUCodigoTitulo testecodigotitulo;
-    switch(testecodigotitulo.run()){
-        case TUCodigoTitulo::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Titulo" << RESET << std::endl;
-                                break;
-        case TUCodigoTitulo::FALHA  : std::cout << RED << "FALHA   - Codigo de Titulo" << RESET << std::endl;
                                 break;
     }
 
@@ -120,7 +143,6 @@ int main() {
     std::cout << nova_conta.getSenha() << std::endl;
     std::cout << nova_conta.getCodigocpf() << std::endl;
 
-      
     return 0;
 
 

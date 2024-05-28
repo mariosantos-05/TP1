@@ -4,9 +4,10 @@ void Estado::validar(string estado){
     bool valid = false; //Indicates format validity
     string estados[3] = {"Previsto","Liquidado","Inadimplente"}; //Valid states
 
-    for(string elem : estados){ 
-        if (elem == estado){ 
+    for(auto& elem : estados){ 
+        if (estado == elem){ 
             valid = true; //Valid format
+            break;
         };
     };
     

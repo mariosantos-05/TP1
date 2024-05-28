@@ -1,3 +1,5 @@
+#ifndef SETOR_H
+#define SETOR_H
 #include <iostream>
 #include <string>
 #include <stdexcept> 
@@ -31,3 +33,5 @@ public:
      */
     std::string getSetor();
 };
+
+#endif
