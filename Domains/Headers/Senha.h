@@ -1,3 +1,5 @@
+#ifndef SENHA_H
+#define SENHA_H
 #include <iostream>
 #include <string>
 #include <stdexcept> 
@@ -31,3 +33,5 @@ public:
      */
     string getSenha();
 };
+
+#endif
