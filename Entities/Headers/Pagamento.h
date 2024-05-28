@@ -15,8 +15,8 @@ private:
 public:
     Pagamento(std::string data, std::string estado, int percentual);
 
-    void setData(std::string nome);
-    void setEstado(std::string senha);
+    void setData(std::string data);
+    void setEstado(std::string estado);
     void setPercentual(int percentual);
 
     std::string getData();
