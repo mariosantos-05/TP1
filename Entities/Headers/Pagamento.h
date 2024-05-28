@@ -15,9 +15,9 @@ private:
     Percentual percentual;
 
 public:
-    Pagamento(std::string data, std::string estado, int percentual);
+    Pagamento(std::string codigo,std::string data, std::string estado, int percentual);
 
-    void setCodigo(std::string codigo)
+    void setCodigo(std::string codigo);
     void setData(std::string data);
     void setEstado(std::string estado);
     void setPercentual(int percentual);
