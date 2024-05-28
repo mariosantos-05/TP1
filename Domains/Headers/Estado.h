@@ -1,3 +1,5 @@
+#ifndef ESTADO_H
+#define ESTADO_H
 #include <iostream>
 #include <string>
 using std::string;
@@ -28,3 +30,5 @@ public:
      */
     std::string getEstado();
 };
+
+#endif
