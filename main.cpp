@@ -3,12 +3,12 @@
 #include "../TUD/TUCodigoTitulo.h"
 #include "../TUD/TUCPF.h"
 #include "../TUD/TUData.h"
+#include "../TUD/TUDinheiro.h"
 #include "../TUD/TUEstado.h"
 #include "../TUD/TUNome.h"
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUSenha.h"
 #include "../TUD/TUSetor.h"
-#include "../TUD/TUValorMonetario.h"
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Conta.h"
 #define RESET   "\033[0m"
@@ -78,6 +78,7 @@ int main() {
         case TUDinheiro::SUCESSO: std::cout << GREEN << "SUCESSO - Dinheiro" << RESET << std::endl;
                                 break;
         case TUDinheiro::FALHA  : std::cout << RED << "FALHA   - Dinheiro" << RESET << std::endl;
+    }
 
     TUSenha testesenha;
     switch(testesenha.run()){
