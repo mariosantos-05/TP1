@@ -1,7 +1,5 @@
 *.cbp
 **/obj/
 **/bin/
-**/.vscode/
+.vscode/*   
 **/build/
-.vscode/settings.json
-.vscode/tasks.json
