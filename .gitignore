@@ -3,4 +3,5 @@
 **/bin/
 **/.vscode/
 **/build/
-
+.vscode/settings.json
+.vscode/tasks.json
