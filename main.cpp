@@ -9,8 +9,16 @@
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUSenha.h"
 #include "../TUD/TUSetor.h"
+
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Conta.h"
+
+#include "../Domains/Headers/CodigoTitulo.h"
+#include "../Domains/Headers/Nome.h"
+#include "../Domains/Headers/Setor.h"
+#include "../Domains/Headers/Data.h"
+#include "../Domains/Headers/Dinheiro.h"
+
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -97,36 +105,51 @@ int main() {
                                 break;
     }
 
+    CodigoTitulo codigoTitulo("CDB123456789");
+    Name nome("Lucas Adeodato");
+    Setor setor("Agricultura");
+    Data emissao("30-06-2024");
+    Data vencimento("30-06-2025");
+    Dinheiro valor(10);
+
     Titulo novo_titulo(
-        "CDB123456789",
-        "Lucas Adeodato",
-        "Agricultura",
-        "30-06-2024",
-        "30-06-2025",
-        10.0
+        codigoTitulo,
+        nome,
+        setor,
+        emissao,
+        vencimento,
+        valor
     );
 
-    std::cout << novo_titulo.getCodigo() << std::endl;
-    std::cout << novo_titulo.getEmissor() << std::endl;
-    std::cout << novo_titulo.getSetor() << std::endl;
-    std::cout << novo_titulo.getValor() << std::endl;
-    std::cout << novo_titulo.getEmissao() << std::endl;
-    std::cout << novo_titulo.getVencimento() << std::endl;
-
-
-    novo_titulo.setCodigo("DEB123456789");
-    novo_titulo.setEmissor("Chacon");
-    novo_titulo.setVencimento("30-06-2026");
+    std::cout << novo_titulo.getCodigo().getTitlecode() << std::endl;
+    std::cout << novo_titulo.getEmissor().getName() << std::endl;
+    std::cout << novo_titulo.getSetor().getSetor() << std::endl;
+    std::cout << novo_titulo.getEmissao().getData() << std::endl;
+    std::cout << novo_titulo.getVencimento().getData() << std::endl;
 
     std::cout << "--------------------" << std::endl;
 
-    std::cout << novo_titulo.getCodigo() << std::endl;
-    std::cout << novo_titulo.getEmissor() << std::endl;
-    std::cout << novo_titulo.getSetor() << std::endl;
-    std::cout << novo_titulo.getValor() << std::endl;
-    std::cout << novo_titulo.getEmissao() << std::endl;
-    std::cout << novo_titulo.getVencimento() << std::endl;
+    CodigoTitulo codigoTitulo2("CDB987654321");
+    Name nome2("Chacon");
+    Setor setor2("Energia");
+    Data emissao2("20-07-2029");
+    Data vencimento2("15-05-2040");
+    Dinheiro valor2(14.35);
 
+    novo_titulo.setCodigo(codigoTitulo2);
+    novo_titulo.setEmissor(nome2);
+    novo_titulo.setSetor(setor2);
+    novo_titulo.setEmissao(emissao2);
+    novo_titulo.setVencimento(vencimento2);
+    novo_titulo.setValor(valor2);
+
+    std::cout << novo_titulo.getCodigo().getTitlecode() << std::endl;
+    std::cout << novo_titulo.getEmissor().getName() << std::endl;
+    std::cout << novo_titulo.getSetor().getSetor() << std::endl;
+    std::cout << novo_titulo.getEmissao().getData() << std::endl;
+    std::cout << novo_titulo.getVencimento().getData() << std::endl;
+
+    std::cout << "--------------------" << std::endl;
 
     Conta nova_conta("Daniel Campos Silva", "081.749.421-90", "941727");
 
