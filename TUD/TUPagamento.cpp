@@ -43,15 +43,6 @@ int TUPagamento::run(){
     return estado;
 }
 
-int main(){
-    TUPagamento teste;
-    
-    teste.run();
-
-    return 0;
-
-}
-
 
 
 
