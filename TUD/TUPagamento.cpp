@@ -1,5 +1,5 @@
 #include "TUPagamento.h"
-#include "../Entities\Headers\Pagamento.h"
+#include "../Entities/Headers/Pagamento.h"
 #include <string>
 #include <stdexcept>
 

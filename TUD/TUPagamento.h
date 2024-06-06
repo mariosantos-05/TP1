@@ -1,6 +1,6 @@
 #ifndef TUPAGAMENTO_H
 #define TUPAGAMENTO_H
-#include "../Entities\Headers\Pagamento.h"
+#include "../Entities/Headers/Pagamento.h"
 #include <string>
 #include <stdexcept>
 
