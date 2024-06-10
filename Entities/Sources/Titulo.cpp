@@ -1,63 +1,63 @@
 #include "../Headers/Titulo.h"
 
 Titulo::Titulo(
-    CodigoTitulo codigo,
-    Name emissor,
-    Setor setor,
-    Data emissao,
-    Data vencimento,
-    Dinheiro valor
+    std::string codigo,
+    std::string emissor,
+    std::string setor,
+    std::string emissao,
+    std::string vencimento,
+    float valor
 ) : codigo(codigo),
-    emissor(emissor),
-    setor(setor),
-    emissao(emissao),
-    vencimento(vencimento),
+    emissor(emissor), 
+    setor(setor), 
+    emissao(emissao), 
+    vencimento(vencimento), 
     valor(valor) {}
 
-void Titulo::setCodigo(CodigoTitulo& codigo) {
-    this->codigo = codigo;
+void Titulo::setCodigo(std::string codigo) {
+    this->codigo.setTitlecode(codigo);
 }
 
-void Titulo::setEmissor(Name& emissor) {
-    this->emissor = emissor;
+void Titulo::setEmissor(std::string emissor) {
+    this->emissor.setName(emissor);
 }
 
-void Titulo::setSetor(Setor& setor) {
-    this->setor = setor;
+void Titulo::setSetor(std::string setor) {
+    this->setor.setSetor(setor);
 }
 
-void Titulo::setEmissao(Data& emissao) {
-    this->emissao = emissao;
+void Titulo::setEmissao(std::string emissao) {
+    this->emissao.setData(emissao);
 }
 
-void Titulo::setVencimento(Data& vencimento) {
-    this->vencimento = vencimento;
+void Titulo::setVencimento(std::string vencimento) {
+    this->vencimento.setData(vencimento);
 }
 
-void Titulo::setValor(Dinheiro& valor) {
-    this->valor = valor;
+void Titulo::setValor(float valor) {
+    this->valor.setDinheiro(valor);
 }
 
-CodigoTitulo Titulo::getCodigo() {
-    return codigo;
+std::string Titulo::getCodigo() {
+    return this-> codigo.getTitlecode();
 }
 
-Name Titulo::getEmissor()  {
-    return emissor;
+std::string Titulo::getEmissor()  {
+    return this->emissor.getName();
 }
 
-Setor Titulo::getSetor()  {
-    return setor;
+std::string Titulo::getSetor()  {
+    return this->setor.getSetor();
 }
 
-Data Titulo::getEmissao()  {
-    return emissao;
+std::string Titulo::getEmissao()  {
+    return this->emissao.getData();
 }
 
-Data Titulo::getVencimento() {
-    return vencimento;
+std::string Titulo::getVencimento() {
+    return this->vencimento.getData();
 }
 
-Dinheiro Titulo::getValor() {
-    return valor;
+float Titulo::getValor() {
+    return this->valor.getDinheiro();
 }

@@ -20,27 +20,27 @@ class Titulo {
     public:
 
         Titulo(
-          CodigoTitulo codigo,
-          Name emissor,
-          Setor setor,
-          Data emissao,
-          Data vencimento,
-          Dinheiro valor
+            std::string codigo,
+            std::string emissor,
+            std::string setor,
+            std::string emissao,
+            std::string vencimento,
+            float valor
         );
 
-        void setCodigo(CodigoTitulo& codigo);
-        void setEmissor(Name& emissor);
-        void setSetor(Setor& setor);
-        void setEmissao(Data& emissao);
-        void setVencimento(Data& vencimento);
-        void setValor(Dinheiro& valor);
+        void setCodigo(std::string codigo);
+        void setEmissor(std::string emissor);
+        void setSetor(std::string setor);
+        void setEmissao(std::string emissao);
+        void setVencimento(std::string vencimento);
+        void setValor(float valor);
 
-        CodigoTitulo getCodigo();
-        Name getEmissor();
-        Setor getSetor();
-        Data getEmissao();
-        Data getVencimento();
-        Dinheiro getValor();
+        std::string getCodigo();
+        std::string getEmissor();
+        std::string getSetor();
+        std::string getEmissao();
+        std::string getVencimento();
+        float getValor();
 
 };
 
