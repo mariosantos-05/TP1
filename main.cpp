@@ -9,9 +9,10 @@
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUSenha.h"
 #include "../TUD/TUSetor.h"
-#include "../Entities/Headers/Titulo.h"
-#include "../Entities/Headers/Conta.h"
+#include "../TUD/TUTitulo.h"
 #include "../TUD/TUPagamento.h"
+#include "../Entities/Headers/Conta.h"
+
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -92,13 +93,23 @@ int main() {
 
     TUSetor testesetor;
     switch(testesetor.run()){
-        case TUSenha::SUCESSO: std::cout << GREEN << "SUCESSO - Setor" << RESET << std::endl;
+        case TUSetor::SUCESSO: std::cout << GREEN << "SUCESSO - Setor" << RESET << std::endl;
                                 break;
-        case TUSenha::FALHA  : std::cout << RED << "FALHA   - Setor" << RESET << std::endl;
+        case TUSetor::FALHA  : std::cout << RED << "FALHA   - Setor" << RESET << std::endl;
                                 break;
     }
+ 
 
+    std::cout << "\nEntidades\n" << std::endl;
 
+    TUTitulo testetitulo;
+    switch(testetitulo.run()){
+        case TUTitulo::SUCESSO: std::cout << GREEN << "SUCESSO - Titulo" << RESET << std::endl;
+                                break;
+        case TUTitulo::FALHA  : std::cout << RED << "FALHA   - Titulo" << RESET << std::endl;
+                                break;
+    }
+    
     TUPagamento testepagamento;
     switch (testepagamento.run()) {
         case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Pagamento" << RESET << std::endl;
@@ -106,37 +117,11 @@ int main() {
         case TUPagamento::FALHA: std::cout << RED << "FALHA   - Pagamento" << RESET << std::endl;
                                 break;
     }
-
-    Titulo novo_titulo(
-        "CDB123456789",
-        "Lucas Adeodato",
-        "Agricultura",
-        "30-06-2024",
-        "30-06-2025",
-        10.0
-    );
-
-    std::cout << novo_titulo.getCodigo() << std::endl;
-    std::cout << novo_titulo.getEmissor() << std::endl;
-    std::cout << novo_titulo.getSetor() << std::endl;
-    std::cout << novo_titulo.getValor() << std::endl;
-    std::cout << novo_titulo.getEmissao() << std::endl;
-    std::cout << novo_titulo.getVencimento() << std::endl;
-
-
-    novo_titulo.setCodigo("DEB123456789");
-    novo_titulo.setEmissor("Chacon");
-    novo_titulo.setVencimento("30-06-2026");
-
-    std::cout << "--------------------" << std::endl;
-
-    std::cout << novo_titulo.getCodigo() << std::endl;
-    std::cout << novo_titulo.getEmissor() << std::endl;
-    std::cout << novo_titulo.getSetor() << std::endl;
-    std::cout << novo_titulo.getValor() << std::endl;
-    std::cout << novo_titulo.getEmissao() << std::endl;
-    std::cout << novo_titulo.getVencimento() << std::endl;
-
+  
+  
+  
+  
+   std::cout << "--------------------" << std::endl;
 
     Conta nova_conta("Daniel Campos Silva", "081.749.421-90", "941727");
 
