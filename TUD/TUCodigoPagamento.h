@@ -6,7 +6,7 @@
 
 class TUCodigoPagamento {
 private:
-    const std::string VALOR_VALIDO   = "123456789 1";   
+    const std::string VALOR_VALIDO   = "123456789";   
     const std::string VALOR_INVALIDO = "00000012 9";   
     CodigoPagamento *codigo;                         
     int estado;                          

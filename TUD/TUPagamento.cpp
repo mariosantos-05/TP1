@@ -6,7 +6,7 @@
 
 void TUPagamento::setUp(){
 
-    pagamento = new Pagamento("11111111 11", "11-11-11","Liquidado",30);
+    pagamento = new Pagamento("123456789", "11-11-2011","Liquidado",30);
     estado = SUCESSO;
 }
 

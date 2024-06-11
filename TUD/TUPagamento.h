@@ -6,8 +6,8 @@
 
 class TUPagamento {
 private:
-    const std::string CODIGO_PAGAMENTO_VALIDO   = "01234567 89";
-    const std::string DATA_VALIDA   = "01-01-01";   
+    const std::string CODIGO_PAGAMENTO_VALIDO   = "123456789";
+    const std::string DATA_VALIDA   = "01-01-2001";   
     const std::string ESTADO_VALIDO   = "Inadimplente";   
     int PERCENTUAL_VALIDO   = 50;   
 
