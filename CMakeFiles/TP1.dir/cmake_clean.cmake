@@ -39,6 +39,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TP1.dir/TUD/TUEstado.cpp.o.d"
   "CMakeFiles/TP1.dir/TUD/TUNome.cpp.o"
   "CMakeFiles/TP1.dir/TUD/TUNome.cpp.o.d"
+  "CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o"
+  "CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o.d"
   "CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o"
   "CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o.d"
   "CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o"

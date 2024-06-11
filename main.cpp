@@ -9,17 +9,9 @@
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUSenha.h"
 #include "../TUD/TUSetor.h"
-
 #include "../TUD/TUTitulo.h"
-
-#include "../Entities/Headers/Titulo.h"
+#include "../TUD/TUPagamento.h"
 #include "../Entities/Headers/Conta.h"
-
-#include "../Domains/Headers/CodigoTitulo.h"
-#include "../Domains/Headers/Nome.h"
-#include "../Domains/Headers/Setor.h"
-#include "../Domains/Headers/Data.h"
-#include "../Domains/Headers/Dinheiro.h"
 
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
@@ -27,6 +19,7 @@
 
 
 int main() {
+    std::cout << "\nTestes de Dominios\n" << std::endl;
     TUCodigoPagamento testecodigopagamento;
     switch(testecodigopagamento.run()){
         case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
@@ -106,9 +99,9 @@ int main() {
         case TUSetor::FALHA  : std::cout << RED << "FALHA   - Setor" << RESET << std::endl;
                                 break;
     }
+ 
 
-
-    std::cout << "\nEntidades\n" << std::endl;
+    std::cout << "\nTestes de Entidades\n" << std::endl;
 
     TUTitulo testetitulo;
     switch(testetitulo.run()){
@@ -117,7 +110,18 @@ int main() {
         case TUTitulo::FALHA  : std::cout << RED << "FALHA   - Titulo" << RESET << std::endl;
                                 break;
     }
-
+    
+    TUPagamento testepagamento;
+    switch (testepagamento.run()) {
+        case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Pagamento" << RESET << std::endl;
+                                break;
+        case TUPagamento::FALHA: std::cout << RED << "FALHA   - Pagamento" << RESET << std::endl;
+                                break;
+    }
+  
+  
+  
+  
    std::cout << "--------------------" << std::endl;
 
     Conta nova_conta("Daniel Campos Silva", "081.749.421-90", "941727");

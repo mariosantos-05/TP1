@@ -9,7 +9,7 @@ CodigoPagamento::CodigoPagamento(std::string pc_number){
 
 //Validation method
 void CodigoPagamento::validatepaymentCode(std::string pc_number){
-    std::regex pattern("^[1-9]\\d{8} \\d{1}$");
+    std::regex pattern("^[1-9]\\d{8}$");
     std::string digitsOnly = pc_number;
     digitsOnly.erase(std::remove(digitsOnly.begin(), digitsOnly.end(), ' '), digitsOnly.end());
 
@@ -18,7 +18,7 @@ void CodigoPagamento::validatepaymentCode(std::string pc_number){
             throw std::invalid_argument("Formato inválido. Apenas números são aceitos");
     };
     if (!std::regex_match(pc_number, pattern)) {
-        throw std::invalid_argument("Formato inválido. Certifique-se de que o codigo de pagamento tenha o seguinte formato: 'XXXXXXXX XX'");
+        throw std::invalid_argument("Formato inválido. Certifique-se de que o codigo de pagamento tenha o seguinte formato: 'XXXXXXXX'");
     };
 };
 //Seter for the payment code
