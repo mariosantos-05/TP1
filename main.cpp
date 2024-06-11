@@ -19,6 +19,7 @@
 
 
 int main() {
+    std::cout << "\nTestes de Dominios\n" << std::endl;
     TUCodigoPagamento testecodigopagamento;
     switch(testecodigopagamento.run()){
         case TUCodigoPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Codigo de Pagamento" << RESET << std::endl;
@@ -100,7 +101,7 @@ int main() {
     }
  
 
-    std::cout << "\nEntidades\n" << std::endl;
+    std::cout << "\nTestes de Entidades\n" << std::endl;
 
     TUTitulo testetitulo;
     switch(testetitulo.run()){

@@ -349,10 +349,24 @@ CMakeFiles/TP1.dir/TUD/TUNome.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TP1.dir/TUD/TUNome.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mario/TP1/TUD/TUNome.cpp -o CMakeFiles/TP1.dir/TUD/TUNome.cpp.s
 
+CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o: CMakeFiles/TP1.dir/flags.make
+CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o: TUD/TUPagamento.cpp
+CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o: CMakeFiles/TP1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o -MF CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o.d -o CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o -c /home/mario/TP1/TUD/TUPagamento.cpp
+
+CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mario/TP1/TUD/TUPagamento.cpp > CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.i
+
+CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mario/TP1/TUD/TUPagamento.cpp -o CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.s
+
 CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o: CMakeFiles/TP1.dir/flags.make
 CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o: TUD/TUPercentual.cpp
 CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o: CMakeFiles/TP1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o -MF CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o.d -o CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o -c /home/mario/TP1/TUD/TUPercentual.cpp
 
 CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.s: cmake_force
 CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o: CMakeFiles/TP1.dir/flags.make
 CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o: TUD/TUSenha.cpp
 CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o: CMakeFiles/TP1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o -MF CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o.d -o CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o -c /home/mario/TP1/TUD/TUSenha.cpp
 
 CMakeFiles/TP1.dir/TUD/TUSenha.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/TP1.dir/TUD/TUSenha.cpp.s: cmake_force
 CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o: CMakeFiles/TP1.dir/flags.make
 CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o: TUD/TUSetor.cpp
 CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o: CMakeFiles/TP1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o -MF CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o.d -o CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o -c /home/mario/TP1/TUD/TUSetor.cpp
 
 CMakeFiles/TP1.dir/TUD/TUSetor.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/TP1.dir/TUD/TUSetor.cpp.s: cmake_force
 CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o: CMakeFiles/TP1.dir/flags.make
 CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o: TUD/TUTitulo.cpp
 CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o: CMakeFiles/TP1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o -MF CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o.d -o CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o -c /home/mario/TP1/TUD/TUTitulo.cpp
 
 CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.s: cmake_force
 CMakeFiles/TP1.dir/main.cpp.o: CMakeFiles/TP1.dir/flags.make
 CMakeFiles/TP1.dir/main.cpp.o: main.cpp
 CMakeFiles/TP1.dir/main.cpp.o: CMakeFiles/TP1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/TP1.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/TP1.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TP1.dir/main.cpp.o -MF CMakeFiles/TP1.dir/main.cpp.o.d -o CMakeFiles/TP1.dir/main.cpp.o -c /home/mario/TP1/main.cpp
 
 CMakeFiles/TP1.dir/main.cpp.i: cmake_force
@@ -441,6 +455,7 @@ TP1_OBJECTS = \
 "CMakeFiles/TP1.dir/TUD/TUDinheiro.cpp.o" \
 "CMakeFiles/TP1.dir/TUD/TUEstado.cpp.o" \
 "CMakeFiles/TP1.dir/TUD/TUNome.cpp.o" \
+"CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o" \
 "CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o" \
 "CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o" \
 "CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o" \
@@ -470,6 +485,7 @@ TP1: CMakeFiles/TP1.dir/TUD/TUData.cpp.o
 TP1: CMakeFiles/TP1.dir/TUD/TUDinheiro.cpp.o
 TP1: CMakeFiles/TP1.dir/TUD/TUEstado.cpp.o
 TP1: CMakeFiles/TP1.dir/TUD/TUNome.cpp.o
+TP1: CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o
 TP1: CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o
 TP1: CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o
 TP1: CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o
@@ -477,7 +493,7 @@ TP1: CMakeFiles/TP1.dir/TUD/TUTitulo.cpp.o
 TP1: CMakeFiles/TP1.dir/main.cpp.o
 TP1: CMakeFiles/TP1.dir/build.make
 TP1: CMakeFiles/TP1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable TP1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mario/TP1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable TP1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TP1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

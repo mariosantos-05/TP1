@@ -609,6 +609,30 @@ TUD/TUNome.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1.dir/build.make CMakeFiles/TP1.dir/TUD/TUNome.cpp.s
 .PHONY : TUD/TUNome.cpp.s
 
+TUD/TUPagamento.o: TUD/TUPagamento.cpp.o
+.PHONY : TUD/TUPagamento.o
+
+# target to build an object file
+TUD/TUPagamento.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1.dir/build.make CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.o
+.PHONY : TUD/TUPagamento.cpp.o
+
+TUD/TUPagamento.i: TUD/TUPagamento.cpp.i
+.PHONY : TUD/TUPagamento.i
+
+# target to preprocess a source file
+TUD/TUPagamento.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1.dir/build.make CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.i
+.PHONY : TUD/TUPagamento.cpp.i
+
+TUD/TUPagamento.s: TUD/TUPagamento.cpp.s
+.PHONY : TUD/TUPagamento.s
+
+# target to generate assembly for a file
+TUD/TUPagamento.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1.dir/build.make CMakeFiles/TP1.dir/TUD/TUPagamento.cpp.s
+.PHONY : TUD/TUPagamento.cpp.s
+
 TUD/TUPercentual.o: TUD/TUPercentual.cpp.o
 .PHONY : TUD/TUPercentual.o
 
@@ -798,6 +822,9 @@ help:
 	@echo "... TUD/TUNome.o"
 	@echo "... TUD/TUNome.i"
 	@echo "... TUD/TUNome.s"
+	@echo "... TUD/TUPagamento.o"
+	@echo "... TUD/TUPagamento.i"
+	@echo "... TUD/TUPagamento.s"
 	@echo "... TUD/TUPercentual.o"
 	@echo "... TUD/TUPercentual.i"
 	@echo "... TUD/TUPercentual.s"
