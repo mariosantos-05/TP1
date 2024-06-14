@@ -11,6 +11,7 @@
 #include "../TUD/TUSetor.h"
 #include "../TUD/TUTitulo.h"
 #include "../TUD/TUPagamento.h"
+#include "../TUD/TUConta.h"
 #include "../Entities/Headers/Conta.h"
 
 #define RESET   "\033[0m"
@@ -116,6 +117,14 @@ int main() {
         case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Pagamento" << RESET << std::endl;
                                 break;
         case TUPagamento::FALHA: std::cout << RED << "FALHA   - Pagamento" << RESET << std::endl;
+                                break;
+    }
+
+    TUConta testeconta;
+    switch (testeconta.run()) {
+        case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Conta" << RESET << std::endl;
+                                break;
+        case TUPagamento::FALHA: std::cout << RED << "FALHA   - Conta" << RESET << std::endl;
                                 break;
     }
   
