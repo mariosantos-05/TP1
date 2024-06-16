@@ -9,10 +9,9 @@
 #include "../TUD/TUPercentual.h"
 #include "../TUD/TUSenha.h"
 #include "../TUD/TUSetor.h"
-#include "../TUD/TUTitulo.h"
-#include "../TUD/TUPagamento.h"
-#include "../TUD/TUConta.h"
-#include "../Entities/Headers/Conta.h"
+#include "../TUE/TUTitulo.h"
+#include "../TUE/TUPagamento.h"
+#include "../TUE/TUConta.h"
 
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
@@ -100,8 +99,7 @@ int main() {
         case TUSetor::FALHA  : std::cout << RED << "FALHA   - Setor" << RESET << std::endl;
                                 break;
     }
- 
-
+    
     std::cout << "\nTestes de Entidades\n" << std::endl;
 
     TUTitulo testetitulo;
@@ -127,30 +125,6 @@ int main() {
         case TUPagamento::FALHA: std::cout << RED << "FALHA   - Conta" << RESET << std::endl;
                                 break;
     }
-  
-  
-  
-  
-   std::cout << "--------------------" << std::endl;
-
-    Conta nova_conta("Daniel Campos Silva", "081.749.421-90", "941727");
-
-    std::cout << nova_conta.getNome() << std::endl;
-    std::cout << nova_conta.getSenha() << std::endl;
-    std::cout << nova_conta.getCodigocpf() << std::endl;
-
-    nova_conta.setCodigocpf("081.723.773-23");
-    nova_conta.setNome("Lucas");
-    nova_conta.setSenha("894367");
-
-    std::cout << "--------------------" << std::endl;
-
-    std::cout << nova_conta.getNome() << std::endl;
-    std::cout << nova_conta.getSenha() << std::endl;
-    std::cout << nova_conta.getCodigocpf() << std::endl;
 
     return 0;
-
-
-
 }

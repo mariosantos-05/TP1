@@ -1,88 +1,45 @@
 #include "TUConta.h"
 
-void ContaTest::runTests() {
-    testGetCodigocpf();
-    testGetNome();
-    testGetSenha();
-
-    testSetNome();
-    testSetCodigocpf();
-    testSetSenha();
-    
+void TUConta::setUp() {
+    conta = new Conta(NOME_VALIDO, CPF_VALIDO, SENHA_VALIDA);
+    estado = SUCESSO;
 }
 
-void ContaTest::testGetCodigocpf(){
-    Name nome("Daniel Campos");
-    Senha senha("senhateste321");
-    CPF cpf("086.721.442-89");
-
-    Conta conta(nome,senha,cpf);
-    assertEqual("testGetCodigocpf", "086.721.442-89", conta.getCodigocpf().getCodigocpf());
+void TUConta::tearDown() {
+    delete conta;
 }
 
-void ContaTest::testGetNome(){
-    Name nome("Daniel Campos");
-    Senha senha("senhateste321");
-    CPF cpf("086.721.442-89");
+void TUConta::testarCenarioValido() {
+    if (conta->getNome() != NOME_VALIDO) {
+        estado = FALHA;
+    }
+    if (conta->getSenha() != SENHA_VALIDA) {
+        estado = FALHA;
+    }
+    if (conta->getCodigocpf() != CPF_VALIDO) {
+        estado = FALHA;
+    }
 
-    Conta conta(nome,senha,cpf);
-    assertEqual("testGetNome", "Daniel Campos", conta.getNome().getNome());
-}
+    // Testar setters
+    conta->setNome("Novo Nome");
+    if (conta->getNome() != "Novo Nome") {
+        estado = FALHA;
+    }
 
-void ContaTest::testGetNome(){
-    Name nome("Daniel Campos");
-    Senha senha("senhateste321");
-    CPF cpf("086.721.442-89");
+    conta->setSenha("NovaSenha@123");
+    if (conta->getSenha() != "NovaSenha@123") {
+        estado = FALHA;
+    }
 
-    Conta conta(nome,senha,cpf);
-    assertEqual("testGetSenha", "senhateste321", conta.getSenha().getSenha());
-}
-
-void ContaTest::testSetNome(){
-    Name nome("Daniel Campos");
-    Senha senha("senhateste321");
-    CPF cpf("086.721.442-89");
-
-    Conta conta(nome,senha,cpf);
-    Name novonome("Joao da Silva");
-    conta.setNome(novonome);
-    assertEqual("testSetNome", "Joao da Silva", conta.getNome().getNome());
-}
-
-void ContaTest::testSetSenha(){
-    Name nome("Daniel Campos");
-    Senha senha("senhateste321");
-    CPF cpf("086.721.442-89");
-
-    Conta conta(nome,senha,cpf);
-    Senha novasenha("senhamaisegura");
-    conta.setSenha(novasenha);
-    assertEqual("testSetSenha", "senhamaisegura", conta.getSenha().getSenha());
-}
-
-void ContaTest::testSetCodigocpf(){
-    Name nome("Daniel Campos");
-    Senha senha("senhateste321");
-    CPF cpf("086.721.442-89");
-
-    Conta conta(nome,senha,cpf);
-    CPF novocpf("056.771.552-23");
-    conta.setCodigocpf(novocpf);
-    assertEqual("testSetCodigocpf", "056.771.552-23", conta.getCodigocpf().getCodigocpf());
-}
-
-void ContaTest::assertEqual(const std::string& testName, const std::string& expected, const std::string& actual) {
-    if (expected == actual) {
-        std::cout << testName << " passed." << std::endl;
-    } else {
-        std::cout << testName << " failed: expected '" << expected << "', but got '" << actual << "'." << std::endl;
+    conta->setCodigocpf("09876543211");
+    if (conta->getCodigocpf() != "09876543211") {
+        estado = FALHA;
     }
 }
 
-void TituloTest::assertEqual(const std::string& testName, double expected, double actual) {
-    if (expected == actual) {
-        std::cout << testName << " passed." << std::endl;
-    } else {
-        std::cout << testName << " failed: expected '" << expected << "', but got '" << actual << "'." << std::endl;
-    }
+int TUConta::run() {
+    setUp();
+    testarCenarioValido();
+    tearDown();
+    return estado;
 }

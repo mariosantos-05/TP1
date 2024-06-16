@@ -1,25 +1,25 @@
-#ifndef TUConta_H
-#define TUConta_H
+#ifndef TUCONTA_H
+#define TUCONTA_H
+#include "../Entities/Headers/Conta.h"
+#include <string>
+#include <stdexcept>
 
-#include <iostream>
-#include "../../Domains/Headers/Nome.h"
-#include "../../Domains/Headers/Senha.h"
-#include "../../Domains/Headers/CPF.h"
+class TUConta {
+private:
+    const std::string NOME_VALIDO = "Nome Valido";
+    const std::string SENHA_VALIDA = "Senha@123";
+    const std::string CPF_VALIDO = "12345678900";
 
-class ContaTest{
-    public:
-        void runTests();
-    private:
-        void testSetNome();
-        void testSetSenha();
-        void testSetCodigocpf();
+    Conta *conta;
+    int estado;
+    void setUp();
+    void tearDown();
+    void testarCenarioValido();
 
-        void testGetCodigocpf();
-        void testGetNome();
-        void testGetSenha();
-
-        void assertEqual(const std::string& testName, const std::string& expected, const std::string& actual);
-        void assertEqual(const std::string& testName, double expected, double actual);
-
+public:
+    const static int SUCESSO =  0;
+    const static int FALHA   = -1;
+    int run();
 };
-#endif
+
+#endif // TUCONTA_H
