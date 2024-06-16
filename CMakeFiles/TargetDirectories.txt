@@ -1,3 +1,0 @@
-/home/mario/TP1/CMakeFiles/TP1.dir
-/home/mario/TP1/CMakeFiles/edit_cache.dir
-/home/mario/TP1/CMakeFiles/rebuild_cache.dir

@@ -1,35 +1,30 @@
-#ifndef TUTitulo_H
-#define TUTitulo_H
+#ifndef TESTE_Titulo
+#define TESTE_Titulo
+#include "../Entities/Headers/Titulo.h"
+#include <string>
+#include <stdexcept>
 
-#include <iostream>
-#include "../../Entities/Headers/Titulo.h"
-#include "../../Domains/Headers/CodigoTitulo.h"
-#include "../../Domains/Headers/Nome.h"
-#include "../../Domains/Headers/Setor.h"
-#include "../../Domains/Headers/Data.h"
-#include "../../Domains/Headers/Dinheiro.h"
-
-class TituloTest {
-public:
-    void runTests();
-
+class TUTitulo {
 private:
-    void testGetCodigo();
-    void testGetEmissor();
-    void testGetSetor();
-    void testGetEmissao();
-    void testGetVencimento();
-    void testGetValor();
 
-    void testSetCodigo();
-    void testSetEmissor();
-    void testSetSetor();
-    void testSetEmissao();
-    void testSetVencimento();
-    void testSetValor();
+    const std::string CODIGO_TITULO_VALIDO = "CDB123456789";
+    const std::string EMISSOR_VALIDO = "Lucas Adeodato";
+    const std::string SETOR_VALIDO = "Energia";
+    const std::string EMISSAO_VALIDA = "30-06-2003";
+    const std::string VENCIMENTO_VALIDO = "30-06-2003";
+    float VALOR_VALIDO = 15.99;
 
-    void assertEqual(const std::string& testName, const std::string& expected, const std::string& actual);
-    void assertEqual(const std::string& testName, double expected, double actual);
+
+    Titulo *titulo;                         
+    int estado;                          
+    void setUp();                       
+    void tearDown();                        
+    void testarCenarioValido();
+
+public:
+    const static int SUCESSO =  0;         
+    const static int FALHA   = -1;          
+    int run();                              
 };
 
 #endif
