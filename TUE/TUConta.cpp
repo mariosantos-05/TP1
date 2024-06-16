@@ -1,7 +1,10 @@
 #include "TUConta.h"
+#include "../Entities/Headers/Conta.h"
+#include <string>
+#include <stdexcept>
 
 void TUConta::setUp() {
-    conta = new Conta(NOME_VALIDO, CPF_VALIDO, SENHA_VALIDA);
+    conta = new Conta("Mario Santos", "039.347.231-84", "241357");
     estado = SUCESSO;
 }
 
@@ -10,29 +13,18 @@ void TUConta::tearDown() {
 }
 
 void TUConta::testarCenarioValido() {
+    conta->setNome(NOME_VALIDO);
     if (conta->getNome() != NOME_VALIDO) {
         estado = FALHA;
     }
-    if (conta->getSenha() != SENHA_VALIDA) {
-        estado = FALHA;
-    }
+
+    conta->setCodigocpf(CPF_VALIDO);
     if (conta->getCodigocpf() != CPF_VALIDO) {
         estado = FALHA;
     }
 
-    // Testar setters
-    conta->setNome("Novo Nome");
-    if (conta->getNome() != "Novo Nome") {
-        estado = FALHA;
-    }
-
-    conta->setSenha("NovaSenha@123");
-    if (conta->getSenha() != "NovaSenha@123") {
-        estado = FALHA;
-    }
-
-    conta->setCodigocpf("09876543211");
-    if (conta->getCodigocpf() != "09876543211") {
+    conta->setSenha(SENHA_VALIDA);
+    if (conta->getSenha() != SENHA_VALIDA) {
         estado = FALHA;
     }
 }

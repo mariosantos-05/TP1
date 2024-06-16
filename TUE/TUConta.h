@@ -1,14 +1,15 @@
-#ifndef TUCONTA_H
-#define TUCONTA_H
+#ifndef TESTE_CONTA_H
+#define TESTE_CONTA_H
+
 #include "../Entities/Headers/Conta.h"
 #include <string>
 #include <stdexcept>
 
 class TUConta {
 private:
-    const std::string NOME_VALIDO = "Nome Valido";
-    const std::string SENHA_VALIDA = "Senha@123";
-    const std::string CPF_VALIDO = "12345678900";
+    const std::string NOME_VALIDO = "Daniel Campos";
+    const std::string SENHA_VALIDA = "241357";
+    const std::string CPF_VALIDO = "081.772.431-88";
 
     Conta *conta;
     int estado;
@@ -22,4 +23,4 @@ public:
     int run();
 };
 
-#endif // TUCONTA_H
+#endif // TESTE_CONTA_H

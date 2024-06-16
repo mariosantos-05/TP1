@@ -99,8 +99,24 @@ int main() {
         case TUSetor::FALHA  : std::cout << RED << "FALHA   - Setor" << RESET << std::endl;
                                 break;
     }
-    
+
     std::cout << "\nTestes de Entidades\n" << std::endl;
+
+    TUConta testeconta;
+    switch (testeconta.run()) {
+        case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Conta" << RESET << std::endl;
+                                break;
+        case TUPagamento::FALHA: std::cout << RED << "FALHA   - Conta" << RESET << std::endl;
+                                break;
+    }
+
+    TUPagamento testepagamento;
+    switch (testepagamento.run()) {
+        case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Pagamento" << RESET << std::endl;
+                                break;
+        case TUPagamento::FALHA: std::cout << RED << "FALHA   - Pagamento" << RESET << std::endl;
+                                break;
+    }
 
     TUTitulo testetitulo;
     switch(testetitulo.run()){
@@ -110,21 +126,6 @@ int main() {
                                 break;
     }
     
-    TUPagamento testepagamento;
-    switch (testepagamento.run()) {
-        case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Pagamento" << RESET << std::endl;
-                                break;
-        case TUPagamento::FALHA: std::cout << RED << "FALHA   - Pagamento" << RESET << std::endl;
-                                break;
-    }
-
-    TUConta testeconta;
-    switch (testeconta.run()) {
-        case TUPagamento::SUCESSO: std::cout << GREEN << "SUCESSO - Conta" << RESET << std::endl;
-                                break;
-        case TUPagamento::FALHA: std::cout << RED << "FALHA   - Conta" << RESET << std::endl;
-                                break;
-    }
 
     return 0;
 }
