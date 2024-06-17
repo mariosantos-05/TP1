@@ -72,33 +72,43 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CONTA_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CONTA_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/CPF.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/Nome.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/Senha.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classConta.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classConta.html">Conta</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="className.html">Name</a> nome;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classSenha.html">Senha</a> senha;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classCPF.html">CPF</a> cpf;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classConta.html">Conta</a>(std::string nome, std::string senha, std::string cpf);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> setNome(std::string nome);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> setSenha(std::string senha);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> setCodigocpf(std::string cpf);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::string getCodigocpf();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::string getNome();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::string getSenha();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CONTA_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/CPF.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/Nome.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/Senha.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classConta.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classConta.html">Conta</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="className.html">Name</a> nome;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classSenha.html">Senha</a> senha;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classCPF.html">CPF</a> cpf;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classConta.html#ac7ba2dd7bad99f55120d046c86e46618">Conta</a>(std::string nome, std::string senha, std::string cpf);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classConta.html#a6eef71dacaaada0c82944995910ecc2d">setNome</a>(std::string nome);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classConta.html#a25f3ded56c515a4f7ebb20cb96ea0d63">setSenha</a>(std::string senha);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classConta.html#a5fc73733c96359d1fcfc3e549d246aa1">setCodigocpf</a>(std::string cpf);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::string <a class="code" href="classConta.html#a3ac6e0b42405d3c27c75b4b3ef455f3e">getCodigocpf</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::string <a class="code" href="classConta.html#afb0c4a2741f4636648d962c78bc54a9a">getNome</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::string <a class="code" href="classConta.html#aaa6872108d0b0121565eae6515daf75b">getSenha</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// CONTA_H</span></div>
 <div class="ttc" id="aclassCPF_html"><div class="ttname"><a href="classCPF.html">CPF</a></div><div class="ttdoc">Class representing a CPF (Cadastro de Pessoas Fisicas) number.</div><div class="ttdef"><b>Definition:</b> CPF.h:10</div></div>
-<div class="ttc" id="aclassConta_html"><div class="ttname"><a href="classConta.html">Conta</a></div><div class="ttdef"><b>Definition:</b> Conta.h:9</div></div>
+<div class="ttc" id="aclassConta_html"><div class="ttname"><a href="classConta.html">Conta</a></div><div class="ttdoc">Class representing the Account of a User.</div><div class="ttdef"><b>Definition:</b> Conta.h:11</div></div>
+<div class="ttc" id="aclassConta_html_a25f3ded56c515a4f7ebb20cb96ea0d63"><div class="ttname"><a href="classConta.html#a25f3ded56c515a4f7ebb20cb96ea0d63">Conta::setSenha</a></div><div class="ttdeci">void setSenha(std::string senha)</div><div class="ttdoc">Setter for the Senha.</div><div class="ttdef"><b>Definition:</b> Conta.cpp:14</div></div>
+<div class="ttc" id="aclassConta_html_a3ac6e0b42405d3c27c75b4b3ef455f3e"><div class="ttname"><a href="classConta.html#a3ac6e0b42405d3c27c75b4b3ef455f3e">Conta::getCodigocpf</a></div><div class="ttdeci">std::string getCodigocpf()</div><div class="ttdoc">Getter for the CPF number.</div><div class="ttdef"><b>Definition:</b> Conta.cpp:18</div></div>
+<div class="ttc" id="aclassConta_html_a5fc73733c96359d1fcfc3e549d246aa1"><div class="ttname"><a href="classConta.html#a5fc73733c96359d1fcfc3e549d246aa1">Conta::setCodigocpf</a></div><div class="ttdeci">void setCodigocpf(std::string cpf)</div><div class="ttdoc">Setter for the cpf.</div><div class="ttdef"><b>Definition:</b> Conta.cpp:6</div></div>
+<div class="ttc" id="aclassConta_html_a6eef71dacaaada0c82944995910ecc2d"><div class="ttname"><a href="classConta.html#a6eef71dacaaada0c82944995910ecc2d">Conta::setNome</a></div><div class="ttdeci">void setNome(std::string nome)</div><div class="ttdoc">Setter for the name.</div><div class="ttdef"><b>Definition:</b> Conta.cpp:10</div></div>
+<div class="ttc" id="aclassConta_html_aaa6872108d0b0121565eae6515daf75b"><div class="ttname"><a href="classConta.html#aaa6872108d0b0121565eae6515daf75b">Conta::getSenha</a></div><div class="ttdeci">std::string getSenha()</div><div class="ttdoc">Getter for the senha number.</div><div class="ttdef"><b>Definition:</b> Conta.cpp:22</div></div>
+<div class="ttc" id="aclassConta_html_ac7ba2dd7bad99f55120d046c86e46618"><div class="ttname"><a href="classConta.html#ac7ba2dd7bad99f55120d046c86e46618">Conta::Conta</a></div><div class="ttdeci">Conta(std::string nome, std::string senha, std::string cpf)</div><div class="ttdoc">Constructor for Conta.</div><div class="ttdef"><b>Definition:</b> Conta.cpp:3</div></div>
+<div class="ttc" id="aclassConta_html_afb0c4a2741f4636648d962c78bc54a9a"><div class="ttname"><a href="classConta.html#afb0c4a2741f4636648d962c78bc54a9a">Conta::getNome</a></div><div class="ttdeci">std::string getNome()</div><div class="ttdoc">Getter for the CPF number.</div><div class="ttdef"><b>Definition:</b> Conta.cpp:26</div></div>
 <div class="ttc" id="aclassName_html"><div class="ttname"><a href="className.html">Name</a></div><div class="ttdoc">Class representing the Name.</div><div class="ttdef"><b>Definition:</b> Nome.h:10</div></div>
 <div class="ttc" id="aclassSenha_html"><div class="ttname"><a href="classSenha.html">Senha</a></div><div class="ttdoc">Class representing the Password.</div><div class="ttdef"><b>Definition:</b> Senha.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->

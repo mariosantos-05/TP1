@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "cdegnpst",
   1: "cdenpst",
-  2: "cdegnps",
+  2: "cdegnpst",
   3: "d"
 };
 

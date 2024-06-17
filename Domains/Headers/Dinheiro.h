@@ -11,6 +11,7 @@ class Dinheiro {
 private:
     float valor;
     void validateDinheiro(float valor);
+    
 public:
     /**
      * @brief Constructor for the Valor class.

@@ -12,17 +12,20 @@ private:
     std::string estado; /**< Stored state */
     void validar(std::string estado);
 public:
+
     /**
      * @brief Constructor for the Estado class.
      * @param estado The initial state to be stored.
      */
     Estado(std::string estado);
+
     /**
      * @brief Sets the state to be stored.
      * @param estado The state to be stored.
      * @throw Throws an exception if the format is invalid.
      */
     void setEstado(std::string estado);
+    
     /**
      * @brief Gets the stored state.
      * 

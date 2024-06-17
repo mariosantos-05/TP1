@@ -79,51 +79,73 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/Data.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../Domains/Headers/Dinheiro.h&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classTitulo.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTitulo.html">Titulo</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="classCodigoTitulo.html">CodigoTitulo</a> codigo;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="className.html">Name</a> emissor;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="classSetor.html">Setor</a> setor;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="classData.html">Data</a> emissao;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classData.html">Data</a> vencimento;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classDinheiro.html">Dinheiro</a> valor;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classTitulo.html">Titulo</a>(</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            std::string codigo,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            std::string emissor,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            std::string setor,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            std::string emissao,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            std::string vencimento,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">float</span> valor</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        );</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> setCodigo(std::string codigo);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> setEmissor(std::string emissor);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> setSetor(std::string setor);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> setEmissao(std::string emissao);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> setVencimento(std::string vencimento);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> setValor(<span class="keywordtype">float</span> valor);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        std::string getCodigo();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        std::string getEmissor();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::string getSetor();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::string getEmissao();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::string getVencimento();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">float</span> getValor();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classTitulo.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTitulo.html">Titulo</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classCodigoTitulo.html">CodigoTitulo</a> codigo;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="className.html">Name</a> emissor;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classSetor.html">Setor</a> setor;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classData.html">Data</a> emissao;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classData.html">Data</a> vencimento;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classDinheiro.html">Dinheiro</a> valor;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classTitulo.html#a9cadd5b3ac9a85e00432aa7b800d8622">Titulo</a>(</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::string codigo,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        std::string emissor,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::string setor,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::string emissao,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        std::string vencimento,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">float</span> valor</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTitulo.html#ac79ac418a929eaf64d2cc5e6e31bd7b0">setCodigo</a>(std::string codigo);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTitulo.html#a1dae8e0de248072bc6ab70b6dd554065">setEmissor</a>(std::string emissor);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTitulo.html#ae991cf29985e7aded2534676cec094ae">setSetor</a>(std::string setor);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTitulo.html#a0b2dbaeaf7cad3ae48b9ec3269210419">setEmissao</a>(std::string emissao);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTitulo.html#adb794a4399fcd86a281dcd44294cc84f">setVencimento</a>(std::string vencimento);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTitulo.html#a3e40534f02cb0524b2b74a2f6b3dcff8">setValor</a>(<span class="keywordtype">float</span> valor);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string <a class="code" href="classTitulo.html#a70642218548d74078a52cb7eefc8c03c">getCodigo</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::string <a class="code" href="classTitulo.html#ae25f1e4374f1e24c9111d2322d28cee1">getEmissor</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::string <a class="code" href="classTitulo.html#a6882c5c45cb43fd9894e8e56fd45fe7a">getSetor</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::string <a class="code" href="classTitulo.html#a81d8702d88ad40fa06902027382dafdd">getEmissao</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::string <a class="code" href="classTitulo.html#a40e9e5c5758fa26a2e5d32d2faab997a">getVencimento</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTitulo.html#af1fece0df31d1fa49506011dbd049369">getValor</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassCodigoTitulo_html"><div class="ttname"><a href="classCodigoTitulo.html">CodigoTitulo</a></div><div class="ttdoc">Class representing the title code.</div><div class="ttdef"><b>Definition:</b> CodigoTitulo.h:10</div></div>
 <div class="ttc" id="aclassData_html"><div class="ttname"><a href="classData.html">Data</a></div><div class="ttdoc">Class representing the Date.</div><div class="ttdef"><b>Definition:</b> Data.h:9</div></div>
 <div class="ttc" id="aclassDinheiro_html"><div class="ttname"><a href="classDinheiro.html">Dinheiro</a></div><div class="ttdoc">Class representing the Monetary Value.</div><div class="ttdef"><b>Definition:</b> Dinheiro.h:10</div></div>
 <div class="ttc" id="aclassName_html"><div class="ttname"><a href="className.html">Name</a></div><div class="ttdoc">Class representing the Name.</div><div class="ttdef"><b>Definition:</b> Nome.h:10</div></div>
 <div class="ttc" id="aclassSetor_html"><div class="ttname"><a href="classSetor.html">Setor</a></div><div class="ttdoc">Class representing the Field.</div><div class="ttdef"><b>Definition:</b> Setor.h:11</div></div>
-<div class="ttc" id="aclassTitulo_html"><div class="ttname"><a href="classTitulo.html">Titulo</a></div><div class="ttdef"><b>Definition:</b> Titulo.h:10</div></div>
+<div class="ttc" id="aclassTitulo_html"><div class="ttname"><a href="classTitulo.html">Titulo</a></div><div class="ttdoc">Class representing the Title of a User.</div><div class="ttdef"><b>Definition:</b> Titulo.h:14</div></div>
+<div class="ttc" id="aclassTitulo_html_a0b2dbaeaf7cad3ae48b9ec3269210419"><div class="ttname"><a href="classTitulo.html#a0b2dbaeaf7cad3ae48b9ec3269210419">Titulo::setEmissao</a></div><div class="ttdeci">void setEmissao(std::string emissao)</div><div class="ttdoc">Setter for the emissao.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:29</div></div>
+<div class="ttc" id="aclassTitulo_html_a1dae8e0de248072bc6ab70b6dd554065"><div class="ttname"><a href="classTitulo.html#a1dae8e0de248072bc6ab70b6dd554065">Titulo::setEmissor</a></div><div class="ttdeci">void setEmissor(std::string emissor)</div><div class="ttdoc">Setter for the emissor.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:21</div></div>
+<div class="ttc" id="aclassTitulo_html_a3e40534f02cb0524b2b74a2f6b3dcff8"><div class="ttname"><a href="classTitulo.html#a3e40534f02cb0524b2b74a2f6b3dcff8">Titulo::setValor</a></div><div class="ttdeci">void setValor(float valor)</div><div class="ttdoc">Setter for the valor.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:37</div></div>
+<div class="ttc" id="aclassTitulo_html_a40e9e5c5758fa26a2e5d32d2faab997a"><div class="ttname"><a href="classTitulo.html#a40e9e5c5758fa26a2e5d32d2faab997a">Titulo::getVencimento</a></div><div class="ttdeci">std::string getVencimento()</div><div class="ttdoc">Getter for the vencimento number.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:57</div></div>
+<div class="ttc" id="aclassTitulo_html_a6882c5c45cb43fd9894e8e56fd45fe7a"><div class="ttname"><a href="classTitulo.html#a6882c5c45cb43fd9894e8e56fd45fe7a">Titulo::getSetor</a></div><div class="ttdeci">std::string getSetor()</div><div class="ttdoc">Getter for the setor name.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:49</div></div>
+<div class="ttc" id="aclassTitulo_html_a70642218548d74078a52cb7eefc8c03c"><div class="ttname"><a href="classTitulo.html#a70642218548d74078a52cb7eefc8c03c">Titulo::getCodigo</a></div><div class="ttdeci">std::string getCodigo()</div><div class="ttdoc">Getter for the codigo number.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:41</div></div>
+<div class="ttc" id="aclassTitulo_html_a81d8702d88ad40fa06902027382dafdd"><div class="ttname"><a href="classTitulo.html#a81d8702d88ad40fa06902027382dafdd">Titulo::getEmissao</a></div><div class="ttdeci">std::string getEmissao()</div><div class="ttdoc">Getter for the emissao number.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:53</div></div>
+<div class="ttc" id="aclassTitulo_html_a9cadd5b3ac9a85e00432aa7b800d8622"><div class="ttname"><a href="classTitulo.html#a9cadd5b3ac9a85e00432aa7b800d8622">Titulo::Titulo</a></div><div class="ttdeci">Titulo(std::string codigo, std::string emissor, std::string setor, std::string emissao, std::string vencimento, float valor)</div><div class="ttdoc">Constructor for Titulo.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:3</div></div>
+<div class="ttc" id="aclassTitulo_html_ac79ac418a929eaf64d2cc5e6e31bd7b0"><div class="ttname"><a href="classTitulo.html#ac79ac418a929eaf64d2cc5e6e31bd7b0">Titulo::setCodigo</a></div><div class="ttdeci">void setCodigo(std::string codigo)</div><div class="ttdoc">Setter for the codigo.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:17</div></div>
+<div class="ttc" id="aclassTitulo_html_adb794a4399fcd86a281dcd44294cc84f"><div class="ttname"><a href="classTitulo.html#adb794a4399fcd86a281dcd44294cc84f">Titulo::setVencimento</a></div><div class="ttdeci">void setVencimento(std::string vencimento)</div><div class="ttdoc">Setter for the vencimento.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:33</div></div>
+<div class="ttc" id="aclassTitulo_html_ae25f1e4374f1e24c9111d2322d28cee1"><div class="ttname"><a href="classTitulo.html#ae25f1e4374f1e24c9111d2322d28cee1">Titulo::getEmissor</a></div><div class="ttdeci">std::string getEmissor()</div><div class="ttdoc">Getter for the emissor name.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:45</div></div>
+<div class="ttc" id="aclassTitulo_html_ae991cf29985e7aded2534676cec094ae"><div class="ttname"><a href="classTitulo.html#ae991cf29985e7aded2534676cec094ae">Titulo::setSetor</a></div><div class="ttdeci">void setSetor(std::string setor)</div><div class="ttdoc">Setter for the setor.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:25</div></div>
+<div class="ttc" id="aclassTitulo_html_af1fece0df31d1fa49506011dbd049369"><div class="ttname"><a href="classTitulo.html#af1fece0df31d1fa49506011dbd049369">Titulo::getValor</a></div><div class="ttdeci">float getValor()</div><div class="ttdoc">Getter for the valor number.</div><div class="ttdef"><b>Definition:</b> Titulo.cpp:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
