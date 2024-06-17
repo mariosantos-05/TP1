@@ -12,6 +12,7 @@ private:
     std::string Names;  /**< The name string. */
     void validateName(std::string name);
 public:
+
     /**
      * @brief Constructor for Name.
      * @param name The name string.

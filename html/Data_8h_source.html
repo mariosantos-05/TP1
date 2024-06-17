@@ -76,26 +76,27 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classData.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classData.html">Data</a>{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        std::string data;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">bool</span> validate(std::string data);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">bool</span> validadeHyphenPlacement(std::string data);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">bool</span> validateDateRanges(std::string data);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">int</span> month_lenth(<span class="keywordtype">int</span> month, <span class="keywordtype">int</span> year);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">bool</span> is_leap_year(<span class="keywordtype">int</span> year);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classData.html#a972911ca68256147a714d91bba1e4da2">Data</a>(std::string data);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classData.html#afe290f1411527568a08ede019a047694">setData</a>(std::string );</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::string <a class="code" href="classData.html#a76ac4ac268da92dc15f7e69e8601b2ae">getData</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::string data;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> validate(std::string data);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">bool</span> validadeHyphenPlacement(std::string data);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> validateDateRanges(std::string data);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> month_lenth(<span class="keywordtype">int</span> month, <span class="keywordtype">int</span> year);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">bool</span> is_leap_year(<span class="keywordtype">int</span> year);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classData.html#a972911ca68256147a714d91bba1e4da2">Data</a>(std::string data);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classData.html#afe290f1411527568a08ede019a047694">setData</a>(std::string );</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::string <a class="code" href="classData.html#a76ac4ac268da92dc15f7e69e8601b2ae">getData</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassData_html"><div class="ttname"><a href="classData.html">Data</a></div><div class="ttdoc">Class representing the Date.</div><div class="ttdef"><b>Definition:</b> Data.h:9</div></div>
-<div class="ttc" id="aclassData_html_a76ac4ac268da92dc15f7e69e8601b2ae"><div class="ttname"><a href="classData.html#a76ac4ac268da92dc15f7e69e8601b2ae">Data::getData</a></div><div class="ttdeci">std::string getData()</div><div class="ttdoc">Gets the data value.</div><div class="ttdef"><b>Definition:</b> Data.cpp:72</div></div>
-<div class="ttc" id="aclassData_html_a972911ca68256147a714d91bba1e4da2"><div class="ttname"><a href="classData.html#a972911ca68256147a714d91bba1e4da2">Data::Data</a></div><div class="ttdeci">Data(std::string data)</div><div class="ttdoc">Constructor for the Data class.</div><div class="ttdef"><b>Definition:</b> Data.cpp:74</div></div>
-<div class="ttc" id="aclassData_html_afe290f1411527568a08ede019a047694"><div class="ttname"><a href="classData.html#afe290f1411527568a08ede019a047694">Data::setData</a></div><div class="ttdeci">void setData(std::string)</div><div class="ttdoc">Sets the data value.</div><div class="ttdef"><b>Definition:</b> Data.cpp:66</div></div>
+<div class="ttc" id="aclassData_html_a76ac4ac268da92dc15f7e69e8601b2ae"><div class="ttname"><a href="classData.html#a76ac4ac268da92dc15f7e69e8601b2ae">Data::getData</a></div><div class="ttdeci">std::string getData()</div><div class="ttdoc">Gets the data value.</div><div class="ttdef"><b>Definition:</b> Data.cpp:70</div></div>
+<div class="ttc" id="aclassData_html_a972911ca68256147a714d91bba1e4da2"><div class="ttname"><a href="classData.html#a972911ca68256147a714d91bba1e4da2">Data::Data</a></div><div class="ttdeci">Data(std::string data)</div><div class="ttdoc">Constructor for the Data class.</div><div class="ttdef"><b>Definition:</b> Data.cpp:72</div></div>
+<div class="ttc" id="aclassData_html_afe290f1411527568a08ede019a047694"><div class="ttname"><a href="classData.html#afe290f1411527568a08ede019a047694">Data::setData</a></div><div class="ttdeci">void setData(std::string)</div><div class="ttdoc">Sets the data value.</div><div class="ttdef"><b>Definition:</b> Data.cpp:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

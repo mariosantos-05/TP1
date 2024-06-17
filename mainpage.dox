@@ -27,7 +27,7 @@ To get started with using the documentation, you can:
 - Refer to the examples and usage patterns provided in the documentation.
 - Consult the reference documentation for detailed information on individual classes and their members.
 
-@section er_diagram ER Diagram
+@section er_diagram UML Diagram
 
 \image html MER.png "Entity-Relationship Diagram" 
 

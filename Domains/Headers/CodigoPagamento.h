@@ -10,6 +10,7 @@ class CodigoPagamento{
     private:
         std::string paymentCode;
         void validatepaymentCode(std::string pc_number);
+        
     public:
         /**
          * @brief Constructor for the payment Code.

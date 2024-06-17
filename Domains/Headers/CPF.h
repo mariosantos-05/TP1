@@ -11,14 +11,13 @@ class CPF{
 private:
     std::string CadastroPF;  /**< The CPF number string. */
     void validateCPFFormat(std::string cpf);
-public:
 
+public:
     /**
      * @brief Constructor for CPF.
      * @param cpf The CPF number string.
      */
     CPF(std::string cpf);
-
 
     /**
      * @brief Setter for the CPF number.
