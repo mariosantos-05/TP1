@@ -6,7 +6,12 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Include directories
-include_directories(Domains/Headers  Entities/Headers TUD TUE)
+include_directories(include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/Domains
+    ${CMAKE_CURRENT_SOURCE_DIR}/Entities
+    ${CMAKE_CURRENT_SOURCE_DIR}/TUD
+    ${CMAKE_CURRENT_SOURCE_DIR}/TUE
+))
 
 # Add all source files
 file(GLOB SOURCES "Domains/Sources/*.cpp" "main.cpp" "TUD/*.cpp" "Entities/Sources/*.cpp" "TUE/*.cpp")
