@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['valor_23',['Valor',['../classValor.html',1,'Valor'],['../classValor.html#aced79c03559228eff25e335252bae843',1,'Valor::Valor()']]]
+  ['titulo_33',['Titulo',['../classTitulo.html',1,'']]]
 ];

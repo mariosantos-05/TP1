@@ -70,27 +70,31 @@ $(function() {
 <div class="title">Setor.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span> </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> std::string;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classSetor.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSetor.html">Setor</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::string setor;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> validar(std::string setor);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classSetor.html#a910d2b0cfc338d84d0194504d272bfc2">Setor</a>(std::string setor);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSetor.html#a0d06f976c578fc7662aa1741fc2fb0f6">set</a>(std::string setor);</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SETOR_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SETOR_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span> </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classSetor.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSetor.html">Setor</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::string setor;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> validar(std::string setor);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classSetor.html#a910d2b0cfc338d84d0194504d272bfc2">Setor</a>(std::string setor);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classSetor.html#a836743f81313cf6a8665acde0c71152e">setSetor</a>(std::string setor);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string <a class="code" href="classSetor.html#adb687a8cc37a353f5044d36f937c3a2c">get</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string <a class="code" href="classSetor.html#a63db13d9fc0c43cfd3ac1677cc724e0c">getSetor</a>();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="ttc" id="aclassSetor_html"><div class="ttname"><a href="classSetor.html">Setor</a></div><div class="ttdoc">Class representing the Field.</div><div class="ttdef"><b>Definition:</b> Setor.h:9</div></div>
-<div class="ttc" id="aclassSetor_html_a0d06f976c578fc7662aa1741fc2fb0f6"><div class="ttname"><a href="classSetor.html#a0d06f976c578fc7662aa1741fc2fb0f6">Setor::set</a></div><div class="ttdeci">void set(std::string setor)</div><div class="ttdoc">Sets the sector to be stored.</div><div class="ttdef"><b>Definition:</b> Setor.cpp:19</div></div>
-<div class="ttc" id="aclassSetor_html_a910d2b0cfc338d84d0194504d272bfc2"><div class="ttname"><a href="classSetor.html#a910d2b0cfc338d84d0194504d272bfc2">Setor::Setor</a></div><div class="ttdeci">Setor(std::string setor)</div><div class="ttdoc">Constructor for the Setor class.</div><div class="ttdef"><b>Definition:</b> Setor.cpp:22</div></div>
-<div class="ttc" id="aclassSetor_html_adb687a8cc37a353f5044d36f937c3a2c"><div class="ttname"><a href="classSetor.html#adb687a8cc37a353f5044d36f937c3a2c">Setor::get</a></div><div class="ttdeci">std::string get()</div><div class="ttdoc">Gets the stored sector.</div><div class="ttdef"><b>Definition:</b> Setor.cpp:16</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassSetor_html"><div class="ttname"><a href="classSetor.html">Setor</a></div><div class="ttdoc">Class representing the Field.</div><div class="ttdef"><b>Definition:</b> Setor.h:11</div></div>
+<div class="ttc" id="aclassSetor_html_a63db13d9fc0c43cfd3ac1677cc724e0c"><div class="ttname"><a href="classSetor.html#a63db13d9fc0c43cfd3ac1677cc724e0c">Setor::getSetor</a></div><div class="ttdeci">std::string getSetor()</div><div class="ttdoc">Gets the stored sector.</div><div class="ttdef"><b>Definition:</b> Setor.cpp:16</div></div>
+<div class="ttc" id="aclassSetor_html_a836743f81313cf6a8665acde0c71152e"><div class="ttname"><a href="classSetor.html#a836743f81313cf6a8665acde0c71152e">Setor::setSetor</a></div><div class="ttdeci">void setSetor(std::string setor)</div><div class="ttdoc">Sets the sector to be stored.</div><div class="ttdef"><b>Definition:</b> Setor.cpp:19</div></div>
+<div class="ttc" id="aclassSetor_html_a910d2b0cfc338d84d0194504d272bfc2"><div class="ttname"><a href="classSetor.html#a910d2b0cfc338d84d0194504d272bfc2">Setor::Setor</a></div><div class="ttdeci">Setor(std::string setor)</div><div class="ttdoc">Constructor for the Setor class.</div><div class="ttdef"><b>Definition:</b> Setor.cpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
