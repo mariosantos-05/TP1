@@ -23,7 +23,7 @@ public:
     /**
      * @brief Sets the password to be stored.
      * @param senha The password to be stored.
-     * @remark the given format is "XXXXXX" where X is a number(0-9) with no duplicate digit nor ascending or descending order and first number not 0.
+     * @remark the valid format is "XXXXXX" where X is a number(0-9) with no duplicate digit nor ascending or descending order and first number not 0.
      * @throw invalid_argument If the password is invalid.
      */
     void setSenha(string senha);
