@@ -17,48 +17,49 @@ private:
 public:
     /**
      * @brief Constructor for Conta.
-     * @param nome an object of the class Name.
-     * @param senha object of class Senha.
-     * @param cpf object of class CPF.
+     * @param nome is a string atribute of an object of the class Name.
+     * @param senha is a string atribute of an object of class Senha.
+     * @param cpf is a string atribute of an object of class CPF.
      */
     Conta(std::string nome, std::string senha, std::string cpf);
 
     /**
      * @brief Setter for the name.
-     * @param nome object of class Name.
+     * @param nome is a string atribute of an object of class Name.
+     * @remark 
      * @throw Class Name Throws exception if the format is invalid.
      */
     void setNome(std::string nome);
 
     /**
      * @brief Setter for the Senha.
-     * @param senha object of class Senha.
+     * @param senha is a string atribute of an object of class Senha.
      * @throw Class Senha Throws exception if the format is invalid.
      */
     void setSenha(std::string senha);
 
     /**
      * @brief Setter for the cpf.
-     * @param cpf object of class CPF.
+     * @param cpf is a string atribute of an object of class CPF.
      * @throw Class CPF Throws exception if the format is invalid.
      */
     void setCodigocpf(std::string cpf);
 
     /**
      * @brief Getter for the CPF number.
-     * @return cpf object of class CPF.
+     * @return cpf is a string atribute of an object of class CPF.
      */
     std::string getCodigocpf();
     
     /**
      * @brief Getter for the CPF number.
-     * @return nome object of class Name.
+     * @return nome is a string atribute of an object of class Name.
      */
     std::string getNome();
 
     /**
      * @brief Getter for the senha number.
-     * @return senha object of class Senha.
+     * @return senha is a string atribute of an object of class Senha.
      */
     std::string getSenha();
 };
