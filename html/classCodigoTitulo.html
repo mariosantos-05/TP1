@@ -138,6 +138,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getCategoria</
 
 <p>Getter for the title code number. </p>
 <dl class="section return"><dt>Returns</dt><dd>The title code string. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the given format is "AAAXXXXXXXX". </dd></dl>
 
 </div>
 </div>
@@ -164,9 +165,10 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getCategoria</
   </table>
   </dd>
 </dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the valid format is "AAAXXXXXXXX" where AAA is one of the valid codes and X is Letter or number. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Throws</td><td>an exception if the format is invalid. </td></tr>
+    <tr><td class="paramname">invalid_argument</td><td>If the value is in the wrong format. </td></tr>
   </table>
   </dd>
 </dl>

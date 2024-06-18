@@ -23,13 +23,15 @@ public:
     /**
      * @brief Sets the password to be stored.
      * @param senha The password to be stored.
-     * @throw std::invalid_argument If the password is invalid.
+     * @remark the given format is "XXXXXX" where X is a number(0-9) with no duplicate digit nor ascending or descending order and first number not 0.
+     * @throw invalid_argument If the password is invalid.
      */
     void setSenha(string senha);
 
     /**
      * @brief Gets the stored password.
      * @return The stored password.
+     * @remark the given format is "XXXXXX".
      */
     string getSenha();
 };

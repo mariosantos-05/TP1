@@ -21,6 +21,7 @@ public:
     /**
      * @brief Sets the percentage value.
      * @param percentual The percentage value to be stored.
+     * @remark the valid format a number in range 0 to 100.
      * @throw invalid_argument If the value is invalid.
      */
     void setPercentual(int percentual);
@@ -28,6 +29,7 @@ public:
     /**
      * @brief Gets the stored percentage value.
      * @return The stored percentage value.
+     * @remark the given format a number in range 0 to 100.
      */
     int getPercentual();
 };

@@ -23,13 +23,15 @@ class CodigoTitulo {
         /**
         * @brief Setter for the title code number.
         * @param  code number string.
-        * @throw Throws an exception if the format is invalid.
+        * @remark the valid format is "AAAXXXXXXXX" where AAA is one of the valid codes and X is Letter or number.
+        * @throw invalid_argument If the value is in the wrong format.
         */
         void setTitlecode(std::string);
         
         /**
         * @brief Getter for the title code number.
         * @return The title code string.
+        * @remark the given format is "AAAXXXXXXXX".
         */
         std::string getTitlecode();
         std::string getCategoria();

@@ -23,8 +23,9 @@ public:
 
     Data(std::string data);
     /**
-     * @brief Sets the data value.
+    * @brief Sets the data value.
     * @param data The new data value.
+    * @remark the valid format is "DD-MM-AAAA" DD-01 to 31. MM-01 to 12. AAAA-2000 to 2100.
     * @throw invalid_argument If the value is in the wrong format.
     */
 
@@ -33,6 +34,7 @@ public:
     /**
     * @brief Gets the data value.
     * @return The data value.
+    * @remark the given format of value is "DD-MM-AAAA"
     */
     std::string getData();
 

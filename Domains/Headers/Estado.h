@@ -22,14 +22,15 @@ public:
     /**
      * @brief Sets the state to be stored.
      * @param estado The state to be stored.
-     * @throw Throws an exception if the format is invalid.
+     * @remark the valid format is one of the three "Previsto" or "Liquidado" or "Inadimplente"
+     * @throw invalid_argument If the value is in the wrong format.
      */
     void setEstado(std::string estado);
     
     /**
      * @brief Gets the stored state.
-     * 
      * @return The stored state.
+     * @remark the given format is one of the three "Previsto" or "Liquidado" or "Inadimplente"
      */
     std::string getEstado();
 };

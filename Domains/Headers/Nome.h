@@ -22,13 +22,15 @@ public:
     /**
      * @brief Setter for the name.
      * @param name The name string.
-     * @throw Throws an exception if the format is invalid.
+     * @remark the valid format is "First" or "First Second" up to two names with each with a min of 3 and a max of 10 characters.
+     * @throw invalid_argument If the value is in the wrong format.
      */
     void setName(std::string name);
 
     /**
      * @brief Getter for the name.
      * @return The name string.
+     * @remark the given format is "First" or "First Second".
      */
     std::string getName();
 };

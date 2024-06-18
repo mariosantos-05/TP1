@@ -135,6 +135,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Getter for the name. </p>
 <dl class="section return"><dt>Returns</dt><dd>The name string. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the given format is "First" or "First Second". </dd></dl>
 
 </div>
 </div>
@@ -161,9 +162,10 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the valid format is "First" or "First Second" up to two names with each with a min of 3 and a max of 10 characters. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Throws</td><td>an exception if the format is invalid. </td></tr>
+    <tr><td class="paramname">invalid_argument</td><td>If the value is in the wrong format. </td></tr>
   </table>
   </dd>
 </dl>

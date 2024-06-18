@@ -89,7 +89,6 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class representing a <a class="el" href="classCPF.html" title="Class representing a CPF (Cadastro de Pessoas Fisicas) number.">CPF</a> (Cadastro de Pessoas Fisicas) number. </p>
-<p>&lt; For string manipulation. &lt; For regular expressions. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae6d429bd44c42bdbad7835b38bfe1639"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6d429bd44c42bdbad7835b38bfe1639">&#9670;&nbsp;</a></span>CPF()</h2>
@@ -135,6 +134,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Getter for the <a class="el" href="classCPF.html" title="Class representing a CPF (Cadastro de Pessoas Fisicas) number.">CPF</a> number. </p>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="classCPF.html" title="Class representing a CPF (Cadastro de Pessoas Fisicas) number.">CPF</a> number string. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the given format is "XXX.XXX.XXX-CC" only numbers </dd></dl>
 
 </div>
 </div>
@@ -161,9 +161,10 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section remark"><dt>Remarks</dt><dd>the valid format is "XXX.XXX.XXX-CC" only numbers </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">Throws</td><td>an exception if the format is invalid. </td></tr>
+    <tr><td class="paramname">Throws</td><td>invalid_argument exception if the format is invalid. </td></tr>
   </table>
   </dd>
 </dl>
