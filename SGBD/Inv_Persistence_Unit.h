@@ -4,24 +4,19 @@
 #include "../Entities/Headers/Conta.h"
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Pagamento.h"
-
-
 #include <list>
 #include <iostream>
 #include <string>
 #include <stdio.h>
-
 #include <sqlite3.h>
 
 class EErroPersistencia {
 private:
-        string mensagem;
+        std::string mensagem;
 public:
-        EErroPersistencia(string);
-        string what();
+        EErroPersistencia(std::string);
+        std::string what();
 };
-
-
 
 class ElementoResultado {
 private:
@@ -49,66 +44,66 @@ protected:
         std::string comandoSQL;
 public:
         ComandoSQL() {
-             nomeBancoDados = " Repository.db";                             // Nome do banco de dados.
+            nomeBancoDados = "Repository.db";  // Nome do banco de dados.
         }
         void executar();
+        static std::list<ElementoResultado>& getListaResultado();  // Add this line
+        static void clearListaResultado();  // Add this line
 };
 
-//methods for Title
-
-class Comando_Criar_Titulo:public ComandoSQL {
+// Command classes for Title
+class Comando_Criar_Titulo: public ComandoSQL {
 public:
         Comando_Criar_Titulo(const Titulo);
 };
 
-class Comando_Ler_Titulo:public ComandoSQL {
+class Comando_Ler_Titulo: public ComandoSQL {
 public:
         Comando_Ler_Titulo(const Titulo);
         Titulo getResultado();
-};
+};      
 
-class Comando_Atualizar_Titulo:public ComandoSQL {
+class Comando_Atualizar_Titulo: public ComandoSQL {
 public:
         Comando_Atualizar_Titulo(const Titulo);
 };
 
-class Comando_Listar_Titulos:public ComandoSQL {
-public: 
+class Comando_Listar_Titulos: public ComandoSQL {
+public:
         Comando_Listar_Titulos(const Conta);
 };
 
-class Comando_Excluir_Titulo:public ComandoSQL {
+class Comando_Excluir_Titulo: public ComandoSQL {
 public:
-        Comando_Excluir_Titulo(Titulo);
+        Comando_Excluir_Titulo(const Titulo);
 };
 
-//Methods for Payment
-
-class Comando_Criar_Pagamento:public ComandoSQL {
+// Command classes for Payment
+class Comando_Criar_Pagamento: public ComandoSQL {
 public:
         Comando_Criar_Pagamento(const Pagamento);
 };
 
-class Comando_Ler_Pagamento:public ComandoSQL {
+class Comando_Ler_Pagamento: public ComandoSQL {
 public:
         Comando_Ler_Pagamento(const Pagamento);
         Pagamento getResultado();
 };
 
-class Comando_Atualizar_Pagamento:public ComandoSQL {
+class Comando_Atualizar_Pagamento: public ComandoSQL {
 public:
         Comando_Atualizar_Pagamento(const Pagamento);
 };
 
-class Comando_Listar_Pagamentos:public ComandoSQL {
-public: 
-        Comando_Listar_Pagamentos(const Titulo);
-};
-
-class Comando_Excluir_Pagamento:public ComandoSQL {
+class Comando_Listar_Pagamentos: public ComandoSQL {
 public:
-        Comando_Excluir_Pagamento(Pagamento);
+        Comando_Listar_Pagamentos(const Titulo);
+        Pagamento getResultado();  // Add this line
 };
 
+class Comando_Excluir_Pagamento: public ComandoSQL {
+public:
+        Comando_Excluir_Pagamento(const Pagamento);
+};
 
-#endif
+#endif // INV_PERSISTENCE_UNIT_H
