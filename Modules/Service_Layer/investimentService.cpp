@@ -37,7 +37,7 @@ std::vector<Titulo> InvestimentoService::Listar_Titulos(const Conta conta) {
         cmd.executar();
         std::vector<Titulo> titulos;
         while (!ComandoSQL::getListaResultado().empty()) {
-            Titulo titulo = cmd.getResultado();
+            conta titulo = cmd.getResultado();
             titulos.push_back(titulo);
         }
         ComandoSQL::clearListaResultado();  // Clear results after usage
