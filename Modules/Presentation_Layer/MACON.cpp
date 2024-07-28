@@ -1,6 +1,7 @@
 #include "MACON.h"
 #include <cstdlib>
 
+
 MainScreen::MainScreen() : isAuthenticated(false) {
     initscr();
     cbreak();
@@ -14,7 +15,7 @@ void MainScreen::display() {
         mvprintw(0, 0, "Bem-vindo de volta! Escolha uma opcao:");
         mvprintw(1, 0, "1. Gerir Investimentos");
         mvprintw(2, 0, "2. Configurar Conta");
-        mvprintw(3, 0, "1. Sair");
+        mvprintw(3, 0, "3. Sair");
     } else {
         mvprintw(0, 0, "Bem-vindo! Escolha uma opcao:");
         mvprintw(1, 0, "1. Registrar");
@@ -45,7 +46,7 @@ void MainScreen::handleInput(int ch) {
                 registerUser();
                 break;
             case '2':
-                authenticateUser();
+                autenticador->autenticar(cpf*);
                 break;
             case '3':
                 endwin();
@@ -59,22 +60,3 @@ void MainScreen::handleInput(int ch) {
 void MainScreen::showOptions() {
     display();
 }
-
-
-
-
-/*
-int main() {
-    MainScreen mainScreen;
-    int ch;
-
-    while (true) {
-        mainScreen.display();
-        ch = getch();
-        mainScreen.handleInput(ch);
-    }
-
-    endwin();
-    return 0;
-}
-*/  
