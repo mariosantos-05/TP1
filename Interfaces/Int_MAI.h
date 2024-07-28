@@ -27,7 +27,7 @@ public:
      * @param id O ID do título de investimento a ser lido.
      * @return O título de investimento lido.
      */
-    virtual Titulo Ler_Titulo(const std::string& id) = 0;
+    virtual Titulo Ler_Titulo(const CodigoTitulo& codigo) = 0;
 
     /**
      * @brief Atualiza um título de investimento existente.
@@ -46,7 +46,7 @@ public:
      * @brief Exclui um título de investimento existente.
      * @param id O ID do título de investimento a ser excluído.
      */
-    virtual void Excluir_Titulo(const Codigo& codigo) = 0;
+    virtual void Excluir_Titulo(const CodigoTitulo& codigo) = 0;
 
     /**
      * @brief Cria um novo pagamento.
@@ -59,7 +59,7 @@ public:
      * @param id O ID do pagamento a ser lido.
      * @return O pagamento lido.
      */
-    virtual Pagamento Ler_Pagamento(const Codigo& codigo) = 0;
+    virtual Pagamento Ler_Pagamento(const CodigoPagamento& codigo) = 0;
 
     /**
      * @brief Atualiza um pagamento existente.
@@ -78,7 +78,7 @@ public:
      * @brief Exclui um pagamento existente.
      * @param id O ID do pagamento a ser excluído.
      */
-    virtual void Excluir_Pagamento(const Codigo& codigo) = 0;
+    virtual void Excluir_Pagamento(const CodigoPagamento& codigo) = 0;
 
     /**
      * @brief Liga o MAI ao MSI.
