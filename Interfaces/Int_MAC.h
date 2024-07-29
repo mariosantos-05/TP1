@@ -3,15 +3,17 @@
 
 #include "../Entities/Headers/Conta.h"
 #include "../Entities/Headers/Pagamento.h"
+#include "../Domains/Headers/Nome.h"
+#include "../Domains/Headers/Senha.h"
 #include <stdexcept>
 
 using namespace std;
 
 /**
- * @class Int_MSI
+ * @class Int_MAC
  * @brief Interface para gerenciamento de conta.
  * 
- * Esta classe fornece uma interface abstrata para realizar operações CRUD em uma conta.
+ * Esta classe fornece uma interface abstrata para requisitar operações CRUD para uma conta.
  */
 
 class ISConta;
@@ -20,26 +22,43 @@ class IAConta {
 public:
 
     /**
+     * @brief Apresenta a tela inicial.
+     */
+
+    virtual void criar_tela_inicial(CPF) = 0;
+
+    /**
+     * @brief Cria uma nova conta.
+     * @param CPF* O CPF da conta a ser criada.
+     * @param Senha A senha da conta a ser criada.
+     * @param Nome O nome da conta a ser criada.
+     * @return Booleano que informa sucesso ou falha na criacao.
+     */
+
+    virtual bool criar_conta(CPF,Senha,Name) = 0;
+
+
+    /**
      * @brief Acessa os atributos de uma conta.
      * @param CPF* O CPF da conta a ser acessada.
      * @return A entidade conta, que contem as informaçoes da mesma.
      */
 
-    virtual Conta ler(CPF*) = 0;           
+    virtual Conta acessar() = 0;
 
     /**
      * @brief Atualiza algum dado (senha ou nome) da conta.
      * @param CPF* O CPF da conta a ser acessada.
      */
 
-    virtual void atualizar(CPF*) = 0;
+    virtual void atualizar_conta() = 0;
 
     /**
      * @brief Exclui uma conta.
      * @param CPF* O CPF da conta a ser acessada.
      */
 
-    virtual void deletar(CPF*) = 0;    
+    virtual void deletar_conta() = 0;    
 
     /**
      * @brief Liga o MAC ao MSC.
@@ -54,8 +73,4 @@ public:
   
     virtual ~IAConta(){}                                     
 };
-
-
-
-
 #endif
