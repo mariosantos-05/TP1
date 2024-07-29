@@ -9,12 +9,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/Domains
     ${CMAKE_CURRENT_SOURCE_DIR}/Entities
-    ${CMAKE_CURRENT_SOURCE_DIR}/TUD
-    ${CMAKE_CURRENT_SOURCE_DIR}/TUE
+    ${CMAKE_CURRENT_SOURCE_DIR}/Interfaces
+    ${CMAKE_CURRENT_SOURCE_DIR}/Modules
+    ${CMAKE_CURRENT_SOURCE_DIR}/SGBD
 ))
 
 # Add all source files
-file(GLOB SOURCES "Domains/Sources/*.cpp" "main.cpp" "TUD/*.cpp" "Entities/Sources/*.cpp" "TUE/*.cpp")
+file(GLOB SOURCES "Domains/Sources/*.cpp"  "Entities/Sources/*.cpp" "Modules/MAA/*.cpp" "Modules/MAC/*.cpp" "Modules/MACON/*.cpp" "Modules/MSI/*.cpp")
 
 # Add executable
-add_executable(TP1 ${SOURCES})
+add_executable(TP1_2 ${SOURCES})

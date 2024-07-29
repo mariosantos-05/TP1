@@ -1,137 +1,77 @@
 [
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/CPF.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/CPF.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/CPF.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/CPF.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/CPF.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/CodigoPagamento.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/CodigoPagamento.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/CodigoPagamento.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/CodigoPagamento.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/CodigoPagamento.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/CodigoTitulo.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/CodigoTitulo.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/CodigoTitulo.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/CodigoTitulo.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/CodigoTitulo.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/Data.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Data.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/Data.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Data.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/Data.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/Dinheiro.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Dinheiro.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/Dinheiro.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Dinheiro.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/Dinheiro.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/Estado.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Estado.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/Estado.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Estado.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/Estado.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/Nome.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Nome.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/Nome.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Nome.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/Nome.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/Percentual.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Percentual.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/Percentual.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Percentual.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/Percentual.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/Senha.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Senha.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/Senha.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Senha.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/Senha.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Domains/Sources/Setor.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Setor.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Domains/Sources/Setor.cpp.o -c /home/mario/projetos/TP1/Domains/Sources/Setor.cpp",
   "file": "/home/mario/projetos/TP1/Domains/Sources/Setor.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Entities/Sources/Conta.cpp.o -c /home/mario/projetos/TP1/Entities/Sources/Conta.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Entities/Sources/Conta.cpp.o -c /home/mario/projetos/TP1/Entities/Sources/Conta.cpp",
   "file": "/home/mario/projetos/TP1/Entities/Sources/Conta.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Entities/Sources/Pagamento.cpp.o -c /home/mario/projetos/TP1/Entities/Sources/Pagamento.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Entities/Sources/Pagamento.cpp.o -c /home/mario/projetos/TP1/Entities/Sources/Pagamento.cpp",
   "file": "/home/mario/projetos/TP1/Entities/Sources/Pagamento.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/Entities/Sources/Titulo.cpp.o -c /home/mario/projetos/TP1/Entities/Sources/Titulo.cpp",
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Entities/Sources/Titulo.cpp.o -c /home/mario/projetos/TP1/Entities/Sources/Titulo.cpp",
   "file": "/home/mario/projetos/TP1/Entities/Sources/Titulo.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUCPF.cpp.o -c /home/mario/projetos/TP1/TUD/TUCPF.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUCPF.cpp"
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Modules/MACON/MACON.cpp.o -c /home/mario/projetos/TP1/Modules/MACON/MACON.cpp",
+  "file": "/home/mario/projetos/TP1/Modules/MACON/MACON.cpp"
 },
 {
   "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUCodigoPagamento.cpp.o -c /home/mario/projetos/TP1/TUD/TUCodigoPagamento.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUCodigoPagamento.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUCodigoTitulo.cpp.o -c /home/mario/projetos/TP1/TUD/TUCodigoTitulo.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUCodigoTitulo.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUData.cpp.o -c /home/mario/projetos/TP1/TUD/TUData.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUData.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUDinheiro.cpp.o -c /home/mario/projetos/TP1/TUD/TUDinheiro.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUDinheiro.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUEstado.cpp.o -c /home/mario/projetos/TP1/TUD/TUEstado.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUEstado.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUNome.cpp.o -c /home/mario/projetos/TP1/TUD/TUNome.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUNome.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUPercentual.cpp.o -c /home/mario/projetos/TP1/TUD/TUPercentual.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUPercentual.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUSenha.cpp.o -c /home/mario/projetos/TP1/TUD/TUSenha.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUSenha.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUD/TUSetor.cpp.o -c /home/mario/projetos/TP1/TUD/TUSetor.cpp",
-  "file": "/home/mario/projetos/TP1/TUD/TUSetor.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUE/TUConta.cpp.o -c /home/mario/projetos/TP1/TUE/TUConta.cpp",
-  "file": "/home/mario/projetos/TP1/TUE/TUConta.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUE/TUPagamento.cpp.o -c /home/mario/projetos/TP1/TUE/TUPagamento.cpp",
-  "file": "/home/mario/projetos/TP1/TUE/TUPagamento.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/TUE/TUTitulo.cpp.o -c /home/mario/projetos/TP1/TUE/TUTitulo.cpp",
-  "file": "/home/mario/projetos/TP1/TUE/TUTitulo.cpp"
-},
-{
-  "directory": "/home/mario/projetos/TP1/build",
-  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/TUD -I/home/mario/projetos/TP1/TUE -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1.dir/main.cpp.o -c /home/mario/projetos/TP1/main.cpp",
-  "file": "/home/mario/projetos/TP1/main.cpp"
+  "command": "/usr/bin/c++  -I/home/mario/projetos/TP1/include_directories -I\"/home/mario/projetos/TP1/(\" -I/home/mario/projetos/TP1/Domains -I/home/mario/projetos/TP1/Entities -I/home/mario/projetos/TP1/Interfaces -I/home/mario/projetos/TP1/Modules -I/home/mario/projetos/TP1/SGBD -I\"/home/mario/projetos/TP1/)\" -g -std=gnu++11 -o CMakeFiles/TP1_2.dir/Modules/MSI/MSI.cpp.o -c /home/mario/projetos/TP1/Modules/MSI/MSI.cpp",
+  "file": "/home/mario/projetos/TP1/Modules/MSI/MSI.cpp"
 }
 ]
