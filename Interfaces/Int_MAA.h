@@ -7,13 +7,13 @@
 class ISAutenticacao;
 
 /**
- * @class IAAutenticacao
+ * @class Int_MAA
  * @brief Interface de autenticação da camada de apresentação.
  * 
  * Esta classe fornece uma interface para o modulo de apresentação de autenticação (MAA), que valida o formato das credenciais 
  * e solicita serviço do módulo de serviço de autenticação (MSA) para verificar se as credenciais estão de acordo com as do banco de dados.
  */
-class IAAutenticacao {
+class Int_MAA {
 public:
     /**
      * @brief Autentica um usuário com base no CPF.
@@ -31,7 +31,7 @@ public:
     /**
      * @brief Destrutor virtual.
      */
-    virtual ~IAAutenticacao() {}
+    virtual ~Int_MAA() {}
 };
 
 #endif 

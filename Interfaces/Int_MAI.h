@@ -3,8 +3,8 @@
 
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Pagamento.h"
-#include "../Domains/Headers/Conta.h"
-#include "../Services/Int_MSI.h"
+#include "../Entities/Headers/Conta.h"
+#include "../Interfaces/Int_MSI.h"
 #include <vector>
 
 /**
