@@ -13,7 +13,7 @@ void CntrIAConta::criar_tela_inicial(CPF){
 
 bool CntrIAConta::criar_conta(CPF cpf, Senha senha,Name nome){
 
-    cntrISConta->ler(cpf);
+    cntrISConta->criar(cpf,senha,nome);
 
 }
 
