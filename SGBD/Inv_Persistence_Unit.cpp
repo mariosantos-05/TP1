@@ -66,7 +66,7 @@ void ComandoSQL::clearListaResultado() {
 
 // Implementações das classes ComandoSQL específicas
 
-// Comando_Criar_Titulo
+
 Comando_Criar_Titulo::Comando_Criar_Titulo(Titulo titulo) {
         comandoSQL = "INSERT INTO Titulo VALUES (";
         comandoSQL += "'" + titulo.getCodigo() + "', ";
@@ -77,48 +77,54 @@ Comando_Criar_Titulo::Comando_Criar_Titulo(Titulo titulo) {
         comandoSQL += "'" + std::to_string(titulo.getValor()) + "')";
 }
 
-// Comando_Ler_Titulo
+
 Comando_Ler_Titulo::Comando_Ler_Titulo(Titulo titulo) {
         comandoSQL = "SELECT * FROM Titulo WHERE codigo = '" + titulo.getCodigo() + "'";
 }
 
 Titulo Comando_Ler_Titulo::getResultado() {
-    if(listaResultado.empty()) {
-        throw EErroPersistencia("Lista de resultados vazia.");
-    }
+        if (listaResultado.empty()) {
+                throw EErroPersistencia("Lista de resultados vazia.");
+        }
 
-    Titulo titulo;
-    ElementoResultado resultado;
+        std::string codigo, emissor, setor, emissao, vencimento;
+        float valor;
 
-    // Assuming the order of columns returned is the same as in the table definition
-        resultado = listaResultado.back();
-        listaResultado.pop_back();
-        titulo.setCodigo(resultado.getValorColuna());
+        // Extract values from listaResultado
+        ElementoResultado resultado;
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        titulo.setEmissor(resultado.getValorColuna());
+        codigo = resultado.getValorColuna();
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        titulo.setSetor(resultado.getValorColuna());
+        emissor = resultado.getValorColuna();
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        titulo.setEmissao(resultado.getValorColuna());
+        setor = resultado.getValorColuna();
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        titulo.setVencimento(resultado.getValorColuna());
+        emissao = resultado.getValorColuna();
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        titulo.setValor(std::stof(resultado.getValorColuna()));
+        vencimento = resultado.getValorColuna();
+
+        resultado = listaResultado.back();
+        listaResultado.pop_back();
+        valor = std::stof(resultado.getValorColuna());
+
+        // Construct the Titulo object with the extracted values
+        Titulo titulo(codigo, emissor, setor, emissao, vencimento, valor);
 
         return titulo;
 }
 
-// Comando_Atualizar_Titulo
+
+
 Comando_Atualizar_Titulo::Comando_Atualizar_Titulo(Titulo titulo) {
         comandoSQL = "UPDATE Titulo SET ";
         comandoSQL += "emissor = '" + titulo.getEmissor() + "', ";
@@ -129,17 +135,17 @@ Comando_Atualizar_Titulo::Comando_Atualizar_Titulo(Titulo titulo) {
         comandoSQL += "WHERE codigo = '" + titulo.getCodigo() + "'";
 }
 
-// Comando_Listar_Titulos
+
 Comando_Listar_Titulos::Comando_Listar_Titulos(Conta conta) {
         comandoSQL = "SELECT * FROM Titulo WHERE conta = '" + conta.getCodigocpf() + "'";
 }
 
-// Comando_Excluir_Titulo
+
 Comando_Excluir_Titulo::Comando_Excluir_Titulo(Titulo titulo) {
         comandoSQL = "DELETE FROM Titulo WHERE codigo = '" + titulo.getCodigo() + "'";
 }
 
-// Comando_Criar_Pagamento
+
 Comando_Criar_Pagamento::Comando_Criar_Pagamento(Pagamento pagamento) {
         comandoSQL = "INSERT INTO pagamento VALUES (";
         comandoSQL += "'" + pagamento.getCodigo() + "', ";
@@ -148,40 +154,45 @@ Comando_Criar_Pagamento::Comando_Criar_Pagamento(Pagamento pagamento) {
         comandoSQL += "'" + pagamento.getEstado() + "')";
 }
 
-// Comando_Ler_Pagamento
+
 Comando_Ler_Pagamento::Comando_Ler_Pagamento(Pagamento pagamento) {
         comandoSQL = "SELECT * FROM pagamento WHERE codigo = '" + pagamento.getCodigo() + "'";
 }
 
 Pagamento Comando_Ler_Pagamento::getResultado() {
-        if(listaResultado.empty()) {
-            throw EErroPersistencia("Lista de resultados vazia.");
+        if (listaResultado.empty()) {
+                throw EErroPersistencia("Lista de resultados vazia.");
         }
 
-        Pagamento pagamento;
+        std::string codigo, data, estado;
+        int percentual;
+
+        // Extract values from listaResultado
         ElementoResultado resultado;
 
-        // Assuming the order of columns returned is the same as in the table definition
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        pagamento.setCodigo(resultado.getValorColuna());
+        codigo = resultado.getValorColuna();
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        pagamento.setData(resultado.getValorColuna());
+        data = resultado.getValorColuna();
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        pagamento.setPercentual(std::stof(resultado.getValorColuna()));
+        percentual = std::stoi(resultado.getValorColuna());
 
         resultado = listaResultado.back();
         listaResultado.pop_back();
-        pagamento.setEstado(resultado.getValorColuna());
+        estado = resultado.getValorColuna();
+
+        // Construct the Pagamento object with the extracted values
+        Pagamento pagamento(codigo, data, estado, percentual);
 
         return pagamento;
 }
 
-// Comando_Atualizar_Pagamento
+
 Comando_Atualizar_Pagamento::Comando_Atualizar_Pagamento(Pagamento pagamento) {
         comandoSQL = "UPDATE pagamento SET ";
         comandoSQL += "data = '" + pagamento.getData() + "', ";
@@ -190,39 +201,12 @@ Comando_Atualizar_Pagamento::Comando_Atualizar_Pagamento(Pagamento pagamento) {
         comandoSQL += "WHERE codigo = '" + pagamento.getCodigo() + "'";
 }
 
-// Comando_Listar_Pagamentos
+
 Comando_Listar_Pagamentos::Comando_Listar_Pagamentos(Titulo titulo) {
         comandoSQL = "SELECT * FROM pagamento WHERE titulo_codigo = '" + titulo.getCodigo() + "'";
 }
 
-Pagamento Comando_Listar_Pagamentos::getResultado() {
-        if (listaResultado.empty()) {
-            throw EErroPersistencia("Lista de resultados vazia.");
-        }
 
-        Pagamento pagamento;
-        ElementoResultado resultado;
-
-        resultado = listaResultado.back();
-        listaResultado.pop_back();
-        pagamento.setCodigo(resultado.getValorColuna());
-
-        resultado = listaResultado.back();
-        listaResultado.pop_back();
-        pagamento.setData(resultado.getValorColuna());
-
-        resultado = listaResultado.back();
-        listaResultado.pop_back();
-        pagamento.setPercentual(std::stof(resultado.getValorColuna()));
-
-        resultado = listaResultado.back();
-        listaResultado.pop_back();
-        pagamento.setEstado(resultado.getValorColuna());
-
-        return pagamento;
-}
-
-// Comando_Excluir_Pagamento
 Comando_Excluir_Pagamento::Comando_Excluir_Pagamento(Pagamento pagamento) {
         comandoSQL = "DELETE FROM pagamento WHERE codigo = '" + pagamento.getCodigo() + "'";
 }
