@@ -26,7 +26,7 @@ public:
      * @brief Liga o MAA ao MSA.
      * @param CPF* Ponteiro para controladora da camada de seriviço (MSA).
      */
-    virtual void setCntrISAunteticacao(ISAutenticacao*) = 0;
+    virtual void setCntrISAunteticacao(ISAutenticacao* cntrISAutenticacao) = 0;
 
     /**
      * @brief Destrutor virtual.
