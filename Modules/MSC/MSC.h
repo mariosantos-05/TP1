@@ -15,9 +15,9 @@ private:
     CPF cpf_logado;           
 public:
     bool criar(CPF,Senha,Name);
-    Conta ler() ;                        
-    void atualizar();                       
-    void deletar();                        
+    Conta ler(CPF) ;                        
+    void atualizar(CPF,Senha,Name);                       
+    void deletar(CPF*);                        
 };
 
 #endif 

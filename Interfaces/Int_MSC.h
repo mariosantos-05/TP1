@@ -40,7 +40,7 @@ public:
      * @param CPF* O CPF da conta a ser acessada.
      */
 
-    virtual void atualizar(CPF) = 0;
+    virtual void atualizar(CPF,Senha,Name) = 0;
 
     /**
      * @brief Exclui uma conta.

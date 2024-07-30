@@ -15,10 +15,10 @@ private:
     ISConta *cntrISConta; 
     CPF cpf_logado;           
 public:
-    void criar_tela_inicial(CPF);
+    void criar_tela_inicial();
     bool criar_conta(CPF,Senha,Name);
     Conta acessar() ;                        
-    void atualizar_conta();                       
+    void atualizar_conta(Senha, Name);                       
     void deletar_conta();                        
     void setCntrISConta(ISConta*) ;      
 };

@@ -12,18 +12,18 @@ bool CntrISConta::criar(CPF cpf, Senha senha,Name nome){
 
 }
 
-Conta CntrISConta::ler(){
+Conta CntrISConta::ler(CPF cpf){
 
 
 }
 
 
-void CntrISConta::atualizar(){
+void CntrISConta::atualizar(CPF cpf,Senha senha,Name nome){
 
 
 }
 
-void CntrISConta::deletar(){
+void CntrISConta::deletar(CPF* cpf){
 
 
 }
