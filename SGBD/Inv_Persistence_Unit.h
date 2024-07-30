@@ -5,7 +5,6 @@
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Pagamento.h"
 #include <list>
-#include <iostream>
 #include <string>
 #include <stdio.h>
 #include <sqlite3.h>

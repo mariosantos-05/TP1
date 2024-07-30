@@ -1,4 +1,4 @@
-#include "MACON.h"
+#include "../Modules/MACON/MACON.h"
 #include <ncurses.h>
 
 
