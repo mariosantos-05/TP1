@@ -4,12 +4,12 @@
 #include "screen.h"
 #include "../Interfaces/Int_MAA.h"
 #include "../Interfaces/Int_MAC.h"
-//#include "../Interfaces/Int_MAI.h" add later when the interface is done
+#include "../Interfaces/Int_MAI.h" 
 #include "../Domains/Headers/CPF.h"
 #include "MACON.h"
 #include <cstdlib>
 
-class MainScreen {
+class MainScreen :public Screen {
 public:
     MainScreen();
 
@@ -18,9 +18,13 @@ public:
     void showOptions();
 
 private:
+    //change for the actual methods in the respective module
+    void Investiment(); 
+    void user_manager();
+    void registerUser();
+    void authenticateUser();
     bool isAuthenticated;
     CPF* cpf;
-    IAAutenticacao* autenticador;
 };
 
 #endif 
