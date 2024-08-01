@@ -38,6 +38,7 @@ bool CntrIAAutenticacao::autenticar(CPF* cpf) {
     // Simula autenticação (futramente pede serviço para camada de serviço)
     bool verificado = (strcmp(cpf_digitado, "036.403.621-44") == 0 && strcmp(senha_digitada, "pass") == 0);
 
+
     clear();
     if (verificado) {
         *cpf = CPF(cpf_digitado);
