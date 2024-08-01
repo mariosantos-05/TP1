@@ -72,7 +72,7 @@ void MainScreen::registerUser() {
 void MainScreen::authenticateUser() {
     // Implementar o código de autenticação de usuário
     mvprintw(5, 0, "Autenticacao de usuario (em desenvolvimento)");
-    isAuthenticated = true; // Aqui você faria a autenticação real
+    acesso_autenticacao->autenticar(cpf);
     refresh();
     getch();
 }
