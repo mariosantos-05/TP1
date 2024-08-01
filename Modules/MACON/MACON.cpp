@@ -1,7 +1,7 @@
 #include "MACON.h"
 #include <cstdlib>
 
-CPF teste("038.397.831-94");
+CPF cpf("000.000.000-00");
 MainScreen::MainScreen() : isAuthenticated(false) {
     initscr();
     cbreak();
@@ -72,7 +72,7 @@ void MainScreen::registerUser() {
 
 void MainScreen::authenticateUser() {
     // Implementar o código de autenticação de usuário
-    isAuthenticated = acesso_autenticacao->autenticar(teste);
+    isAuthenticated = acesso_autenticacao->autenticar(cpf);
     refresh();
     getch();
 }
