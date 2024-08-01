@@ -20,7 +20,7 @@ public:
      * @param cpf O CPF do usuário a ser autenticado.
      * @return true se a autenticação for bem-sucedida, false caso contrário.
      */
-    virtual bool autenticar(CPF* cpf) = 0;
+    virtual bool autenticar(CPF& cpf) = 0;
 
     /**
      * @brief Liga o MAA ao MSA.

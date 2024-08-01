@@ -7,7 +7,7 @@ void CntrIAAutenticacao::setCntrISAunteticacao(ISAutenticacao* cntrISAutenticaca
     this->cntrISAutenticacao = cntrISAutenticacao;
 }
 
-bool CntrIAAutenticacao::autenticar(CPF* cpf) {
+bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     clear();
     initscr();
     noecho();
@@ -41,7 +41,7 @@ bool CntrIAAutenticacao::autenticar(CPF* cpf) {
 
     clear();
     if (verificado) {
-        *cpf = CPF(cpf_digitado);
+        cpf = CPF(cpf_digitado);
         mvprintw(LINES / 2, (COLS - strlen("Autenticação bem-sucedida!")) / 2, "Autenticação bem-sucedida!");
         refresh();
         sleep(3);
