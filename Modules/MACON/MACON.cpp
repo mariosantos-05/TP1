@@ -47,6 +47,7 @@ void MainScreen::handleInput(int ch) {
                 break;
             case '2':
                 authenticateUser();
+                refresh();
                 break;
             case '3':
                 endwin();
@@ -71,8 +72,7 @@ void MainScreen::registerUser() {
 
 void MainScreen::authenticateUser() {
     // Implementar o código de autenticação de usuário
-    mvprintw(5, 0, "Autenticacao de usuario (em desenvolvimento)");
-    acesso_autenticacao->autenticar(cpf);
+    isAuthenticated = acesso_autenticacao->autenticar(cpf);
     refresh();
     getch();
 }

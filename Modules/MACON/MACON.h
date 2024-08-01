@@ -20,8 +20,8 @@ public:
     void display();
     void handleInput(int ch);
     void showOptions();
-    void setMAC(CntrIAConta*) ;      
-    void setMAA(CntrIAAutenticacao*) ;      
+    void setMAC(CntrIAConta* conta) { acesso_conta = conta; }      
+    void setMAA(CntrIAAutenticacao* autenticacao) { acesso_autenticacao = autenticacao; }   
     //void setMAI(CntrIAInvestimento*) ;
 
 private:
@@ -30,6 +30,7 @@ private:
     void user_manager();
     void registerUser();
     void authenticateUser();
+    bool isAuthenticated;
     CntrIAAutenticacao* acesso_autenticacao;
     CntrIAConta *acesso_conta; 
     //CntrIAInvestimento *acesso_investimento; 

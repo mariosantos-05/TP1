@@ -1,4 +1,4 @@
-#include<MAA.h>
+#include "MAA.h"
 #include <ncurses.h>
 #include <unistd.h> //biblioteca para usar sleep
 
@@ -8,7 +8,7 @@ void CntrIAAutenticacao::setCntrISAunteticacao(ISAutenticacao* cntrISAutenticaca
 }
 
 bool CntrIAAutenticacao::autenticar(CPF* cpf) {
-
+    clear();
     initscr();
     noecho();
     cbreak();
