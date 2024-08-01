@@ -1,7 +1,7 @@
 #include "MACON.h"
 #include <cstdlib>
 
-CPF cpf("000.000.000-00");
+
 MainScreen::MainScreen() : isAuthenticated(false) {
     initscr();
     cbreak();

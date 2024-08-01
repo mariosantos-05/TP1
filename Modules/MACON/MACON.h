@@ -33,6 +33,7 @@ private:
     bool isAuthenticated;
     CntrIAAutenticacao* acesso_autenticacao;
     CntrIAConta *acesso_conta; 
+    CPF cpf = CPF("000.000.000-00");
     //CntrIAInvestimento *acesso_investimento; 
     
 };
