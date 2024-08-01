@@ -34,7 +34,7 @@ private:
     CntrIAAutenticacao* acesso_autenticacao;
     CntrIAConta *acesso_conta; 
     //CntrIAInvestimento *acesso_investimento; 
-    CPF* cpf;
+    
 };
 
 #endif 

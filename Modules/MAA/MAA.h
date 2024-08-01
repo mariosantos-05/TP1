@@ -7,7 +7,7 @@ class CntrIAAutenticacao:public Int_MAA {
     ISAutenticacao *cntrISAutenticacao;
 
     public:
-        bool autenticar(CPF* cpf);
+        bool autenticar(CPF& cpf);
         void setCntrISAunteticacao(ISAutenticacao* cntrISAutenticacao);
 };
 
