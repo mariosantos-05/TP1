@@ -18,7 +18,8 @@ public:
     void showOptions();
     void setMAC(IAConta*) ;      
     void setMAA(IAAutenticacao*) ;      
-    void setMAI(IAInvestimento*) ;      
+    void setMAI(IAInvestimento*) ;
+          
 
 
 private:
