@@ -81,11 +81,6 @@ void MainScreen::authenticateUser() {
     mvprintw(1, 0, "Digite suas credenciais:");
     // Implementar o código de autenticação de usuário
     isAuthenticated = acesso_autenticacao->autenticar(cpf);
-    if (isAuthenticated) {
-        mvprintw(2, 0, "Autenticação bem-sucedida!");
-    } else {
-        mvprintw(2, 0, "Falha na autenticação. Tente novamente.");
-    }
     refresh();
     getch();
 }

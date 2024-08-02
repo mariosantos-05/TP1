@@ -40,12 +40,12 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     clear();
     if (verificado) {
         cpf = CPF(cpf_digitado);
-        mvprintw(LINES / 2, (COLS - strlen("Autenticação bem-sucedida!")) / 2, "Autenticação bem-sucedida!");
+        mvprintw(2, 0, "Autenticação bem-sucedida!");
     } else {
-        mvprintw(LINES / 2, (COLS - strlen("Autenticação falhou!")) / 2, "Autenticação falhou!");
+        mvprintw(2 ,0,"Autenticação falhou!");
     }
     refresh();
-    sleep(3);
+    getchar();
 
     endwin();
     return verificado;

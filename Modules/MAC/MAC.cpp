@@ -35,10 +35,10 @@ void CntrIAConta::criar_tela_inicial(CPF logado, bool isAuthenticated) {
                     atualizar_conta();
                     break;
                 case '2':
-                    acessar();
+                    Acess();
                     break;
                 case '3':
-                    deletar_conta();
+                    deletar();
                     break;
                 case '4':
                     endwin();
@@ -96,12 +96,17 @@ Conta CntrIAConta::acessar() {
     // Conta conta = Conta(cntrISConta->ler(cpf_logado)); // Uncomment when controller is ready
     Conta conta("Jonas Morelo", "142598", "000.000.000-00"); // Placeholder data
 
-    std::string CPF = "CPF : " + conta.getCodigocpf();
+   /* std::string CPF = "CPF : " + conta.getCodigocpf();
     std::string name = "Nome: " + conta.getNome();
     std::string password = "Senha: " + conta.getSenha();
     mvprintw(1, 0, CPF.c_str());
     mvprintw(2, 0, name.c_str());
-    mvprintw(3, 0, password.c_str());
+    mvprintw(3, 0, password.c_str());*/
+    mvprintw(1, 0, "CPF: 000.000.000-00");
+    mvprintw(2, 0, "Nome: Jonas ferras");
+    mvprintw(3, 0, "Senha: 231479");
+
+
     refresh();
     getch();
     clear();
@@ -142,7 +147,56 @@ void CntrIAConta::deletar_conta() {
         clear();
         // cntrISConta->deletar(&cpf_logado); // Uncomment when controller is ready
         mvprintw(0, 0, "Conta deletada com sucesso!");
+        endwin();
     } else {
+        clear();
+        mvprintw(0, 0, "Operação Abortada!");
+    }
+    refresh();
+    getch();
+    clear();
+    refresh();
+}
+
+
+void CntrIAConta::Acess() {
+    clear();
+    mvprintw(0, 0, "Dados da conta:");
+    // Conta conta = Conta(cntrISConta->ler(cpf_logado)); // Uncomment when controller is ready
+    /*Conta conta("Jonas Morelo", "142598", "000.000.000-00"); // Placeholder data
+
+    std::string CPF = "CPF : " + conta.getCodigocpf();
+    std::string name = "Nome: " + conta.getNome();
+    std::string password = "Senha: " + conta.getSenha();
+    mvprintw(1, 0, CPF.c_str());
+    mvprintw(2, 0, name.c_str());
+    mvprintw(3, 0, password.c_str());*/
+    mvprintw(1, 0, "CPF: 000.000.000-00");
+    mvprintw(2, 0, "Nome: Jonas ferras");
+    mvprintw(3, 0, "Senha: 231479");
+
+
+    refresh();
+    getch();
+    clear();
+    refresh();
+}
+
+void CntrIAConta::deletar(){
+    clear();
+    mvprintw(0, 0, "ESTA ACAO IRA DELETAR SUA CONTA, DESEJA SEGUIR:");
+    mvprintw(1, 0, "1. Sim");
+    mvprintw(2, 0, "2. Não");
+
+    int ch = getch();
+    if (ch == '1') {
+        clear();
+        // cntrISConta->deletar(&cpf_logado); // Uncomment when controller is ready
+        mvprintw(0, 0, "Conta deletada com sucesso!");
+        endwin();
+        exit(0);
+    } else {
+        clear();
         mvprintw(0, 0, "Operação Abortada!");
     }
     refresh();

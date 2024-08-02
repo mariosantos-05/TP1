@@ -20,7 +20,9 @@ public:
     Conta acessar() ;                        
     void atualizar_conta();                       
     void deletar_conta();                        
-    void setCntrISConta(ISConta*) ;      
+    void setCntrISConta(ISConta*) ;   
+    void Acess();  
+    void deletar();
 };
 
 void inline CntrIAConta::setCntrISConta(ISConta *cntrISConta){

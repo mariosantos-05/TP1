@@ -465,6 +465,30 @@ Modules/MAA/MAA.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAA/MAA.cpp.s
 .PHONY : Modules/MAA/MAA.cpp.s
 
+Modules/MAC/MAC.o: Modules/MAC/MAC.cpp.o
+.PHONY : Modules/MAC/MAC.o
+
+# target to build an object file
+Modules/MAC/MAC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAC/MAC.cpp.o
+.PHONY : Modules/MAC/MAC.cpp.o
+
+Modules/MAC/MAC.i: Modules/MAC/MAC.cpp.i
+.PHONY : Modules/MAC/MAC.i
+
+# target to preprocess a source file
+Modules/MAC/MAC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAC/MAC.cpp.i
+.PHONY : Modules/MAC/MAC.cpp.i
+
+Modules/MAC/MAC.s: Modules/MAC/MAC.cpp.s
+.PHONY : Modules/MAC/MAC.s
+
+# target to generate assembly for a file
+Modules/MAC/MAC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAC/MAC.cpp.s
+.PHONY : Modules/MAC/MAC.cpp.s
+
 Modules/MACON/MACON.o: Modules/MACON/MACON.cpp.o
 .PHONY : Modules/MACON/MACON.o
 
@@ -588,6 +612,9 @@ help:
 	@echo "... Modules/MAA/MAA.o"
 	@echo "... Modules/MAA/MAA.i"
 	@echo "... Modules/MAA/MAA.s"
+	@echo "... Modules/MAC/MAC.o"
+	@echo "... Modules/MAC/MAC.i"
+	@echo "... Modules/MAC/MAC.s"
 	@echo "... Modules/MACON/MACON.o"
 	@echo "... Modules/MACON/MACON.i"
 	@echo "... Modules/MACON/MACON.s"
