@@ -1,4 +1,4 @@
-#include "TP1/Modules/MAC/MAC.h"
+#include "../Modules/MAC/MAC.h"
 
 #include <stdexcept>
 #include <iostream>

@@ -2,7 +2,7 @@
 #define INT_MSC_INCLUDE
 
 
-#include "TP1/Interfaces/Int_MAC.h"
+#include "../Interfaces/Int_MAC.h"
 #include <stdexcept>
 
 using namespace std;
