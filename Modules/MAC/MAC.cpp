@@ -7,129 +7,146 @@
 
 using namespace std;
 
-void CntrIAConta::criar_tela_inicial() {
-    initscr(); // Inicializa o modo ncurses
-    cbreak(); // Desativa o buffering de linha
-    noecho(); // Não exibe os caracteres digitados
-    keypad(stdscr, TRUE); // Habilita a leitura de teclas especiais
-    refresh(); // Atualiza a tela
+void CntrIAConta::criar_tela_inicial(CPF logado, bool isAuthenticated) {
+    initscr();
+    cbreak();
+    noecho();
+    keypad(stdscr, TRUE);
 
-    // Cria a janela principal
-    int height = 10;
-    int width = 50;
-    int starty = (LINES - height) / 2;
-    int startx = (COLS - width) / 2;
-    WINDOW* win = newwin(height, width, starty, startx);
-    box(win, 0, 0); // Desenha uma caixa ao redor da janela
-    wrefresh(win);
+    while (true) {
+        clear();
+        if (isAuthenticated) {
+            mvprintw(0, 0, "Bem-vindo de volta! Escolha um servico:");
+            mvprintw(1, 0, "1. Atualizar Conta");
+            mvprintw(2, 0, "2. Acessar Conta");
+            mvprintw(3, 0, "3. Deletar Conta");
+            mvprintw(4, 0, "4. Sair");
+        } else {
+            mvprintw(0, 0, "Bem-vindo! Selecione uma das opções:");
+            mvprintw(1, 0, "1. Criar Conta");
+            mvprintw(2, 0, "2. Sair");
+        }
+        refresh();
 
-    mvwprintw(win, 1, 1, "Digite seu CPF: ");
-    wrefresh(win);
-
-    // Leitura do CPF
-    char cpf[20];
-    echo(); // Exibe os caracteres digitados
-    wgetstr(win, cpf);
-
-    cpf_logado = CPF(cpf);
-    
-    noecho(); // Desativa a exibição dos caracteres
-
-    mvwprintw(win, 3, 1, "Digite o servico desejado: ");
-    wrefresh(win);
-
-    // Leitura do serviço
-    char servico[50];
-    echo(); // Exibe os caracteres digitados
-    wgetstr(win, servico);
-    noecho(); // Desativa a exibição dos caracteres
-
-    if (servico == "Criar Conta"){
-
-        mvwprintw(win, 3, 1, "Digite o seu nome: ");
-        wrefresh(win);
-
-        char nome[50];
-        echo(); 
-        wgetstr(win, nome);
-        noecho(); 
-
-
-        mvwprintw(win, 3, 1, "Digite a sua senha: ");
-        wrefresh(win);
-
-        char senha[50];
-        echo(); 
-        wgetstr(win, senha);
-        noecho(); 
-
-
-        criar_conta(cpf_logado,Senha(senha),Name(nome));
-
+        int ch = getch();
+        if (isAuthenticated) {
+            switch (ch) {
+                case '1':
+                    atualizar_conta();
+                    break;
+                case '2':
+                    acessar();
+                    break;
+                case '3':
+                    deletar_conta();
+                    break;
+                case '4':
+                    endwin();
+                    exit(0);
+                default:
+                    break;
+            }
+        } else {
+            switch (ch) {
+                case '1':
+                    criar_conta();
+                    break;
+                case '2':
+                    endwin();
+                    exit(0);
+                default:
+                    break;
+            }
+        }
     }
-    else if(servico == "Atualizar Conta"){
-
-
-        mvwprintw(win, 3, 1, "Digite o seu nome: ");
-        wrefresh(win);
-
-        char nome[50];
-        echo();
-        wgetstr(win, nome);
-        noecho(); 
-        
-
-        mvwprintw(win, 3, 1, "Digite a sua senha: ");
-        wrefresh(win);
-
-        char senha[50];
-        echo(); 
-        wgetstr(win, senha);
-        noecho(); 
-
-        atualizar_conta(Senha(senha),Name(nome));
-
-    }
-    else if(servico == "Acessar Conta"){
-        acessar();
-    }
-    else if(servico == "Deletar Conta"){
-        deletar_conta();
-    }
-    else{
-        cout << "Ação inválida" << endl;
-    }
-
-    // Finaliza o modo ncurses
-    delwin(win);
-    endwin();
 }
 
+bool CntrIAConta::criar_conta() {
+    clear();
+    mvprintw(1, 13, "Criação de conta");
+    mvprintw(2, 2, "CPF: ");
+    mvprintw(4, 2, "Nome: ");
+    mvprintw(6, 2, "Senha: ");
 
-bool CntrIAConta::criar_conta(CPF cpf, Senha senha,Name nome){
+    char cpf_digitado[30];
+    char nome_digitado[50];
+    char senha_digitada[30];
 
-    cntrISConta->criar(cpf,senha,nome);
+    echo();
+    mvgetnstr(2, 7, cpf_digitado, 29);  
+    mvgetnstr(4, 8, nome_digitado, 49); 
+    noecho();
+    mvgetnstr(6, 9, senha_digitada, 29); 
 
+    // existe_igual = cntrISConta->criar(cpf, Senha(senha), Name(nome));
+    bool existe_igual = false; // Placeholder value
+    if (existe_igual) {
+        mvprintw(8, 0, "CPF já é utilizado por outra conta!");
+    } else {
+        mvprintw(8, 0, "Conta criada com sucesso!");
+    }
+    refresh();
+    getch();
+    return !existe_igual;
 }
 
-Conta CntrIAConta::acessar(){
+Conta CntrIAConta::acessar() {
+    clear();
+    mvprintw(0, 0, "Dados da conta:");
+    // Conta conta = Conta(cntrISConta->ler(cpf_logado)); // Uncomment when controller is ready
+    Conta conta("Jonas Morelo", "142598", "000.000.000-00"); // Placeholder data
 
-    cntrISConta->ler(cpf_logado);
-
+    std::string CPF = "CPF : " + conta.getCodigocpf();
+    std::string name = "Nome: " + conta.getNome();
+    std::string password = "Senha: " + conta.getSenha();
+    mvprintw(1, 0, CPF.c_str());
+    mvprintw(2, 0, name.c_str());
+    mvprintw(3, 0, password.c_str());
+    refresh();
+    getch();
+    clear();
+    refresh();
+    return conta;
 }
 
+void CntrIAConta::atualizar_conta() {
+    clear();
+    mvprintw(1, 0, "Atualização dos dados da conta");
+    mvprintw(2, 0, "Nome: ");
+    mvprintw(4, 0, "Senha: ");
 
-void CntrIAConta::atualizar_conta(Senha senha, Name nome){
+    char nome_digitado[50];
+    char senha_digitada[30];
 
-    cntrISConta->atualizar(cpf_logado,senha,nome);
+    echo();
+    mvgetnstr(2, 6, nome_digitado, 49); 
+    noecho();
+    mvgetnstr(4, 7, senha_digitada, 29); 
 
+    // cntrISConta->atualizar(cpf_logado, senha, nome); // Uncomment when controller is ready
+    mvprintw(6, 0, "Conta atualizada com sucesso!");
+    refresh();
+    getch();
+    clear();
+    refresh();
 }
 
-void CntrIAConta::deletar_conta(){
+void CntrIAConta::deletar_conta() {
+    clear();
+    mvprintw(0, 0, "ESTA AÇÃO IRA DELETAR SUA CONTA, DESEJA SEGUIR:");
+    mvprintw(1, 0, "1. Sim");
+    mvprintw(2, 0, "2. Não");
 
-    cntrISConta->deletar(&cpf_logado);
-
+    int ch = getch();
+    if (ch == '1') {
+        clear();
+        // cntrISConta->deletar(&cpf_logado); // Uncomment when controller is ready
+        mvprintw(0, 0, "Conta deletada com sucesso!");
+    } else {
+        mvprintw(0, 0, "Operação Abortada!");
+    }
+    refresh();
+    getch();
+    clear();
+    refresh();
 }
-
-
-

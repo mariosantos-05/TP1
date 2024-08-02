@@ -1,7 +1,6 @@
 #include "MACON.h"
 #include <cstdlib>
 
-
 MainScreen::MainScreen() : isAuthenticated(false) {
     initscr();
     cbreak();
@@ -38,6 +37,9 @@ void MainScreen::handleInput(int ch) {
                 endwin();
                 exit(0);
             default:
+                mvprintw(4, 0, "Opção inválida. Tente novamente.");
+                refresh();
+                getch();
                 break;
         }
     } else {
@@ -47,12 +49,14 @@ void MainScreen::handleInput(int ch) {
                 break;
             case '2':
                 authenticateUser();
-                refresh();
                 break;
             case '3':
                 endwin();
                 exit(0);
             default:
+                mvprintw(4, 0, "Opção inválida. Tente novamente.");
+                refresh();
+                getch();
                 break;
         }
     }
@@ -62,30 +66,42 @@ void MainScreen::showOptions() {
     display();
 }
 
-
 void MainScreen::registerUser() {
-    // Implementar o código de registro de usuário
-    mvprintw(5, 0, "Registro de usuario (em desenvolvimento)");
+    clear();
+    mvprintw(0, 0, "Registro de usuário:");
+    mvprintw(1, 0, "Digite os dados necessários:");
+    acesso_conta->criar_tela_inicial(cpf, isAuthenticated);
     refresh();
     getch();
 }
 
 void MainScreen::authenticateUser() {
+    clear();
+    mvprintw(0, 0, "Autenticação de usuário:");
+    mvprintw(1, 0, "Digite suas credenciais:");
     // Implementar o código de autenticação de usuário
     isAuthenticated = acesso_autenticacao->autenticar(cpf);
+    if (isAuthenticated) {
+        mvprintw(2, 0, "Autenticação bem-sucedida!");
+    } else {
+        mvprintw(2, 0, "Falha na autenticação. Tente novamente.");
+    }
     refresh();
     getch();
 }
 
-
-void MainScreen::Investiment(){
-    mvprintw(5, 0, "investimentos (titulos e pagamentos) (em desenvolvimento)");
+void MainScreen::Investiment() {
+    clear();
+    mvprintw(0, 0, "Gerenciar Investimentos:");
+    mvprintw(1, 0, "Titulos e Pagamentos (em desenvolvimento)");
     refresh();
     getch();
 }
 
-void MainScreen::user_manager(){
-    mvprintw(5, 0, "Gerenciamento de conta (em desenvolvimento)");
+void MainScreen::user_manager() {
+    clear();
+    mvprintw(0, 0, "Gerenciar Conta:");
+    acesso_conta->criar_tela_inicial(cpf, isAuthenticated);
     refresh();
     getch();
 }
