@@ -10,7 +10,7 @@
 using namespace std;
 
 
-class CntrIAConta:public IAConta {
+class CntrIAConta:public Int_MAC {
 private:
     ISConta *cntrISConta; 
     CPF cpf_logado;           

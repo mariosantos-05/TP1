@@ -9,16 +9,16 @@
 
 using namespace std;
 
+
+class ISConta;
+
 /**
  * @class Int_MAC
  * @brief Interface para gerenciamento de conta.
  * 
  * Esta classe fornece uma interface abstrata para requisitar operações CRUD para uma conta.
  */
-
-class ISConta;
-
-class IAConta {
+class Int_MAC {
 public:
 
     /**
@@ -71,6 +71,6 @@ public:
      * @brief Destrutor virtual.
      */
   
-    virtual ~IAConta(){}                                     
+    virtual ~Int_MAC(){}                                     
 };
 #endif

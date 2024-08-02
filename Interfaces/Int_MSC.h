@@ -15,7 +15,7 @@ using namespace std;
  */
 
 
-class ISConta {
+class Int_MSC {
 public:
 
     /**
@@ -60,7 +60,7 @@ public:
      * @brief Destrutor virtual.
      */
   
-    virtual ~ISConta(){}                                     
+    virtual ~Int_MSC(){}                                     
 };
 
 

@@ -5,7 +5,6 @@
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Pagamento.h"
 #include <list>
-#include <iostream>
 #include <string>
 #include <stdio.h>
 #include <sqlite3.h>
@@ -98,7 +97,6 @@ public:
 class Comando_Listar_Pagamentos: public ComandoSQL {
 public:
         Comando_Listar_Pagamentos(const Titulo);
-        Pagamento getResultado();  // Add this line
 };
 
 class Comando_Excluir_Pagamento: public ComandoSQL {

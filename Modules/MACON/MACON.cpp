@@ -46,7 +46,8 @@ void MainScreen::handleInput(int ch) {
                 registerUser();
                 break;
             case '2':
-                autenticador->autenticar(cpf*);
+                authenticateUser();
+                refresh();
                 break;
             case '3':
                 endwin();
@@ -59,4 +60,32 @@ void MainScreen::handleInput(int ch) {
 
 void MainScreen::showOptions() {
     display();
+}
+
+
+void MainScreen::registerUser() {
+    // Implementar o código de registro de usuário
+    mvprintw(5, 0, "Registro de usuario (em desenvolvimento)");
+    refresh();
+    getch();
+}
+
+void MainScreen::authenticateUser() {
+    // Implementar o código de autenticação de usuário
+    isAuthenticated = acesso_autenticacao->autenticar(cpf);
+    refresh();
+    getch();
+}
+
+
+void MainScreen::Investiment(){
+    mvprintw(5, 0, "investimentos (titulos e pagamentos) (em desenvolvimento)");
+    refresh();
+    getch();
+}
+
+void MainScreen::user_manager(){
+    mvprintw(5, 0, "Gerenciamento de conta (em desenvolvimento)");
+    refresh();
+    getch();
 }

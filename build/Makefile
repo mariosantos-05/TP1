@@ -441,6 +441,30 @@ Entities/Sources/Titulo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Entities/Sources/Titulo.cpp.s
 .PHONY : Entities/Sources/Titulo.cpp.s
 
+Modules/MAA/MAA.o: Modules/MAA/MAA.cpp.o
+.PHONY : Modules/MAA/MAA.o
+
+# target to build an object file
+Modules/MAA/MAA.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAA/MAA.cpp.o
+.PHONY : Modules/MAA/MAA.cpp.o
+
+Modules/MAA/MAA.i: Modules/MAA/MAA.cpp.i
+.PHONY : Modules/MAA/MAA.i
+
+# target to preprocess a source file
+Modules/MAA/MAA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAA/MAA.cpp.i
+.PHONY : Modules/MAA/MAA.cpp.i
+
+Modules/MAA/MAA.s: Modules/MAA/MAA.cpp.s
+.PHONY : Modules/MAA/MAA.s
+
+# target to generate assembly for a file
+Modules/MAA/MAA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAA/MAA.cpp.s
+.PHONY : Modules/MAA/MAA.cpp.s
+
 Modules/MACON/MACON.o: Modules/MACON/MACON.cpp.o
 .PHONY : Modules/MACON/MACON.o
 
@@ -465,29 +489,53 @@ Modules/MACON/MACON.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MACON/MACON.cpp.s
 .PHONY : Modules/MACON/MACON.cpp.s
 
-Modules/MSI/MSI.o: Modules/MSI/MSI.cpp.o
-.PHONY : Modules/MSI/MSI.o
+Modules/screen.o: Modules/screen.cpp.o
+.PHONY : Modules/screen.o
 
 # target to build an object file
-Modules/MSI/MSI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MSI/MSI.cpp.o
-.PHONY : Modules/MSI/MSI.cpp.o
+Modules/screen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/screen.cpp.o
+.PHONY : Modules/screen.cpp.o
 
-Modules/MSI/MSI.i: Modules/MSI/MSI.cpp.i
-.PHONY : Modules/MSI/MSI.i
+Modules/screen.i: Modules/screen.cpp.i
+.PHONY : Modules/screen.i
 
 # target to preprocess a source file
-Modules/MSI/MSI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MSI/MSI.cpp.i
-.PHONY : Modules/MSI/MSI.cpp.i
+Modules/screen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/screen.cpp.i
+.PHONY : Modules/screen.cpp.i
 
-Modules/MSI/MSI.s: Modules/MSI/MSI.cpp.s
-.PHONY : Modules/MSI/MSI.s
+Modules/screen.s: Modules/screen.cpp.s
+.PHONY : Modules/screen.s
 
 # target to generate assembly for a file
-Modules/MSI/MSI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MSI/MSI.cpp.s
-.PHONY : Modules/MSI/MSI.cpp.s
+Modules/screen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/screen.cpp.s
+.PHONY : Modules/screen.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -537,12 +585,18 @@ help:
 	@echo "... Entities/Sources/Titulo.o"
 	@echo "... Entities/Sources/Titulo.i"
 	@echo "... Entities/Sources/Titulo.s"
+	@echo "... Modules/MAA/MAA.o"
+	@echo "... Modules/MAA/MAA.i"
+	@echo "... Modules/MAA/MAA.s"
 	@echo "... Modules/MACON/MACON.o"
 	@echo "... Modules/MACON/MACON.i"
 	@echo "... Modules/MACON/MACON.s"
-	@echo "... Modules/MSI/MSI.o"
-	@echo "... Modules/MSI/MSI.i"
-	@echo "... Modules/MSI/MSI.s"
+	@echo "... Modules/screen.o"
+	@echo "... Modules/screen.i"
+	@echo "... Modules/screen.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

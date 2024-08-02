@@ -1,4 +1,4 @@
-#include "investimentService.h"
+#include "MSI.h"
 
 void InvestimentoService::Criar_Titulo(const Titulo& titulo) {
     try {
@@ -37,7 +37,18 @@ std::vector<Titulo> InvestimentoService::Listar_Titulos(const Conta conta) {
         cmd.executar();
         std::vector<Titulo> titulos;
         while (!ComandoSQL::getListaResultado().empty()) {
-            conta titulo = cmd.getResultado();
+            ElementoResultado resultado = ComandoSQL::getListaResultado().back();
+            ComandoSQL::getListaResultado().pop_back();
+
+            // Extract the values from the result set
+            std::string codigo = resultado.getValorColuna();
+            std::string emissor = resultado.getValorColuna();
+            std::string setor = resultado.getValorColuna();
+            std::string emissao = resultado.getValorColuna();
+            std::string vencimento = resultado.getValorColuna();
+            float valor = std::stof(resultado.getValorColuna());
+
+            Titulo titulo(codigo, emissor, setor, emissao, vencimento, valor);
             titulos.push_back(titulo);
         }
         ComandoSQL::clearListaResultado();  // Clear results after usage
@@ -94,7 +105,16 @@ std::vector<Pagamento> InvestimentoService::Listar_Pagamentos(const Titulo titul
         cmd.executar();
         std::vector<Pagamento> pagamentos;
         while (!ComandoSQL::getListaResultado().empty()) {
-            Pagamento pagamento = cmd.getResultado();
+            ElementoResultado resultado = ComandoSQL::getListaResultado().back();
+            ComandoSQL::getListaResultado().pop_back();
+
+            // Extract the values from the result set
+            std::string codigo = resultado.getValorColuna();
+            std::string data = resultado.getValorColuna();
+            std::string estado = resultado.getValorColuna();
+            int percentual = std::stoi(resultado.getValorColuna());
+
+            Pagamento pagamento(codigo, data, estado, percentual);
             pagamentos.push_back(pagamento);
         }
         ComandoSQL::clearListaResultado();  // Clear results after usage

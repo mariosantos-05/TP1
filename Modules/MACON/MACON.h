@@ -4,38 +4,37 @@
 #include "screen.h"
 #include "../Interfaces/Int_MAA.h"
 #include "../Interfaces/Int_MAC.h"
-//#include "../Interfaces/Int_MAI.h" add later when the interface is done
+#include "../Interfaces/Int_MAI.h" 
+#include "../Modules/MAA/MAA.h" 
+#include "../Modules/MAC/MAC.h" 
+//#include "../Modules/MAI/MAI.h"  //NAO EXISTE
+
 #include "../Domains/Headers/CPF.h"
 #include "MACON.h"
 #include <cstdlib>
 
-class MainScreen {
+class MainScreen :public Screen {
 public:
     MainScreen();
 
     void display();
     void handleInput(int ch);
     void showOptions();
-    void setMAC(IAConta*) ;      
-    void setMAA(IAAutenticacao*) ;      
-    void setMAI(IAInvestimento*) ;
-          
-
+    void setMAC(CntrIAConta* conta) { acesso_conta = conta; }      
+    void setMAA(CntrIAAutenticacao* autenticacao) { acesso_autenticacao = autenticacao; }   
+    //void setMAI(CntrIAInvestimento*) ;
 
 private:
+    //change for the actual methods in the respective module
+    void Investiment(); 
+    void user_manager();
+    void registerUser();
+    void authenticateUser();
     bool isAuthenticated;
+    CntrIAAutenticacao* acesso_autenticacao;
+    CntrIAConta *acesso_conta; 
+    //CntrIAInvestimento *acesso_investimento; 
     CPF* cpf;
-    IAAutenticacao* autenticador;
-    IAConta *acesso_conta; 
-    IAInvestimento *acesso_investimento; 
-
-
 };
 
-void inline MainScreen::setMAC(IAConta *acesso_conta){
-        this->acesso_conta = acesso_conta;
-}
-void inline MainScreen::setMAI(IAConta *acesso_investimento){
-        this->acesso_investimento = acesso_investimento;
-}
 #endif 

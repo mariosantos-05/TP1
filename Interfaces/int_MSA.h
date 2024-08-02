@@ -6,13 +6,13 @@
 #include "../Domains/Headers/Senha.h"
 
 /**
- * @class ISAutenticacao
+ * @class int_MSA
  * @brief Interface de autenticação da camada de serviço.
  * 
  * Esta classe fornece uma interface para o módulo de serviço de autenticação, recebendo solicitações da camada de apresentação.
  * É responsável por verificar se as credenciais estão de acordo com as do banco de dados.
  */
-class ISAutenticacao {
+class int_MSA {
 public:
     /**
      * @brief Autentica um usuário com base no CPF e na Senha.
@@ -25,7 +25,7 @@ public:
     /**
      * @brief Destrutor virtual.
      */
-    virtual ~ISAutenticacao() {}
+    virtual ~int_MSA() {}
 };
 
 #endif 
