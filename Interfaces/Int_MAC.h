@@ -25,7 +25,7 @@ public:
      * @brief Apresenta a tela inicial.
      */
 
-    virtual void criar_tela_inicial(CPF) = 0;
+    virtual void criar_tela_inicial() = 0;
 
     /**
      * @brief Cria uma nova conta.
@@ -51,7 +51,7 @@ public:
      * @param CPF* O CPF da conta a ser acessada.
      */
 
-    virtual void atualizar_conta() = 0;
+    virtual void atualizar_conta(Senha,Name) = 0;
 
     /**
      * @brief Exclui uma conta.
