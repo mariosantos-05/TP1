@@ -513,6 +513,30 @@ Modules/MACON/MACON.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MACON/MACON.cpp.s
 .PHONY : Modules/MACON/MACON.cpp.s
 
+Modules/MAI/MAI.o: Modules/MAI/MAI.cpp.o
+.PHONY : Modules/MAI/MAI.o
+
+# target to build an object file
+Modules/MAI/MAI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAI/MAI.cpp.o
+.PHONY : Modules/MAI/MAI.cpp.o
+
+Modules/MAI/MAI.i: Modules/MAI/MAI.cpp.i
+.PHONY : Modules/MAI/MAI.i
+
+# target to preprocess a source file
+Modules/MAI/MAI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAI/MAI.cpp.i
+.PHONY : Modules/MAI/MAI.cpp.i
+
+Modules/MAI/MAI.s: Modules/MAI/MAI.cpp.s
+.PHONY : Modules/MAI/MAI.s
+
+# target to generate assembly for a file
+Modules/MAI/MAI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TP1_2.dir/build.make CMakeFiles/TP1_2.dir/Modules/MAI/MAI.cpp.s
+.PHONY : Modules/MAI/MAI.cpp.s
+
 Modules/screen.o: Modules/screen.cpp.o
 .PHONY : Modules/screen.o
 
@@ -618,6 +642,9 @@ help:
 	@echo "... Modules/MACON/MACON.o"
 	@echo "... Modules/MACON/MACON.i"
 	@echo "... Modules/MACON/MACON.s"
+	@echo "... Modules/MAI/MAI.o"
+	@echo "... Modules/MAI/MAI.i"
+	@echo "... Modules/MAI/MAI.s"
 	@echo "... Modules/screen.o"
 	@echo "... Modules/screen.i"
 	@echo "... Modules/screen.s"

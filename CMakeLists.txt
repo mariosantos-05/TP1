@@ -27,6 +27,7 @@ file(GLOB SOURCES
     "Modules/MAC/MAC.cpp" 
     "Modules/MACON/MACON.cpp"
     "Modules/MACON/MSI.cpp"
+    "Modules/MAI/MAI.cpp"
     "main.cpp"
     "SGBD/Inv_Peristence_Unit.cpp"
 )
