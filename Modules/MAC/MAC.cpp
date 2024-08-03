@@ -94,17 +94,18 @@ Conta CntrIAConta::acessar() {
     clear();
     mvprintw(0, 0, "Dados da conta:");
     // Conta conta = Conta(cntrISConta->ler(cpf_logado)); // Uncomment when controller is ready
-    Conta conta("Jonas Morelo", "142598", "000.000.000-00"); // Placeholder data
+    
+    Conta conta = Conta("Jonas Morelo", "241357", "000.000.000-00");
 
-   /* std::string CPF = "CPF : " + conta.getCodigocpf();
+    std::string CPF = "CPF : " + conta.getCodigocpf();
     std::string name = "Nome: " + conta.getNome();
     std::string password = "Senha: " + conta.getSenha();
     mvprintw(1, 0, CPF.c_str());
     mvprintw(2, 0, name.c_str());
-    mvprintw(3, 0, password.c_str());*/
-    mvprintw(1, 0, "CPF: 000.000.000-00");
+    mvprintw(3, 0, password.c_str());
+    /*mvprintw(1, 0, "CPF: 000.000.000-00");
     mvprintw(2, 0, "Nome: Jonas ferras");
-    mvprintw(3, 0, "Senha: 231479");
+    mvprintw(3, 0, "Senha: 231479");*/
 
 
     refresh();
@@ -147,6 +148,7 @@ void CntrIAConta::deletar_conta() {
         clear();
         // cntrISConta->deletar(&cpf_logado); // Uncomment when controller is ready
         mvprintw(0, 0, "Conta deletada com sucesso!");
+        refresh();
         endwin();
     } else {
         clear();
@@ -163,17 +165,19 @@ void CntrIAConta::Acess() {
     clear();
     mvprintw(0, 0, "Dados da conta:");
     // Conta conta = Conta(cntrISConta->ler(cpf_logado)); // Uncomment when controller is ready
-    /*Conta conta("Jonas Morelo", "142598", "000.000.000-00"); // Placeholder data
+    CPF cpf = CPF("000.000.000-00");
+    Name name = Name("Jonas Donas");
+    Senha senha = Senha("093795");
 
-    std::string CPF = "CPF : " + conta.getCodigocpf();
-    std::string name = "Nome: " + conta.getNome();
-    std::string password = "Senha: " + conta.getSenha();
+    std::string CPF = "CPF : " + cpf.getCPF();
+    std::string name_2 = "Nome: " + name.getName();
+    std::string password = "Senha: " + senha.getSenha();
     mvprintw(1, 0, CPF.c_str());
-    mvprintw(2, 0, name.c_str());
-    mvprintw(3, 0, password.c_str());*/
-    mvprintw(1, 0, "CPF: 000.000.000-00");
+    mvprintw(2, 0, name_2.c_str());
+    mvprintw(3, 0, password.c_str());
+    /*mvprintw(1, 0, "CPF: 000.000.000-00");
     mvprintw(2, 0, "Nome: Jonas ferras");
-    mvprintw(3, 0, "Senha: 231479");
+    mvprintw(3, 0, "Senha: 231479");*/
 
 
     refresh();

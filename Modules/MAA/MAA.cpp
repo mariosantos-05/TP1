@@ -35,7 +35,7 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
 
 
     // Simula autenticação (futuramente pede serviço para camada de serviço)
-    bool verificado = (strcmp(cpf_digitado, "036.403.621-44") == 0 && strcmp(senha_digitada, "pass") == 0);
+    bool verificado = (strcmp(cpf_digitado, "000.000.000-00") == 0 && strcmp(senha_digitada, "pass") == 0);
 
     clear();
     if (verificado) {
@@ -45,7 +45,6 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
         mvprintw(2 ,0,"Autenticação falhou!");
     }
     refresh();
-    getchar();
 
     endwin();
     return verificado;
