@@ -7,6 +7,10 @@
 #include "../Interfaces/Int_MSI.h"
 #include <vector>
 
+
+
+
+class ISInvestimentos;
 /**
  * @class Int_MAI
  * @brief Interface para apresentação de investimentos e pagamentos.
@@ -16,6 +20,12 @@
  */
 class Int_MAI {
 public:
+
+    /**
+     * @brief Apresenta a tela inicial.
+     */
+    virtual void criar_tela_investimentos() = 0;
+    
     /**
      * @brief Cria um novo título de investimento.
      * @param titulo O título de investimento a ser criado.
