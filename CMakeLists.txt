@@ -29,6 +29,7 @@ file(GLOB SOURCES
     "Modules/MACON/MSI.cpp"
     "main.cpp"
     "SGBD/Inv_Peristence_Unit.cpp"
+    "SGBD/Aut_Peristence_Unit.cpp"
 )
 
 # Add executable

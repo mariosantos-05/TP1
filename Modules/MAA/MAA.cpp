@@ -34,12 +34,31 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     mvgetnstr(6, 9, senha_digitada, 29); // Adjust the starting position of input
 
 
-    // Simula autenticação (futuramente pede serviço para camada de serviço)
-    bool verificado = (strcmp(cpf_digitado, "036.403.621-44") == 0 && strcmp(senha_digitada, "pass") == 0);
+    bool verificado = false;
+    try {
+        // Cria objetos CPF e Senha com os valores digitados
+        CPF cpf_obj(cpf_digitado);
+        Senha senha_obj(senha_digitada);
+
+        // Solicita a autenticação ao serviço
+        verificado = cntrISAutenticacao->autenticar(cpf_obj, senha_obj);
+
+        // Atualiza a variável cpf se a autenticação for bem-sucedida
+        if (verificado) {
+            cpf = cpf_obj;
+        }
+
+    } catch (const std::exception& e) {
+        clear();
+        mvprintw(LINES / 2, (COLS - strlen("Erro na autenticação: ")) / 2, "Erro na autenticação: %s", e.what());
+        refresh();
+        sleep(3);
+        endwin();
+        return false;
+    }
 
     clear();
     if (verificado) {
-        cpf = CPF(cpf_digitado);
         mvprintw(LINES / 2, (COLS - strlen("Autenticação bem-sucedida!")) / 2, "Autenticação bem-sucedida!");
     } else {
         mvprintw(LINES / 2, (COLS - strlen("Autenticação falhou!")) / 2, "Autenticação falhou!");
@@ -47,6 +66,7 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     refresh();
     sleep(3);
 
+    
     endwin();
     return verificado;
 }

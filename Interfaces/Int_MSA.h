@@ -12,7 +12,7 @@
  * Esta classe fornece uma interface para o módulo de serviço de autenticação, recebendo solicitações da camada de apresentação.
  * É responsável por verificar se as credenciais estão de acordo com as do banco de dados.
  */
-class int_MSA {
+class Int_MSA {
 public:
     /**
      * @brief Autentica um usuário com base no CPF e na Senha.
@@ -20,12 +20,12 @@ public:
      * @param senha A senha do usuário a ser autenticado.
      * @return true se a autenticação for bem-sucedida, false caso contrário.
      */
-    virtual bool autenticar(const CPF& cpf, const Senha& senha) = 0;
+    virtual bool autenticar(CPF& cpf, Senha& senha) = 0;
 
     /**
      * @brief Destrutor virtual.
      */
-    virtual ~int_MSA() {}
+    virtual ~Int_MSA() {}
 };
 
 #endif 
