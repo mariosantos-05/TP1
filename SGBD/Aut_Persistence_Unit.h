@@ -44,7 +44,7 @@ protected:
         std::string comandoSQL;
 public:
         ComandoSQL() {
-            nomeBancoDados = "repository.db";  // Nome do banco de dados.
+            nomeBancoDados = "../SGBD/repository.db";  // Nome do banco de dados.
         }
         void executar();
         static std::list<ElementoResultado>& getListaResultado();  // Add this line
