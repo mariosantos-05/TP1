@@ -2,9 +2,6 @@
 #include <ncurses.h>
 #include <unistd.h> // biblioteca para usar sleep
 
-void CntrIAAutenticacao::setCntrISAunteticacao(ISAutenticacao* cntrISAutenticacao) {
-    this->cntrISAutenticacao = cntrISAutenticacao;
-}
 
 bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     initscr();
@@ -41,7 +38,7 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
         Senha senha_obj(senha_digitada);
 
         // Solicita a autenticação ao serviço
-        verificado = cntrISAutenticacao->autenticar(cpf_obj, senha_obj);
+        autenticacaoService->autenticar(cpf_obj, senha_obj);
 
         // Atualiza a variável cpf se a autenticação for bem-sucedida
         if (verificado) {
@@ -69,4 +66,9 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     
     endwin();
     return verificado;
+}
+
+void CntrIAAutenticacao::setCntrISAunteticacao(AutenticacaoService *autenticacaoService)
+{
+    this->autenticacaoService = autenticacaoService;
 }
