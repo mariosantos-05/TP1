@@ -2,9 +2,6 @@
 #include <ncurses.h>
 #include <unistd.h> // biblioteca para usar sleep
 
-void CntrIAAutenticacao::setCntrISAunteticacao(ISAutenticacao* cntrISAutenticacao) {
-    this->cntrISAutenticacao = cntrISAutenticacao;
-}
 
 bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     initscr();
@@ -34,19 +31,44 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     mvgetnstr(6, 9, senha_digitada, 29); // Adjust the starting position of input
 
 
-    // Simula autenticação (futuramente pede serviço para camada de serviço)
-    bool verificado = (strcmp(cpf_digitado, "036.403.621-44") == 0 && strcmp(senha_digitada, "pass") == 0);
+    bool verificado = false;
+    try {
+        // Cria objetos CPF e Senha com os valores digitados
+        CPF cpf_obj(cpf_digitado);
+        Senha senha_obj(senha_digitada);
+
+        // Solicita a autenticação ao serviço
+        autenticacaoService->autenticar(cpf_obj, senha_obj);
+
+        // Atualiza a variável cpf se a autenticação for bem-sucedida
+        if (verificado) {
+            cpf = cpf_obj;
+        }
+
+    } catch (const std::exception& e) {
+        clear();
+        mvprintw(LINES / 2, (COLS - strlen("Erro na autenticação: ")) / 2, "Erro na autenticação: %s", e.what());
+        refresh();
+        sleep(3);
+        endwin();
+        return false;
+    }
 
     clear();
     if (verificado) {
-        cpf = CPF(cpf_digitado);
-        mvprintw(2, 0, "Autenticação bem-sucedida!");
+        mvprintw(LINES / 2, (COLS - strlen("Autenticação bem-sucedida!")) / 2, "Autenticação bem-sucedida!");
     } else {
-        mvprintw(2 ,0,"Autenticação falhou!");
+        mvprintw(LINES / 2, (COLS - strlen("Autenticação falhou!")) / 2, "Autenticação falhou!");
     }
     refresh();
-    getchar();
+    sleep(3);
 
+    
     endwin();
     return verificado;
+}
+
+void CntrIAAutenticacao::setCntrISAunteticacao(AutenticacaoService *autenticacaoService)
+{
+    this->autenticacaoService = autenticacaoService;
 }

@@ -8,8 +8,10 @@
 int main() {
     // Instantiate the necessary controllers
     CntrIAAutenticacao autenticacaoController;
-    //CntrIAConta contaController;
-    CPF* cpf; // Assuming CPF is initialized appropriately
+
+    // Initialize the service for authentication and set it in the controller
+    AutenticacaoService autenticacaoService;
+    autenticacaoController.setCntrISAunteticacao(&autenticacaoService);
 
     // Initialize the main screen
     MainScreen mainScreen;

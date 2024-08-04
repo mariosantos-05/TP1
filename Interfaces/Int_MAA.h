@@ -4,7 +4,7 @@
 #include "../Entities/Headers/Conta.h"
 #include "../Domains/Headers/CPF.h"
 
-class ISAutenticacao;
+class AutenticacaoService;
 
 /**
  * @class Int_MAA
@@ -26,7 +26,7 @@ public:
      * @brief Liga o MAA ao MSA.
      * @param CPF* Ponteiro para controladora da camada de seriviço (MSA).
      */
-    virtual void setCntrISAunteticacao(ISAutenticacao* cntrISAutenticacao) = 0;
+    virtual void setCntrISAunteticacao(AutenticacaoService* cntrAutenticacaoService) = 0;
 
     /**
      * @brief Destrutor virtual.
