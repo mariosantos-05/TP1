@@ -1,23 +1,20 @@
-#ifndef MSC_INCLUDE
-#define MSC_INCLUDE
-#include "../Interfaces/Int_MSC.h"
-#include "../Interfaces/Int_MSC.h"
+#ifndef CONTA_SERVICE_H
+#define CONTA_SERVICE_H
 
-#include <stdexcept>
+#include "Int_MSC.h"
+#include "Conta_Persistence_Unit.h"
+#include <vector>
 #include <iostream>
-#include <cstdlib>
 
-using namespace std;
-
-
-class CntrISConta:public ISConta {
-private:
-    CPF cpf_logado;           
+class ContaService : public Int_MSC {
 public:
-    bool criar(CPF,Senha,Name);
-    Conta ler(CPF) ;                        
-    void atualizar(CPF,Senha,Name);                       
-    void deletar(CPF*);                        
+    bool criar(CPF cpf, Senha senha, Name nome) override;
+    Conta ler(CPF cpf) override;
+    void atualizar(CPF cpf, Senha senha, Name nome) override;
+    void deletar(CPF* cpf) override;
+    void setCntrISConta(ISConta* isConta) override;
+private:
+    ISConta* isConta;
 };
 
-#endif 
+#endif // CONTA_SERVICE_H

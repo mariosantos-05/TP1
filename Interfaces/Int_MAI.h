@@ -7,6 +7,10 @@
 #include "../Interfaces/Int_MSI.h"
 #include <vector>
 
+
+
+
+class ISInvestimentos;
 /**
  * @class Int_MAI
  * @brief Interface para apresentação de investimentos e pagamentos.
@@ -16,69 +20,75 @@
  */
 class Int_MAI {
 public:
+
+    /**
+     * @brief Apresenta a tela inicial.
+     */
+    virtual void criar_tela_investimentos(CPF& cpf) = 0;
+    
     /**
      * @brief Cria um novo título de investimento.
      * @param titulo O título de investimento a ser criado.
      */
-    virtual void Criar_Titulo(const Titulo& titulo) = 0;
+    virtual void Criar_Titulo() = 0;
 
     /**
      * @brief Lê um título de investimento existente.
      * @param id O ID do título de investimento a ser lido.
      * @return O título de investimento lido.
      */
-    virtual Titulo Ler_Titulo(const CodigoTitulo& codigo) = 0;
+    virtual Titulo Ler_Titulo() = 0;
 
     /**
      * @brief Atualiza um título de investimento existente.
      * @param titulo O título de investimento a ser atualizado.
      */
-    virtual void Atualizar_Titulo(const Titulo& titulo) = 0;
+    virtual void Atualizar_Titulo() = 0;
 
     /**
      * @brief Lista todos os títulos de investimento.
      * @param conta A conta do usuário.
      * @return Um vetor contendo os títulos de investimento listados.
      */
-    virtual std::vector<Titulo> Listar_Titulos(const Conta& conta) = 0;
+    virtual std::vector<Titulo> Listar_Titulos() = 0;
 
     /**
      * @brief Exclui um título de investimento existente.
      * @param id O ID do título de investimento a ser excluído.
      */
-    virtual void Excluir_Titulo(const CodigoTitulo& codigo) = 0;
+    virtual void Excluir_Titulo() = 0;
 
     /**
      * @brief Cria um novo pagamento.
      * @param pagamento O pagamento a ser criado.
      */
-    virtual void Criar_Pagamento(const Pagamento& pagamento) = 0;
+    virtual void Criar_Pagamento() = 0;
 
     /**
      * @brief Lê um pagamento existente.
      * @param id O ID do pagamento a ser lido.
      * @return O pagamento lido.
      */
-    virtual Pagamento Ler_Pagamento(const CodigoPagamento& codigo) = 0;
+    virtual Pagamento Ler_Pagamento() = 0;
 
     /**
      * @brief Atualiza um pagamento existente.
      * @param pagamento O pagamento a ser atualizado.
      */
-    virtual void Atualizar_Pagamento(const Pagamento& pagamento) = 0;
+    virtual void Atualizar_Pagamento() = 0;
 
     /**
      * @brief Lista todos os pagamentos.
      * @param titulo O título de investimento associado aos pagamentos.
      * @return Um vetor contendo os pagamentos listados.
      */
-    virtual std::vector<Pagamento> Listar_Pagamentos(const Titulo& titulo) = 0;
+    virtual std::vector<Pagamento> Listar_Pagamentos() = 0;
 
     /**
      * @brief Exclui um pagamento existente.
      * @param id O ID do pagamento a ser excluído.
      */
-    virtual void Excluir_Pagamento(const CodigoPagamento& codigo) = 0;
+    virtual void Excluir_Pagamento() = 0;
 
     /**
      * @brief Liga o MAI ao MSI.

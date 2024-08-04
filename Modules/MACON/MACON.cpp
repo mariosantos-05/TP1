@@ -45,7 +45,7 @@ void MainScreen::handleInput(int ch) {
     } else {
         switch (ch) {
             case '1':
-                registerUser();
+                user_manager();
                 break;
             case '2':
                 authenticateUser();
@@ -66,14 +66,6 @@ void MainScreen::showOptions() {
     display();
 }
 
-void MainScreen::registerUser() {
-    clear();
-    mvprintw(0, 0, "Registro de usuário:");
-    mvprintw(1, 0, "Digite os dados necessários:");
-    acesso_conta->criar_tela_inicial(cpf, isAuthenticated);
-    refresh();
-    getch();
-}
 
 void MainScreen::authenticateUser() {
     clear();
@@ -88,7 +80,7 @@ void MainScreen::authenticateUser() {
 void MainScreen::Investiment() {
     clear();
     mvprintw(0, 0, "Gerenciar Investimentos:");
-    mvprintw(1, 0, "Titulos e Pagamentos (em desenvolvimento)");
+    acesso_investimento->criar_tela_investimentos(cpf);
     refresh();
     getch();
 }
