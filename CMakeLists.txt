@@ -35,6 +35,8 @@ file(GLOB SOURCES
     "main.cpp"
     "SGBD/Aut_Persistence_Unit.cpp"
     "SGBD/Con_Persistence_Unit.cpp"
+    "SGBD/Inv_Persistence_Unit.cpp"
+    "SGBD/Comandos.cpp"
 )
 
 # Add executable

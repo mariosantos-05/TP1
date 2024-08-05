@@ -25,7 +25,7 @@ Conta ContaService::ler(CPF cpf) {
         Comando_Ler_Conta cmd(cpf);
         cmd.executar();
         Conta resultado = cmd.getResultado();
-        ComandoSQL::clearListaResultado();  // Limpa os resultados após o uso
+        //ComandoSQL::clearListaResultado();  // Limpa os resultados após o uso
         return resultado;
     } catch (EErroPersistencia& e) {
         std::cerr << "Erro ao ler conta: " << e.what() << std::endl;
