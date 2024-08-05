@@ -12,7 +12,7 @@ int main() {
     // Instantiate the necessary controllers
     CntrIAAutenticacao autenticacaoController;
     CntrIAConta contaController(cpf);
-    CntrIAInvestimentos investimentos;
+    //CntrIAInvestimentos investimentos;
     // CntrIAInvestimentos investimentoController; // Uncomment if using investments
 
     // Initialize the services and set them in the controllers

@@ -1,0 +1,67 @@
+\hypertarget{classInt__MAA}{}\doxysection{Int\+\_\+\+MAA Class Reference}
+\label{classInt__MAA}\index{Int\_MAA@{Int\_MAA}}
+
+
+Interface de autenticação da camada de apresentação.  
+
+
+
+
+{\ttfamily \#include $<$Int\+\_\+\+MAA.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classInt__MAA_a21a21b8523a3a60d1d7f944837b43350}{autenticar}} (CPF \&cpf)=0
+\begin{DoxyCompactList}\small\item\em Autentica um usuário com base no CPF. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MAA_a0e54e2cd08570a4e47abc466c31780f4}{set\+Cntr\+ISAunteticacao}} (Autenticacao\+Service $\ast$cntr\+Autenticacao\+Service)=0
+\begin{DoxyCompactList}\small\item\em Liga o MAA ao MSA. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInt__MAA_ad247bf81951d9f2596e48c0d018d2692}\label{classInt__MAA_ad247bf81951d9f2596e48c0d018d2692}} 
+virtual \mbox{\hyperlink{classInt__MAA_ad247bf81951d9f2596e48c0d018d2692}{$\sim$\+Int\+\_\+\+MAA}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface de autenticação da camada de apresentação. 
+
+Esta classe fornece uma interface para o modulo de apresentação de autenticação (MAA), que valida o formato das credenciais e solicita serviço do módulo de serviço de autenticação (MSA) para verificar se as credenciais estão de acordo com as do banco de dados. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInt__MAA_a21a21b8523a3a60d1d7f944837b43350}\label{classInt__MAA_a21a21b8523a3a60d1d7f944837b43350}} 
+\index{Int\_MAA@{Int\_MAA}!autenticar@{autenticar}}
+\index{autenticar@{autenticar}!Int\_MAA@{Int\_MAA}}
+\doxysubsubsection{\texorpdfstring{autenticar()}{autenticar()}}
+{\footnotesize\ttfamily virtual bool Int\+\_\+\+MAA\+::autenticar (\begin{DoxyParamCaption}\item[{CPF \&}]{cpf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Autentica um usuário com base no CPF. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O CPF do usuário a ser autenticado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a autenticação for bem-\/sucedida, false caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInt__MAA_a0e54e2cd08570a4e47abc466c31780f4}\label{classInt__MAA_a0e54e2cd08570a4e47abc466c31780f4}} 
+\index{Int\_MAA@{Int\_MAA}!setCntrISAunteticacao@{setCntrISAunteticacao}}
+\index{setCntrISAunteticacao@{setCntrISAunteticacao}!Int\_MAA@{Int\_MAA}}
+\doxysubsubsection{\texorpdfstring{setCntrISAunteticacao()}{setCntrISAunteticacao()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MAA\+::set\+Cntr\+ISAunteticacao (\begin{DoxyParamCaption}\item[{Autenticacao\+Service $\ast$}]{cntr\+Autenticacao\+Service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Liga o MAA ao MSA. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em CPF$\ast$} & Ponteiro para controladora da camada de seriviço (MSA). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Int\+\_\+\+MAA.\+h\end{DoxyCompactItemize}

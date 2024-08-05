@@ -76,36 +76,22 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>ISConta;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classInt__MAC.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInt__MAC.html">Int_MAC</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classInt__MAC.html#adf867d553bc0b0dd28ac91ba80faf53c">   28</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAC.html#adf867d553bc0b0dd28ac91ba80faf53c">criar_tela_inicial</a>(CPF) = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classInt__MAC.html#ad7a70f4bd85e175314a7a8f1127b3cfd">   38</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classInt__MAC.html#ad7a70f4bd85e175314a7a8f1127b3cfd">criar_conta</a>(CPF,Senha,Name) = 0;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classInt__MAC.html#acf4f56106d149e2887751cbd22f5dc01">   47</a></span>&#160;    <span class="keyword">virtual</span> Conta <a class="code" href="classInt__MAC.html#acf4f56106d149e2887751cbd22f5dc01">acessar</a>() = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classInt__MAC.html#ad9bdef21ac1bcbed6ca87ec34bc2e5dc">   54</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAC.html#ad9bdef21ac1bcbed6ca87ec34bc2e5dc">atualizar_conta</a>() = 0;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classInt__MAC.html#af8429158439e0eefbd7206d0d91e363e">   61</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAC.html#af8429158439e0eefbd7206d0d91e363e">deletar_conta</a>() = 0;    </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classInt__MAC.html#acf41900149a22be72ad6c68a2c1bb112">   68</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAC.html#acf41900149a22be72ad6c68a2c1bb112">setCntrISConta</a>(ISConta*) = 0;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classInt__MAC.html#aa1402ccddacdf632ed01f020d898ed0f">   74</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classInt__MAC.html#aa1402ccddacdf632ed01f020d898ed0f">~Int_MAC</a>(){}                                     </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassInt__MAC_html"><div class="ttname"><a href="classInt__MAC.html">Int_MAC</a></div><div class="ttdoc">Interface para gerenciamento de conta.</div><div class="ttdef"><b>Definition:</b> Int_MAC.h:21</div></div>
-<div class="ttc" id="aclassInt__MAC_html_aa1402ccddacdf632ed01f020d898ed0f"><div class="ttname"><a href="classInt__MAC.html#aa1402ccddacdf632ed01f020d898ed0f">Int_MAC::~Int_MAC</a></div><div class="ttdeci">virtual ~Int_MAC()</div><div class="ttdoc">Destrutor virtual.</div><div class="ttdef"><b>Definition:</b> Int_MAC.h:74</div></div>
-<div class="ttc" id="aclassInt__MAC_html_acf41900149a22be72ad6c68a2c1bb112"><div class="ttname"><a href="classInt__MAC.html#acf41900149a22be72ad6c68a2c1bb112">Int_MAC::setCntrISConta</a></div><div class="ttdeci">virtual void setCntrISConta(ISConta *)=0</div><div class="ttdoc">Liga o MAC ao MSC.</div></div>
-<div class="ttc" id="aclassInt__MAC_html_acf4f56106d149e2887751cbd22f5dc01"><div class="ttname"><a href="classInt__MAC.html#acf4f56106d149e2887751cbd22f5dc01">Int_MAC::acessar</a></div><div class="ttdeci">virtual Conta acessar()=0</div><div class="ttdoc">Acessa os atributos de uma conta.</div></div>
-<div class="ttc" id="aclassInt__MAC_html_ad7a70f4bd85e175314a7a8f1127b3cfd"><div class="ttname"><a href="classInt__MAC.html#ad7a70f4bd85e175314a7a8f1127b3cfd">Int_MAC::criar_conta</a></div><div class="ttdeci">virtual bool criar_conta(CPF, Senha, Name)=0</div><div class="ttdoc">Cria uma nova conta.</div></div>
-<div class="ttc" id="aclassInt__MAC_html_ad9bdef21ac1bcbed6ca87ec34bc2e5dc"><div class="ttname"><a href="classInt__MAC.html#ad9bdef21ac1bcbed6ca87ec34bc2e5dc">Int_MAC::atualizar_conta</a></div><div class="ttdeci">virtual void atualizar_conta()=0</div><div class="ttdoc">Atualiza algum dado (senha ou nome) da conta.</div></div>
-<div class="ttc" id="aclassInt__MAC_html_adf867d553bc0b0dd28ac91ba80faf53c"><div class="ttname"><a href="classInt__MAC.html#adf867d553bc0b0dd28ac91ba80faf53c">Int_MAC::criar_tela_inicial</a></div><div class="ttdeci">virtual void criar_tela_inicial(CPF)=0</div><div class="ttdoc">Apresenta a tela inicial.</div></div>
-<div class="ttc" id="aclassInt__MAC_html_af8429158439e0eefbd7206d0d91e363e"><div class="ttname"><a href="classInt__MAC.html#af8429158439e0eefbd7206d0d91e363e">Int_MAC::deletar_conta</a></div><div class="ttdeci">virtual void deletar_conta()=0</div><div class="ttdoc">Exclui uma conta.</div></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>ContaService;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classInt__MAC.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInt__MAC.html">Int_MAC</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classInt__MAC.html#ad0e80f6a9e833e2ec1510b4e0e3db2de">   26</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAC.html#ad0e80f6a9e833e2ec1510b4e0e3db2de">criar_tela_inicial</a>(CPF&amp; cpf, <span class="keywordtype">bool</span> isAuthenticated) = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classInt__MAC.html#a79522c8ab2503bd6a7f6242e7eaf20af">   31</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAC.html#a79522c8ab2503bd6a7f6242e7eaf20af">setCntrISConta</a>(ContaService*) = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classInt__MAC.html#aa1402ccddacdf632ed01f020d898ed0f">   36</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classInt__MAC.html#aa1402ccddacdf632ed01f020d898ed0f">~Int_MAC</a>() {}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassInt__MAC_html"><div class="ttname"><a href="classInt__MAC.html">Int_MAC</a></div><div class="ttdoc">Interface para gerenciamento de conta.</div><div class="ttdef"><b>Definition:</b> Int_MAC.h:20</div></div>
+<div class="ttc" id="aclassInt__MAC_html_a79522c8ab2503bd6a7f6242e7eaf20af"><div class="ttname"><a href="classInt__MAC.html#a79522c8ab2503bd6a7f6242e7eaf20af">Int_MAC::setCntrISConta</a></div><div class="ttdeci">virtual void setCntrISConta(ContaService *)=0</div><div class="ttdoc">Liga o MAC ao MSC.</div></div>
+<div class="ttc" id="aclassInt__MAC_html_aa1402ccddacdf632ed01f020d898ed0f"><div class="ttname"><a href="classInt__MAC.html#aa1402ccddacdf632ed01f020d898ed0f">Int_MAC::~Int_MAC</a></div><div class="ttdeci">virtual ~Int_MAC()</div><div class="ttdoc">Destrutor virtual.</div><div class="ttdef"><b>Definition:</b> Int_MAC.h:36</div></div>
+<div class="ttc" id="aclassInt__MAC_html_ad0e80f6a9e833e2ec1510b4e0e3db2de"><div class="ttname"><a href="classInt__MAC.html#ad0e80f6a9e833e2ec1510b4e0e3db2de">Int_MAC::criar_tela_inicial</a></div><div class="ttdeci">virtual void criar_tela_inicial(CPF &amp;cpf, bool isAuthenticated)=0</div><div class="ttdoc">Apresenta a tela inicial.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

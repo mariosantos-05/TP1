@@ -1,0 +1,106 @@
+\hypertarget{classInt__MSC}{}\doxysection{Int\+\_\+\+MSC Class Reference}
+\label{classInt__MSC}\index{Int\_MSC@{Int\_MSC}}
+
+
+Interface para prestacao de servicos de conta.  
+
+
+
+
+{\ttfamily \#include $<$Int\+\_\+\+MSC.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classInt__MSC_a23a4e73d860987134aab7868aa9ade3c}{criar}} (CPF cpf, Senha senha, Name nome)=0
+\begin{DoxyCompactList}\small\item\em Cria uma conta dados CPF, senha e nome. \end{DoxyCompactList}\item 
+virtual Conta \mbox{\hyperlink{classInt__MSC_a2522a94688342c894b1e1db9c6b6d12d}{ler}} (CPF)=0
+\begin{DoxyCompactList}\small\item\em Le os atributos de uma conta. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MSC_a83c79a3bbc54f98a6a41bffed37e3709}{atualizar}} (CPF, Senha, Name)=0
+\begin{DoxyCompactList}\small\item\em Atualiza algum dado (senha ou nome) da conta. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MSC_a9a7d82fe034e08844ff58984bbaac18b}{deletar}} (CPF $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Exclui uma conta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInt__MSC_a6ad001d1fc61a3c89bcba1e80ce9969e}\label{classInt__MSC_a6ad001d1fc61a3c89bcba1e80ce9969e}} 
+virtual \mbox{\hyperlink{classInt__MSC_a6ad001d1fc61a3c89bcba1e80ce9969e}{$\sim$\+Int\+\_\+\+MSC}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface para prestacao de servicos de conta. 
+
+Esta classe fornece uma interface abstrata para realizar operações CRUD em uma conta. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInt__MSC_a83c79a3bbc54f98a6a41bffed37e3709}\label{classInt__MSC_a83c79a3bbc54f98a6a41bffed37e3709}} 
+\index{Int\_MSC@{Int\_MSC}!atualizar@{atualizar}}
+\index{atualizar@{atualizar}!Int\_MSC@{Int\_MSC}}
+\doxysubsubsection{\texorpdfstring{atualizar()}{atualizar()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSC\+::atualizar (\begin{DoxyParamCaption}\item[{CPF}]{,  }\item[{Senha}]{,  }\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza algum dado (senha ou nome) da conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em CPF$\ast$} & O CPF da conta a ser acessada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSC_a23a4e73d860987134aab7868aa9ade3c}\label{classInt__MSC_a23a4e73d860987134aab7868aa9ade3c}} 
+\index{Int\_MSC@{Int\_MSC}!criar@{criar}}
+\index{criar@{criar}!Int\_MSC@{Int\_MSC}}
+\doxysubsubsection{\texorpdfstring{criar()}{criar()}}
+{\footnotesize\ttfamily virtual bool Int\+\_\+\+MSC\+::criar (\begin{DoxyParamCaption}\item[{CPF}]{cpf,  }\item[{Senha}]{senha,  }\item[{Name}]{nome }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria uma conta dados CPF, senha e nome. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Senha} & A senha da conta a ser criada. \\
+\hline
+{\em Nome} & O nome da conta a ser criada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Booleano que informa sucesso ou falha na criacao. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInt__MSC_a9a7d82fe034e08844ff58984bbaac18b}\label{classInt__MSC_a9a7d82fe034e08844ff58984bbaac18b}} 
+\index{Int\_MSC@{Int\_MSC}!deletar@{deletar}}
+\index{deletar@{deletar}!Int\_MSC@{Int\_MSC}}
+\doxysubsubsection{\texorpdfstring{deletar()}{deletar()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSC\+::deletar (\begin{DoxyParamCaption}\item[{CPF $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui uma conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em CPF$\ast$} & O CPF da conta a ser acessada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSC_a2522a94688342c894b1e1db9c6b6d12d}\label{classInt__MSC_a2522a94688342c894b1e1db9c6b6d12d}} 
+\index{Int\_MSC@{Int\_MSC}!ler@{ler}}
+\index{ler@{ler}!Int\_MSC@{Int\_MSC}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}}
+{\footnotesize\ttfamily virtual Conta Int\+\_\+\+MSC\+::ler (\begin{DoxyParamCaption}\item[{CPF}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Le os atributos de uma conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em CPF$\ast$} & O CPF da conta a ser acessada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A entidade conta, que contem as informaçoes da mesma. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Int\+\_\+\+MSC.\+h\end{DoxyCompactItemize}

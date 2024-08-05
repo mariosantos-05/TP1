@@ -71,21 +71,21 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../Entities/Headers/Conta.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../Domains/Headers/CPF.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>ISAutenticacao;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>AutenticacaoService;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classInt__MAA.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInt__MAA.html">Int_MAA</a> {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classInt__MAA.html#a20af53762075802d528d41749d2d9a0d">   23</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classInt__MAA.html#a20af53762075802d528d41749d2d9a0d">autenticar</a>(CPF* cpf) = 0;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classInt__MAA.html#a21a21b8523a3a60d1d7f944837b43350">   23</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classInt__MAA.html#a21a21b8523a3a60d1d7f944837b43350">autenticar</a>(CPF&amp; cpf) = 0;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classInt__MAA.html#a87a46cbf7d355c28f777171e7742192e">   29</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAA.html#a87a46cbf7d355c28f777171e7742192e">setCntrISAunteticacao</a>(ISAutenticacao*) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classInt__MAA.html#a0e54e2cd08570a4e47abc466c31780f4">   29</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MAA.html#a0e54e2cd08570a4e47abc466c31780f4">setCntrISAunteticacao</a>(AutenticacaoService* cntrAutenticacaoService) = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classInt__MAA.html#ad247bf81951d9f2596e48c0d018d2692">   34</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classInt__MAA.html#ad247bf81951d9f2596e48c0d018d2692">~Int_MAA</a>() {}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span></div>
 <div class="ttc" id="aclassInt__MAA_html"><div class="ttname"><a href="classInt__MAA.html">Int_MAA</a></div><div class="ttdoc">Interface de autenticação da camada de apresentação.</div><div class="ttdef"><b>Definition:</b> Int_MAA.h:16</div></div>
-<div class="ttc" id="aclassInt__MAA_html_a20af53762075802d528d41749d2d9a0d"><div class="ttname"><a href="classInt__MAA.html#a20af53762075802d528d41749d2d9a0d">Int_MAA::autenticar</a></div><div class="ttdeci">virtual bool autenticar(CPF *cpf)=0</div><div class="ttdoc">Autentica um usuário com base no CPF.</div></div>
-<div class="ttc" id="aclassInt__MAA_html_a87a46cbf7d355c28f777171e7742192e"><div class="ttname"><a href="classInt__MAA.html#a87a46cbf7d355c28f777171e7742192e">Int_MAA::setCntrISAunteticacao</a></div><div class="ttdeci">virtual void setCntrISAunteticacao(ISAutenticacao *)=0</div><div class="ttdoc">Liga o MAA ao MSA.</div></div>
+<div class="ttc" id="aclassInt__MAA_html_a0e54e2cd08570a4e47abc466c31780f4"><div class="ttname"><a href="classInt__MAA.html#a0e54e2cd08570a4e47abc466c31780f4">Int_MAA::setCntrISAunteticacao</a></div><div class="ttdeci">virtual void setCntrISAunteticacao(AutenticacaoService *cntrAutenticacaoService)=0</div><div class="ttdoc">Liga o MAA ao MSA.</div></div>
+<div class="ttc" id="aclassInt__MAA_html_a21a21b8523a3a60d1d7f944837b43350"><div class="ttname"><a href="classInt__MAA.html#a21a21b8523a3a60d1d7f944837b43350">Int_MAA::autenticar</a></div><div class="ttdeci">virtual bool autenticar(CPF &amp;cpf)=0</div><div class="ttdoc">Autentica um usuário com base no CPF.</div></div>
 <div class="ttc" id="aclassInt__MAA_html_ad247bf81951d9f2596e48c0d018d2692"><div class="ttname"><a href="classInt__MAA.html#ad247bf81951d9f2596e48c0d018d2692">Int_MAA::~Int_MAA</a></div><div class="ttdeci">virtual ~Int_MAA()</div><div class="ttdoc">Destrutor virtual.</div><div class="ttdef"><b>Definition:</b> Int_MAA.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

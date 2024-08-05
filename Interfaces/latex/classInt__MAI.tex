@@ -1,0 +1,50 @@
+\hypertarget{classInt__MAI}{}\doxysection{Int\+\_\+\+MAI Class Reference}
+\label{classInt__MAI}\index{Int\_MAI@{Int\_MAI}}
+
+
+Interface para apresentação de investimentos e pagamentos.  
+
+
+
+
+{\ttfamily \#include $<$Int\+\_\+\+MAI.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInt__MAI_a24a54023c9624ad64671243d75583716}\label{classInt__MAI_a24a54023c9624ad64671243d75583716}} 
+virtual void \mbox{\hyperlink{classInt__MAI_a24a54023c9624ad64671243d75583716}{criar\+\_\+tela\+\_\+investimentos}} ()=0
+\begin{DoxyCompactList}\small\item\em Apresenta a tela inicial. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MAI_a68f9bea5a1b75984c5ae0d215b649634}{set\+Cntr\+ISInvestimentos}} (Investimento\+Service $\ast$cntr\+Investiment\+Service)=0
+\begin{DoxyCompactList}\small\item\em Liga o MAI ao MSI. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInt__MAI_a8b84003f0c2a01227b189396becb5818}\label{classInt__MAI_a8b84003f0c2a01227b189396becb5818}} 
+virtual \mbox{\hyperlink{classInt__MAI_a8b84003f0c2a01227b189396becb5818}{$\sim$\+Int\+\_\+\+MAI}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface para apresentação de investimentos e pagamentos. 
+
+Esta classe fornece uma interface para o módulo de apresentação de investimentos (MAI), que valida o formato dos dados e solicita serviços do módulo de serviço de investimentos (MSI) para realizar operações CRUD. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInt__MAI_a68f9bea5a1b75984c5ae0d215b649634}\label{classInt__MAI_a68f9bea5a1b75984c5ae0d215b649634}} 
+\index{Int\_MAI@{Int\_MAI}!setCntrISInvestimentos@{setCntrISInvestimentos}}
+\index{setCntrISInvestimentos@{setCntrISInvestimentos}!Int\_MAI@{Int\_MAI}}
+\doxysubsubsection{\texorpdfstring{setCntrISInvestimentos()}{setCntrISInvestimentos()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MAI\+::set\+Cntr\+ISInvestimentos (\begin{DoxyParamCaption}\item[{Investimento\+Service $\ast$}]{cntr\+Investiment\+Service }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Liga o MAI ao MSI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msi\+Service} & Ponteiro para a controladora da camada de serviço (MSI). \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Int\+\_\+\+MAI.\+h\end{DoxyCompactItemize}

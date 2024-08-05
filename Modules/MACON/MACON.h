@@ -22,6 +22,7 @@ public:
     void setMAA(CntrIAAutenticacao* autenticacao) { acesso_autenticacao = autenticacao; }   
     void setMAI(CntrIAInvestimentos* investimentos) { acesso_investimentos = investimentos; }
 
+
 private:
     void Investiment(); 
     void user_manager();

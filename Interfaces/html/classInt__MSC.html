@@ -76,18 +76,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a23a4e73d860987134aab7868aa9ade3c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSC.html#a23a4e73d860987134aab7868aa9ade3c">criar</a> (CPF cpf, Senha senha, Name nome)=0</td></tr>
+<tr class="memdesc:a23a4e73d860987134aab7868aa9ade3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria uma conta dados CPF, senha e nome.  <a href="classInt__MSC.html#a23a4e73d860987134aab7868aa9ade3c">More...</a><br /></td></tr>
+<tr class="separator:a23a4e73d860987134aab7868aa9ade3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2522a94688342c894b1e1db9c6b6d12d"><td class="memItemLeft" align="right" valign="top">virtual Conta&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSC.html#a2522a94688342c894b1e1db9c6b6d12d">ler</a> (CPF)=0</td></tr>
 <tr class="memdesc:a2522a94688342c894b1e1db9c6b6d12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le os atributos de uma conta.  <a href="classInt__MSC.html#a2522a94688342c894b1e1db9c6b6d12d">More...</a><br /></td></tr>
 <tr class="separator:a2522a94688342c894b1e1db9c6b6d12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c041ca9c141655a40ceea474fcfe21f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSC.html#a9c041ca9c141655a40ceea474fcfe21f">atualizar</a> (CPF)=0</td></tr>
-<tr class="memdesc:a9c041ca9c141655a40ceea474fcfe21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atualiza algum dado (senha ou nome) da conta.  <a href="classInt__MSC.html#a9c041ca9c141655a40ceea474fcfe21f">More...</a><br /></td></tr>
-<tr class="separator:a9c041ca9c141655a40ceea474fcfe21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c79a3bbc54f98a6a41bffed37e3709"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSC.html#a83c79a3bbc54f98a6a41bffed37e3709">atualizar</a> (CPF, Senha, Name)=0</td></tr>
+<tr class="memdesc:a83c79a3bbc54f98a6a41bffed37e3709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atualiza algum dado (senha ou nome) da conta.  <a href="classInt__MSC.html#a83c79a3bbc54f98a6a41bffed37e3709">More...</a><br /></td></tr>
+<tr class="separator:a83c79a3bbc54f98a6a41bffed37e3709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a7d82fe034e08844ff58984bbaac18b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSC.html#a9a7d82fe034e08844ff58984bbaac18b">deletar</a> (CPF *)=0</td></tr>
 <tr class="memdesc:a9a7d82fe034e08844ff58984bbaac18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exclui uma conta.  <a href="classInt__MSC.html#a9a7d82fe034e08844ff58984bbaac18b">More...</a><br /></td></tr>
 <tr class="separator:a9a7d82fe034e08844ff58984bbaac18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74c298ea322ac4a62dba38c7b0d31f8c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSC.html#a74c298ea322ac4a62dba38c7b0d31f8c">setCntrISConta</a> (ISConta *)=0</td></tr>
-<tr class="memdesc:a74c298ea322ac4a62dba38c7b0d31f8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liga o MAC ao MSC.  <a href="classInt__MSC.html#a74c298ea322ac4a62dba38c7b0d31f8c">More...</a><br /></td></tr>
-<tr class="separator:a74c298ea322ac4a62dba38c7b0d31f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad001d1fc61a3c89bcba1e80ce9969e"><td class="memItemLeft" align="right" valign="top"><a id="a6ad001d1fc61a3c89bcba1e80ce9969e"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSC.html#a6ad001d1fc61a3c89bcba1e80ce9969e">~Int_MSC</a> ()</td></tr>
 <tr class="memdesc:a6ad001d1fc61a3c89bcba1e80ce9969e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual. <br /></td></tr>
@@ -97,8 +97,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <div class="textblock"><p>Interface para prestacao de servicos de conta. </p>
 <p>Esta classe fornece uma interface abstrata para realizar operações CRUD em uma conta. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9c041ca9c141655a40ceea474fcfe21f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c041ca9c141655a40ceea474fcfe21f">&#9670;&nbsp;</a></span>atualizar()</h2>
+<a id="a83c79a3bbc54f98a6a41bffed37e3709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c79a3bbc54f98a6a41bffed37e3709">&#9670;&nbsp;</a></span>atualizar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -110,8 +110,24 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
           <td class="memname">virtual void Int_MSC::atualizar </td>
           <td>(</td>
           <td class="paramtype">CPF&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Senha&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Name&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -128,6 +144,58 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a23a4e73d860987134aab7868aa9ade3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a4e73d860987134aab7868aa9ade3c">&#9670;&nbsp;</a></span>criar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Int_MSC::criar </td>
+          <td>(</td>
+          <td class="paramtype">CPF&#160;</td>
+          <td class="paramname"><em>cpf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Senha&#160;</td>
+          <td class="paramname"><em>senha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Name&#160;</td>
+          <td class="paramname"><em>nome</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cria uma conta dados CPF, senha e nome. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Senha</td><td>A senha da conta a ser criada. </td></tr>
+    <tr><td class="paramname">Nome</td><td>O nome da conta a ser criada. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Booleano que informa sucesso ou falha na criacao. </dd></dl>
 
 </div>
 </div>
@@ -197,40 +265,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A entidade conta, que contem as informaçoes da mesma. </dd></dl>
-
-</div>
-</div>
-<a id="a74c298ea322ac4a62dba38c7b0d31f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74c298ea322ac4a62dba38c7b0d31f8c">&#9670;&nbsp;</a></span>setCntrISConta()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Int_MSC::setCntrISConta </td>
-          <td>(</td>
-          <td class="paramtype">ISConta *&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Liga o MAC ao MSC. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">CPF*</td><td>O CPF da conta a ser acessada. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
