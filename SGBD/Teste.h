@@ -3,6 +3,8 @@
 
 #include "Comandos.h"
 
+//bora fi du bill
+
 class TestComandoSQL : public ComandoSQL {
 public:
     TestComandoSQL(const string& sqlCommand) {
