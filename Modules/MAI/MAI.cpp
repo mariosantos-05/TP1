@@ -7,41 +7,6 @@
 using namespace std;
 
 
-void CntrIAInvestimentos::criar_tela_investimentos() {
-    initscr();
-    cbreak();
-    noecho();
-    keypad(stdscr, TRUE);
-
-    while (true) {
-        clear();
-        
-        mvprintw(0, 0, "Escolha a opção de serviços que deseja realizar");
-        mvprintw(1, 0, "1. Titulo");
-        mvprintw(2, 0, "2. Pagamento");
-        mvprintw(3, 0, "3. Sair");
-
-        refresh();
-
-        int ch = getch();
-        
-        switch (ch) {
-            case '1':
-                Tela_Titulo();
-                break;
-            case '2':
-                Tela_Pagamento();
-                break;
-            case '3':
-                endwin();
-                exit(0);
-            default:
-                break;
-        }
-    }
-}
-
-
 void CntrIAInvestimentos::Tela_Titulo(){
     clear();
     while(true){
@@ -58,21 +23,28 @@ void CntrIAInvestimentos::Tela_Titulo(){
         
         switch (ch) {
             case '1':
+                clear();
                 Criar_Titulo();
                 break;
             case '2':
+                clear();
                 Ler_Titulo();
                 break;
             case '3':
+                clear();
                 Listar_Titulos();
                 break;
             case '4':
+                clear();
                 Atualizar_Titulo();
                 break;
             case '5':
+                clear();
                 Excluir_Titulo();
                 break;
             case '6':
+                refresh();
+                clear();
                 endwin();
             default:
                 break;
@@ -82,11 +54,11 @@ void CntrIAInvestimentos::Tela_Titulo(){
 void CntrIAInvestimentos::Tela_Pagamento(){
     clear();
     while(true){
-        mvprintw(1, 0, "6. Criar pagamento");
-        mvprintw(2, 0, "7. Ler pagamento");
-        mvprintw(3, 0, "8. Listar pagamentos");
-        mvprintw(4, 0, "9. Atualizar pagamento");
-        mvprintw(5, 0, "10. Excluir pagamento");
+        mvprintw(1, 0, "1. Criar pagamento");
+        mvprintw(2, 0, "2. Ler pagamento");
+        mvprintw(3, 0, "3. Listar pagamentos");
+        mvprintw(4, 0, "4. Atualizar pagamento");
+        mvprintw(5, 0, "5. Excluir pagamento");
         mvprintw(6, 0, "6. Voltar");
         refresh();
 
@@ -94,23 +66,31 @@ void CntrIAInvestimentos::Tela_Pagamento(){
         
         switch (ch) {
             case '1':
+                clear();
                 Criar_Pagamento();
                 break;
             case '2':
+                clear();
                 Ler_Pagamento();
                 break;
             case '3':
+                clear();
                 Listar_Pagamentos();
                 break;
             case '4':
+                clear();
                 Atualizar_Pagamento();
                 break;
             case '5':
+                clear();
                 Excluir_Pagamento();
                 break;
             case '6':
+                clear();
                 endwin();
+                exit(0);
             default:
+                exit(0);
                 break;
         }
     }
@@ -133,11 +113,11 @@ void CntrIAInvestimentos::Criar_Titulo() {
     char valor_digitado[50];
 
     echo();
-    mvgetnstr(2, 17, codigo_digitado, 29);  
-    mvgetnstr(4, 17, data_de_emissao_digitada, 49); 
-    mvgetnstr(6, 20, data_de_vencimento_digitada, 29); 
-    mvgetnstr(8, 8, setor_digitado, 29); 
-    mvgetnstr(10, 8, valor_digitado, 49); 
+    mvgetnstr(2, 27, codigo_digitado, 29);  
+    mvgetnstr(4, 27, data_de_emissao_digitada, 49); 
+    mvgetnstr(6, 30, data_de_vencimento_digitada, 29); 
+    mvgetnstr(8, 18, setor_digitado, 29); 
+    mvgetnstr(10, 18, valor_digitado, 49); 
 
     //existe_igual = cntrISInvestimento->criar(CodigoTitulo(codigo), Data(data_de_emissao), Data(data_de_vencimento), Setor(setor), Valor(valor));
     bool existe_igual = false; // Placeholder value
@@ -158,7 +138,7 @@ Titulo CntrIAInvestimentos::Ler_Titulo() {
     char codigo_digitado[30];
     
     echo();
-    mvgetnstr(2, 18, codigo_digitado, 29);  
+    mvgetnstr(2, 35, codigo_digitado, 29);  
     noecho();
     Titulo titulo("CDB123456789","Lucas Adeodato","Energia","30-06-2003","30-06-2003",15.99);
 
@@ -176,16 +156,18 @@ Titulo CntrIAInvestimentos::Ler_Titulo() {
     
     refresh();
     getch();
+    clear();
     return titulo;
 }
 
 std::vector<Titulo> CntrIAInvestimentos::Listar_Titulos() {
     clear();
     mvprintw(1, 13, "Listagem de títulos");
+    Titulo titulo("CDB123456789","Lucas Adeodato","Energia","30-06-2003","30-06-2003",15.99);
+
     /*
     // std::vector<Titulo> titulos = cntrISInvestimentos->Listar_Titulos(conta);
     std::vector<Titulo> titulos; // Placeholder data
-    
     
     for (size_t i = 0; i < titulos.size(); ++i) {
         mvprintw(i+3, 0, ("Título " + to_string(i+1)).c_str());
@@ -197,8 +179,18 @@ std::vector<Titulo> CntrIAInvestimentos::Listar_Titulos() {
         mvprintw(i+9, 0, ("Emissor: " + to_string(titulos[i].getEmissor())).c_str());
     }
     */
+
+    mvprintw(4, 0, "Titulo 1:");
+    mvprintw(5, 0, ("Código: " + titulo.getCodigo()).c_str());
+    mvprintw(6, 0, ("Data de emissão: " + titulo.getEmissao()).c_str());
+    mvprintw(7, 0, ("Data de vencimento: " + titulo.getVencimento()).c_str());
+    mvprintw(8, 0, ("Setor: " + titulo.getSetor()).c_str());
+    mvprintw(9, 0, ("Valor: " + to_string(titulo.getValor())).c_str());
+    mvprintw(10, 0, ("Emissor: " + (titulo.getEmissor())).c_str());
+
     refresh();
     getch();
+    clear();
     //return titulos;
 }
 
@@ -218,17 +210,18 @@ void CntrIAInvestimentos::Atualizar_Titulo() {
     char valor_digitado[50];
     
     echo();
-    mvgetnstr(2, 20, codigo_digitado, 29);  
-    mvgetnstr(4, 22, data_de_emissao_digitada, 49); 
-    mvgetnstr(6, 25, data_de_vencimento_digitada, 29); 
-    mvgetnstr(8, 12, setor_digitado, 29); 
-    mvgetnstr(10, 11, valor_digitado, 49); 
+    mvgetnstr(2, 35, codigo_digitado, 29);  
+    mvgetnstr(4, 35, data_de_emissao_digitada, 49); 
+    mvgetnstr(6, 35, data_de_vencimento_digitada, 29); 
+    mvgetnstr(8, 35, setor_digitado, 29); 
+    mvgetnstr(10, 35, valor_digitado, 49); 
     
     // cntrISInvestimentos->Atualizar_Titulo(CodigoTitulo(codigo), Data(data_de_emissao), Data(data_de_vencimento), Setor(setor), Valor(valor));
     
     mvprintw(12, 0, "Título atualizado com sucesso!");
     refresh();
     getch();
+    clear();
 }
 
 void CntrIAInvestimentos::Excluir_Titulo() {
@@ -239,7 +232,7 @@ void CntrIAInvestimentos::Excluir_Titulo() {
     char codigo_digitado[30];
     
     echo();
-    mvgetnstr(2, 20, codigo_digitado, 29);  
+    mvgetnstr(2, 30, codigo_digitado, 29);  
     noecho();
     
     // cntrISInvestimentos->Excluir_Titulo(CodigoTitulo(codigo_digitado));
@@ -247,6 +240,7 @@ void CntrIAInvestimentos::Excluir_Titulo() {
     mvprintw(4, 0, "Título excluído com sucesso!");
     refresh();
     getch();
+    clear();
 }
 
 void CntrIAInvestimentos::Criar_Pagamento() {
@@ -261,9 +255,9 @@ void CntrIAInvestimentos::Criar_Pagamento() {
     char valor_digitado[50];
 
     echo();
-    mvgetnstr(2, 20, codigo_digitado, 29);  
-    mvgetnstr(4, 18, data_digitada, 49); 
-    mvgetnstr(6, 8, valor_digitado, 49); 
+    mvgetnstr(2, 25, codigo_digitado, 29);  
+    mvgetnstr(4, 25, data_digitada, 49); 
+    mvgetnstr(6, 25, valor_digitado, 49); 
 
     //existe_igual = cntrISInvestimento->criarPagamento(CodigoPagamento(codigo), Data(data), Valor(valor));
     bool existe_igual = false; // Placeholder value
@@ -274,7 +268,7 @@ void CntrIAInvestimentos::Criar_Pagamento() {
     }
     refresh();
     getch();
-
+    clear();
 }
 
 Pagamento CntrIAInvestimentos::Ler_Pagamento() {
@@ -285,7 +279,7 @@ Pagamento CntrIAInvestimentos::Ler_Pagamento() {
     char codigo_digitado[30];
     
     echo();
-    mvgetnstr(2, 22, codigo_digitado, 29);  
+    mvgetnstr(2, 40, codigo_digitado, 29);  
     noecho();
     Pagamento pagamento("123456789","30-06-2003", "Previsto", 30);
 
@@ -301,6 +295,7 @@ Pagamento CntrIAInvestimentos::Ler_Pagamento() {
 
     refresh();
     getch();
+    clear();
     return pagamento;
 }
 
@@ -324,6 +319,7 @@ std::vector<Pagamento> CntrIAInvestimentos::Listar_Pagamentos() {
     */
     refresh();
     getch();
+    clear();
     //return pagamentos;
 }
 
@@ -339,15 +335,17 @@ void CntrIAInvestimentos::Atualizar_Pagamento() {
     char valor_digitado[50];
     
     echo();
-    mvgetnstr(2, 22, codigo_digitado, 29);  
-    mvgetnstr(4, 11, data_digitada, 49); 
-    mvgetnstr(6, 11, valor_digitado, 49); 
+    mvgetnstr(2, 32, codigo_digitado, 29);  
+    mvgetnstr(4, 32, data_digitada, 49); 
+    mvgetnstr(6, 32, valor_digitado, 49); 
     
     // cntrISInvestimentos->Atualizar_Pagamento(CodigoPagamento(codigo), Data(data), Valor(valor));
     
     mvprintw(8, 0, "Pagamento atualizado com sucesso!");
     refresh();
     getch();
+    clear();
+
 }
 
 void CntrIAInvestimentos::Excluir_Pagamento() {
@@ -358,7 +356,7 @@ void CntrIAInvestimentos::Excluir_Pagamento() {
     char codigo_digitado[30];
     
     echo();
-    mvgetnstr(2, 22, codigo_digitado, 29);  
+    mvgetnstr(2, 32, codigo_digitado, 29);  
     noecho();
     
     // cntrISInvestimentos->Excluir_Pagamento(CodigoPagamento(codigo_digitado));
@@ -366,8 +364,5 @@ void CntrIAInvestimentos::Excluir_Pagamento() {
     mvprintw(4, 0, "Pagamento excluído com sucesso!");
     refresh();
     getch();
-}
-
-void CntrIAInvestimentos::setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos){
-    this->cntrISInvestimentos = cntrISInvestimentos;
+    clear();
 }

@@ -1,0 +1,212 @@
+\hypertarget{classInt__MSI}{}\doxysection{Int\+\_\+\+MSI Class Reference}
+\label{classInt__MSI}\index{Int\_MSI@{Int\_MSI}}
+
+
+Interface para gerenciamento de investimentos e pagamentos.  
+
+
+
+
+{\ttfamily \#include $<$Int\+\_\+\+MSI.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classInt__MSI_a588144f976388e759c7b40ed5e07ccce}{Criar\+\_\+\+Titulo}} (const Titulo \&titulo)=0
+\begin{DoxyCompactList}\small\item\em Cria um novo título de investimento. \end{DoxyCompactList}\item 
+virtual Titulo \mbox{\hyperlink{classInt__MSI_a6f12a0eecdfc5c5511101557bd17405b}{Ler\+\_\+\+Titulo}} (const Titulo \&titulo)=0
+\begin{DoxyCompactList}\small\item\em Lê um título de investimento existente. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MSI_a9054f48018d05540c61d09d751098199}{Atualizar\+\_\+\+Titulo}} (const Titulo \&titulo)=0
+\begin{DoxyCompactList}\small\item\em Atualiza um título de investimento existente. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ Titulo $>$ \mbox{\hyperlink{classInt__MSI_a2c5010b46b194351aa3a44f9cab0d23b}{Listar\+\_\+\+Titulos}} (const Conta)=0
+\begin{DoxyCompactList}\small\item\em Lista todos os títulos de investimento. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MSI_a1e086d91d2bb63023a3b7e6c8aec191f}{Excluir\+\_\+\+Titulo}} (const Titulo \&titulo)=0
+\begin{DoxyCompactList}\small\item\em Exclui um título de investimento existente. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MSI_a068e376481d906089c6fa62cc859138d}{Criar\+\_\+\+Pagamento}} (const Pagamento \&pagamento)=0
+\begin{DoxyCompactList}\small\item\em Cria um novo pagamento. \end{DoxyCompactList}\item 
+virtual Pagamento \mbox{\hyperlink{classInt__MSI_afb0270b152e35aa27ad07ae64ca83a14}{Ler\+\_\+\+Pagamento}} (const Pagamento \&pagamento)=0
+\begin{DoxyCompactList}\small\item\em Lê um pagamento existente. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MSI_a9e69e090074025987e4bf462fde7ef72}{Atualizar\+\_\+\+Pagamento}} (const Pagamento \&pagamento)=0
+\begin{DoxyCompactList}\small\item\em Atualiza um pagamento existente. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ Pagamento $>$ \mbox{\hyperlink{classInt__MSI_a53c0489e0b7e081edfb256ac502e72f9}{Listar\+\_\+\+Pagamentos}} (const Titulo)=0
+\begin{DoxyCompactList}\small\item\em Lista todos os pagamentos. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MSI_a280df3059af50d64d3efebc0149a1b25}{Excluir\+\_\+\+Pagamento}} (const Pagamento \&pagamento)=0
+\begin{DoxyCompactList}\small\item\em Exclui um pagamento existente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInt__MSI_a6685041cd400251d01a4bc4fe5d58460}\label{classInt__MSI_a6685041cd400251d01a4bc4fe5d58460}} 
+virtual \mbox{\hyperlink{classInt__MSI_a6685041cd400251d01a4bc4fe5d58460}{$\sim$\+Int\+\_\+\+MSI}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface para gerenciamento de investimentos e pagamentos. 
+
+Esta classe fornece uma interface abstrata para realizar operações CRUD em títulos de investimento (Titulo) e pagamentos (Pagamento). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInt__MSI_a9e69e090074025987e4bf462fde7ef72}\label{classInt__MSI_a9e69e090074025987e4bf462fde7ef72}} 
+\index{Int\_MSI@{Int\_MSI}!Atualizar\_Pagamento@{Atualizar\_Pagamento}}
+\index{Atualizar\_Pagamento@{Atualizar\_Pagamento}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Atualizar\_Pagamento()}{Atualizar\_Pagamento()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSI\+::\+Atualizar\+\_\+\+Pagamento (\begin{DoxyParamCaption}\item[{const Pagamento \&}]{pagamento }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza um pagamento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento a ser atualizado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSI_a9054f48018d05540c61d09d751098199}\label{classInt__MSI_a9054f48018d05540c61d09d751098199}} 
+\index{Int\_MSI@{Int\_MSI}!Atualizar\_Titulo@{Atualizar\_Titulo}}
+\index{Atualizar\_Titulo@{Atualizar\_Titulo}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Atualizar\_Titulo()}{Atualizar\_Titulo()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSI\+::\+Atualizar\+\_\+\+Titulo (\begin{DoxyParamCaption}\item[{const Titulo \&}]{titulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Atualiza um título de investimento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título de investimento a ser atualizado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSI_a068e376481d906089c6fa62cc859138d}\label{classInt__MSI_a068e376481d906089c6fa62cc859138d}} 
+\index{Int\_MSI@{Int\_MSI}!Criar\_Pagamento@{Criar\_Pagamento}}
+\index{Criar\_Pagamento@{Criar\_Pagamento}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Criar\_Pagamento()}{Criar\_Pagamento()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSI\+::\+Criar\+\_\+\+Pagamento (\begin{DoxyParamCaption}\item[{const Pagamento \&}]{pagamento }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria um novo pagamento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento a ser criado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSI_a588144f976388e759c7b40ed5e07ccce}\label{classInt__MSI_a588144f976388e759c7b40ed5e07ccce}} 
+\index{Int\_MSI@{Int\_MSI}!Criar\_Titulo@{Criar\_Titulo}}
+\index{Criar\_Titulo@{Criar\_Titulo}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Criar\_Titulo()}{Criar\_Titulo()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSI\+::\+Criar\+\_\+\+Titulo (\begin{DoxyParamCaption}\item[{const Titulo \&}]{titulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Cria um novo título de investimento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título de investimento a ser criado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSI_a280df3059af50d64d3efebc0149a1b25}\label{classInt__MSI_a280df3059af50d64d3efebc0149a1b25}} 
+\index{Int\_MSI@{Int\_MSI}!Excluir\_Pagamento@{Excluir\_Pagamento}}
+\index{Excluir\_Pagamento@{Excluir\_Pagamento}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Excluir\_Pagamento()}{Excluir\_Pagamento()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSI\+::\+Excluir\+\_\+\+Pagamento (\begin{DoxyParamCaption}\item[{const Pagamento \&}]{pagamento }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui um pagamento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento a ser excluído. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSI_a1e086d91d2bb63023a3b7e6c8aec191f}\label{classInt__MSI_a1e086d91d2bb63023a3b7e6c8aec191f}} 
+\index{Int\_MSI@{Int\_MSI}!Excluir\_Titulo@{Excluir\_Titulo}}
+\index{Excluir\_Titulo@{Excluir\_Titulo}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Excluir\_Titulo()}{Excluir\_Titulo()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MSI\+::\+Excluir\+\_\+\+Titulo (\begin{DoxyParamCaption}\item[{const Titulo \&}]{titulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Exclui um título de investimento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título de investimento a ser excluído. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInt__MSI_afb0270b152e35aa27ad07ae64ca83a14}\label{classInt__MSI_afb0270b152e35aa27ad07ae64ca83a14}} 
+\index{Int\_MSI@{Int\_MSI}!Ler\_Pagamento@{Ler\_Pagamento}}
+\index{Ler\_Pagamento@{Ler\_Pagamento}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Ler\_Pagamento()}{Ler\_Pagamento()}}
+{\footnotesize\ttfamily virtual Pagamento Int\+\_\+\+MSI\+::\+Ler\+\_\+\+Pagamento (\begin{DoxyParamCaption}\item[{const Pagamento \&}]{pagamento }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê um pagamento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O pagamento a ser lido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O pagamento lido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInt__MSI_a6f12a0eecdfc5c5511101557bd17405b}\label{classInt__MSI_a6f12a0eecdfc5c5511101557bd17405b}} 
+\index{Int\_MSI@{Int\_MSI}!Ler\_Titulo@{Ler\_Titulo}}
+\index{Ler\_Titulo@{Ler\_Titulo}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Ler\_Titulo()}{Ler\_Titulo()}}
+{\footnotesize\ttfamily virtual Titulo Int\+\_\+\+MSI\+::\+Ler\+\_\+\+Titulo (\begin{DoxyParamCaption}\item[{const Titulo \&}]{titulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lê um título de investimento existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O título de investimento a ser lido. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O título de investimento lido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInt__MSI_a53c0489e0b7e081edfb256ac502e72f9}\label{classInt__MSI_a53c0489e0b7e081edfb256ac502e72f9}} 
+\index{Int\_MSI@{Int\_MSI}!Listar\_Pagamentos@{Listar\_Pagamentos}}
+\index{Listar\_Pagamentos@{Listar\_Pagamentos}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Listar\_Pagamentos()}{Listar\_Pagamentos()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$Pagamento$>$ Int\+\_\+\+MSI\+::\+Listar\+\_\+\+Pagamentos (\begin{DoxyParamCaption}\item[{const}]{Titulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista todos os pagamentos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pagamento} & O critério para listar os pagamentos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um vetor contendo os pagamentos listados. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInt__MSI_a2c5010b46b194351aa3a44f9cab0d23b}\label{classInt__MSI_a2c5010b46b194351aa3a44f9cab0d23b}} 
+\index{Int\_MSI@{Int\_MSI}!Listar\_Titulos@{Listar\_Titulos}}
+\index{Listar\_Titulos@{Listar\_Titulos}!Int\_MSI@{Int\_MSI}}
+\doxysubsubsection{\texorpdfstring{Listar\_Titulos()}{Listar\_Titulos()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$Titulo$>$ Int\+\_\+\+MSI\+::\+Listar\+\_\+\+Titulos (\begin{DoxyParamCaption}\item[{const}]{Conta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Lista todos os títulos de investimento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & O critério para listar títulos de investimento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um vetor contendo os títulos de investimento listados. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Int\+\_\+\+MSI.\+h\end{DoxyCompactItemize}

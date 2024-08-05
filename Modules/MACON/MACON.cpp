@@ -2,7 +2,7 @@
 #include <cstdlib>
 
 //TODO: Change isAutheticated to false
-MainScreen::MainScreen() : isAuthenticated(true) {
+MainScreen::MainScreen() : isAuthenticated(false) {
     initscr();
     cbreak();
     noecho();
@@ -67,7 +67,6 @@ void MainScreen::showOptions() {
     display();
 }
 
-
 void MainScreen::authenticateUser() {
     clear();
     mvprintw(0, 0, "Autenticação de usuário:");
@@ -79,11 +78,32 @@ void MainScreen::authenticateUser() {
 }
 
 void MainScreen::Investiment() {
-    clear();
-    mvprintw(0, 0, "Gerenciar Investimentos:");
-    acesso_investimentos->criar_tela_investimentos();
-    refresh();
-    getch();
+    while (true) {
+        clear();
+        
+        mvprintw(0, 0, "Escolha a opção de serviços que deseja realizar");
+        mvprintw(1, 0, "1. Titulo");
+        mvprintw(2, 0, "2. Pagamento");
+        mvprintw(3, 0, "3. Sair");
+
+        refresh();
+
+        int ch = getch();
+        
+        switch (ch) {
+            case '1':
+                acesso_investimentos->Tela_Titulo();   
+                break;
+            case '2':
+                acesso_investimentos->Tela_Pagamento();
+                break;
+            case '3':
+                endwin();
+                exit(0);
+            default:
+                break;
+        }
+    }
 }
 
 void MainScreen::user_manager() {
@@ -93,3 +113,5 @@ void MainScreen::user_manager() {
     refresh();
     getch();
 }
+
+

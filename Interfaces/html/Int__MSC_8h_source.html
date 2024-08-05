@@ -77,27 +77,26 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classInt__MSC.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInt__MSC.html">Int_MSC</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a2522a94688342c894b1e1db9c6b6d12d">   27</a></span>&#160;    <span class="keyword">virtual</span> Conta <a class="code" href="classInt__MSC.html#a2522a94688342c894b1e1db9c6b6d12d">ler</a>(CPF) = 0;           </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a9c041ca9c141655a40ceea474fcfe21f">   34</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MSC.html#a9c041ca9c141655a40ceea474fcfe21f">atualizar</a>(CPF) = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a9a7d82fe034e08844ff58984bbaac18b">   41</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MSC.html#a9a7d82fe034e08844ff58984bbaac18b">deletar</a>(CPF*) = 0;    </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a74c298ea322ac4a62dba38c7b0d31f8c">   48</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MSC.html#a74c298ea322ac4a62dba38c7b0d31f8c">setCntrISConta</a>(ISConta*) = 0;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a6ad001d1fc61a3c89bcba1e80ce9969e">   54</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classInt__MSC.html#a6ad001d1fc61a3c89bcba1e80ce9969e">~Int_MSC</a>(){}                                     </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a23a4e73d860987134aab7868aa9ade3c">   28</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classInt__MSC.html#a23a4e73d860987134aab7868aa9ade3c">criar</a>(CPF cpf, Senha senha, Name nome) = 0;           </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a2522a94688342c894b1e1db9c6b6d12d">   37</a></span>&#160;    <span class="keyword">virtual</span> Conta <a class="code" href="classInt__MSC.html#a2522a94688342c894b1e1db9c6b6d12d">ler</a>(CPF) = 0;    </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a83c79a3bbc54f98a6a41bffed37e3709">   43</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MSC.html#a83c79a3bbc54f98a6a41bffed37e3709">atualizar</a>(CPF,Senha,Name) = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a9a7d82fe034e08844ff58984bbaac18b">   50</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classInt__MSC.html#a9a7d82fe034e08844ff58984bbaac18b">deletar</a>(CPF*) = 0;    </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classInt__MSC.html#a6ad001d1fc61a3c89bcba1e80ce9969e">   56</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classInt__MSC.html#a6ad001d1fc61a3c89bcba1e80ce9969e">~Int_MSC</a>(){}                                     </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassInt__MSC_html"><div class="ttname"><a href="classInt__MSC.html">Int_MSC</a></div><div class="ttdoc">Interface para prestacao de servicos de conta.</div><div class="ttdef"><b>Definition:</b> Int_MSC.h:18</div></div>
+<div class="ttc" id="aclassInt__MSC_html_a23a4e73d860987134aab7868aa9ade3c"><div class="ttname"><a href="classInt__MSC.html#a23a4e73d860987134aab7868aa9ade3c">Int_MSC::criar</a></div><div class="ttdeci">virtual bool criar(CPF cpf, Senha senha, Name nome)=0</div><div class="ttdoc">Cria uma conta dados CPF, senha e nome.</div></div>
 <div class="ttc" id="aclassInt__MSC_html_a2522a94688342c894b1e1db9c6b6d12d"><div class="ttname"><a href="classInt__MSC.html#a2522a94688342c894b1e1db9c6b6d12d">Int_MSC::ler</a></div><div class="ttdeci">virtual Conta ler(CPF)=0</div><div class="ttdoc">Le os atributos de uma conta.</div></div>
-<div class="ttc" id="aclassInt__MSC_html_a6ad001d1fc61a3c89bcba1e80ce9969e"><div class="ttname"><a href="classInt__MSC.html#a6ad001d1fc61a3c89bcba1e80ce9969e">Int_MSC::~Int_MSC</a></div><div class="ttdeci">virtual ~Int_MSC()</div><div class="ttdoc">Destrutor virtual.</div><div class="ttdef"><b>Definition:</b> Int_MSC.h:54</div></div>
-<div class="ttc" id="aclassInt__MSC_html_a74c298ea322ac4a62dba38c7b0d31f8c"><div class="ttname"><a href="classInt__MSC.html#a74c298ea322ac4a62dba38c7b0d31f8c">Int_MSC::setCntrISConta</a></div><div class="ttdeci">virtual void setCntrISConta(ISConta *)=0</div><div class="ttdoc">Liga o MAC ao MSC.</div></div>
+<div class="ttc" id="aclassInt__MSC_html_a6ad001d1fc61a3c89bcba1e80ce9969e"><div class="ttname"><a href="classInt__MSC.html#a6ad001d1fc61a3c89bcba1e80ce9969e">Int_MSC::~Int_MSC</a></div><div class="ttdeci">virtual ~Int_MSC()</div><div class="ttdoc">Destrutor virtual.</div><div class="ttdef"><b>Definition:</b> Int_MSC.h:56</div></div>
+<div class="ttc" id="aclassInt__MSC_html_a83c79a3bbc54f98a6a41bffed37e3709"><div class="ttname"><a href="classInt__MSC.html#a83c79a3bbc54f98a6a41bffed37e3709">Int_MSC::atualizar</a></div><div class="ttdeci">virtual void atualizar(CPF, Senha, Name)=0</div><div class="ttdoc">Atualiza algum dado (senha ou nome) da conta.</div></div>
 <div class="ttc" id="aclassInt__MSC_html_a9a7d82fe034e08844ff58984bbaac18b"><div class="ttname"><a href="classInt__MSC.html#a9a7d82fe034e08844ff58984bbaac18b">Int_MSC::deletar</a></div><div class="ttdeci">virtual void deletar(CPF *)=0</div><div class="ttdoc">Exclui uma conta.</div></div>
-<div class="ttc" id="aclassInt__MSC_html_a9c041ca9c141655a40ceea474fcfe21f"><div class="ttname"><a href="classInt__MSC.html#a9c041ca9c141655a40ceea474fcfe21f">Int_MSC::atualizar</a></div><div class="ttdeci">virtual void atualizar(CPF)=0</div><div class="ttdoc">Atualiza algum dado (senha ou nome) da conta.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

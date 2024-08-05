@@ -1,0 +1,50 @@
+\hypertarget{classInt__MAC}{}\doxysection{Int\+\_\+\+MAC Class Reference}
+\label{classInt__MAC}\index{Int\_MAC@{Int\_MAC}}
+
+
+Interface para gerenciamento de conta.  
+
+
+
+
+{\ttfamily \#include $<$Int\+\_\+\+MAC.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classInt__MAC_ad0e80f6a9e833e2ec1510b4e0e3db2de}\label{classInt__MAC_ad0e80f6a9e833e2ec1510b4e0e3db2de}} 
+virtual void \mbox{\hyperlink{classInt__MAC_ad0e80f6a9e833e2ec1510b4e0e3db2de}{criar\+\_\+tela\+\_\+inicial}} (CPF \&cpf, bool is\+Authenticated)=0
+\begin{DoxyCompactList}\small\item\em Apresenta a tela inicial. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classInt__MAC_a79522c8ab2503bd6a7f6242e7eaf20af}{set\+Cntr\+ISConta}} (Conta\+Service $\ast$)=0
+\begin{DoxyCompactList}\small\item\em Liga o MAC ao MSC. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classInt__MAC_aa1402ccddacdf632ed01f020d898ed0f}\label{classInt__MAC_aa1402ccddacdf632ed01f020d898ed0f}} 
+virtual \mbox{\hyperlink{classInt__MAC_aa1402ccddacdf632ed01f020d898ed0f}{$\sim$\+Int\+\_\+\+MAC}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor virtual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface para gerenciamento de conta. 
+
+Esta classe fornece uma interface abstrata para requisitar operações CRUD para uma conta. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInt__MAC_a79522c8ab2503bd6a7f6242e7eaf20af}\label{classInt__MAC_a79522c8ab2503bd6a7f6242e7eaf20af}} 
+\index{Int\_MAC@{Int\_MAC}!setCntrISConta@{setCntrISConta}}
+\index{setCntrISConta@{setCntrISConta}!Int\_MAC@{Int\_MAC}}
+\doxysubsubsection{\texorpdfstring{setCntrISConta()}{setCntrISConta()}}
+{\footnotesize\ttfamily virtual void Int\+\_\+\+MAC\+::set\+Cntr\+ISConta (\begin{DoxyParamCaption}\item[{Conta\+Service $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Liga o MAC ao MSC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em CPF} & O CPF da conta a ser acessada. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Int\+\_\+\+MAC.\+h\end{DoxyCompactItemize}

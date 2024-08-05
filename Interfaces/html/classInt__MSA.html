@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Interfaces TP1: Int_MAC Class Reference</title>
+<title>Interfaces TP1: Int_MSA Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,37 +63,25 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classInt__MAC-members.html">List of all members</a>  </div>
+<a href="classInt__MSA-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Int_MAC Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Int_MSA Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Interface para gerenciamento de conta.  
- <a href="classInt__MAC.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="Int__MAC_8h_source.html">Int_MAC.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0e80f6a9e833e2ec1510b4e0e3db2de"><td class="memItemLeft" align="right" valign="top"><a id="ad0e80f6a9e833e2ec1510b4e0e3db2de"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAC.html#ad0e80f6a9e833e2ec1510b4e0e3db2de">criar_tela_inicial</a> (CPF &amp;cpf, bool isAuthenticated)=0</td></tr>
-<tr class="memdesc:ad0e80f6a9e833e2ec1510b4e0e3db2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apresenta a tela inicial. <br /></td></tr>
-<tr class="separator:ad0e80f6a9e833e2ec1510b4e0e3db2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79522c8ab2503bd6a7f6242e7eaf20af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAC.html#a79522c8ab2503bd6a7f6242e7eaf20af">setCntrISConta</a> (ContaService *)=0</td></tr>
-<tr class="memdesc:a79522c8ab2503bd6a7f6242e7eaf20af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liga o MAC ao MSC.  <a href="classInt__MAC.html#a79522c8ab2503bd6a7f6242e7eaf20af">More...</a><br /></td></tr>
-<tr class="separator:a79522c8ab2503bd6a7f6242e7eaf20af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1402ccddacdf632ed01f020d898ed0f"><td class="memItemLeft" align="right" valign="top"><a id="aa1402ccddacdf632ed01f020d898ed0f"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAC.html#aa1402ccddacdf632ed01f020d898ed0f">~Int_MAC</a> ()</td></tr>
-<tr class="memdesc:aa1402ccddacdf632ed01f020d898ed0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual. <br /></td></tr>
-<tr class="separator:aa1402ccddacdf632ed01f020d898ed0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7705ef077f0d55b31f39c53137a36201"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSA.html#a7705ef077f0d55b31f39c53137a36201">autenticar</a> (CPF &amp;cpf, Senha &amp;senha)=0</td></tr>
+<tr class="memdesc:a7705ef077f0d55b31f39c53137a36201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Autentica um usuário com base no CPF e na Senha.  <a href="classInt__MSA.html#a7705ef077f0d55b31f39c53137a36201">More...</a><br /></td></tr>
+<tr class="separator:a7705ef077f0d55b31f39c53137a36201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5fc3c7f29c9c8d00b93e2c0588a3500"><td class="memItemLeft" align="right" valign="top"><a id="ad5fc3c7f29c9c8d00b93e2c0588a3500"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MSA.html#ad5fc3c7f29c9c8d00b93e2c0588a3500">~Int_MSA</a> ()</td></tr>
+<tr class="memdesc:ad5fc3c7f29c9c8d00b93e2c0588a3500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual. <br /></td></tr>
+<tr class="separator:ad5fc3c7f29c9c8d00b93e2c0588a3500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface para gerenciamento de conta. </p>
-<p>Esta classe fornece uma interface abstrata para requisitar operações CRUD para uma conta. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a79522c8ab2503bd6a7f6242e7eaf20af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79522c8ab2503bd6a7f6242e7eaf20af">&#9670;&nbsp;</a></span>setCntrISConta()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7705ef077f0d55b31f39c53137a36201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7705ef077f0d55b31f39c53137a36201">&#9670;&nbsp;</a></span>autenticar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -102,11 +90,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void Int_MAC::setCntrISConta </td>
+          <td class="memname">virtual bool Int_MSA::autenticar </td>
           <td>(</td>
-          <td class="paramtype">ContaService *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">CPF &amp;&#160;</td>
+          <td class="paramname"><em>cpf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Senha &amp;&#160;</td>
+          <td class="paramname"><em>senha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -116,18 +114,20 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table>
 </div><div class="memdoc">
 
-<p>Liga o MAC ao MSC. </p>
+<p>Autentica um usuário com base no CPF e na Senha. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">CPF</td><td>O CPF da conta a ser acessada. </td></tr>
+    <tr><td class="paramname">cpf</td><td>O CPF do usuário a ser autenticado. </td></tr>
+    <tr><td class="paramname">senha</td><td>A senha do usuário a ser autenticado. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>true se a autenticação for bem-sucedida, false caso contrário. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="Int__MAC_8h_source.html">Int_MAC.h</a></li>
+<li><a class="el" href="Int__MSA_8h_source.html">Int_MSA.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

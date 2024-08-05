@@ -76,12 +76,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a20af53762075802d528d41749d2d9a0d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAA.html#a20af53762075802d528d41749d2d9a0d">autenticar</a> (CPF *cpf)=0</td></tr>
-<tr class="memdesc:a20af53762075802d528d41749d2d9a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Autentica um usuário com base no CPF.  <a href="classInt__MAA.html#a20af53762075802d528d41749d2d9a0d">More...</a><br /></td></tr>
-<tr class="separator:a20af53762075802d528d41749d2d9a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87a46cbf7d355c28f777171e7742192e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAA.html#a87a46cbf7d355c28f777171e7742192e">setCntrISAunteticacao</a> (ISAutenticacao *)=0</td></tr>
-<tr class="memdesc:a87a46cbf7d355c28f777171e7742192e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liga o MAA ao MSA.  <a href="classInt__MAA.html#a87a46cbf7d355c28f777171e7742192e">More...</a><br /></td></tr>
-<tr class="separator:a87a46cbf7d355c28f777171e7742192e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a21b8523a3a60d1d7f944837b43350"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAA.html#a21a21b8523a3a60d1d7f944837b43350">autenticar</a> (CPF &amp;cpf)=0</td></tr>
+<tr class="memdesc:a21a21b8523a3a60d1d7f944837b43350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Autentica um usuário com base no CPF.  <a href="classInt__MAA.html#a21a21b8523a3a60d1d7f944837b43350">More...</a><br /></td></tr>
+<tr class="separator:a21a21b8523a3a60d1d7f944837b43350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e54e2cd08570a4e47abc466c31780f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAA.html#a0e54e2cd08570a4e47abc466c31780f4">setCntrISAunteticacao</a> (AutenticacaoService *cntrAutenticacaoService)=0</td></tr>
+<tr class="memdesc:a0e54e2cd08570a4e47abc466c31780f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liga o MAA ao MSA.  <a href="classInt__MAA.html#a0e54e2cd08570a4e47abc466c31780f4">More...</a><br /></td></tr>
+<tr class="separator:a0e54e2cd08570a4e47abc466c31780f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad247bf81951d9f2596e48c0d018d2692"><td class="memItemLeft" align="right" valign="top"><a id="ad247bf81951d9f2596e48c0d018d2692"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInt__MAA.html#ad247bf81951d9f2596e48c0d018d2692">~Int_MAA</a> ()</td></tr>
 <tr class="memdesc:ad247bf81951d9f2596e48c0d018d2692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrutor virtual. <br /></td></tr>
@@ -91,8 +91,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <div class="textblock"><p>Interface de autenticação da camada de apresentação. </p>
 <p>Esta classe fornece uma interface para o modulo de apresentação de autenticação (MAA), que valida o formato das credenciais e solicita serviço do módulo de serviço de autenticação (MSA) para verificar se as credenciais estão de acordo com as do banco de dados. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a20af53762075802d528d41749d2d9a0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20af53762075802d528d41749d2d9a0d">&#9670;&nbsp;</a></span>autenticar()</h2>
+<a id="a21a21b8523a3a60d1d7f944837b43350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a21b8523a3a60d1d7f944837b43350">&#9670;&nbsp;</a></span>autenticar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,7 +103,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
         <tr>
           <td class="memname">virtual bool Int_MAA::autenticar </td>
           <td>(</td>
-          <td class="paramtype">CPF *&#160;</td>
+          <td class="paramtype">CPF &amp;&#160;</td>
           <td class="paramname"><em>cpf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -126,8 +126,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
-<a id="a87a46cbf7d355c28f777171e7742192e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87a46cbf7d355c28f777171e7742192e">&#9670;&nbsp;</a></span>setCntrISAunteticacao()</h2>
+<a id="a0e54e2cd08570a4e47abc466c31780f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e54e2cd08570a4e47abc466c31780f4">&#9670;&nbsp;</a></span>setCntrISAunteticacao()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,8 +138,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
         <tr>
           <td class="memname">virtual void Int_MAA::setCntrISAunteticacao </td>
           <td>(</td>
-          <td class="paramtype">ISAutenticacao *&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">AutenticacaoService *&#160;</td>
+          <td class="paramname"><em>cntrAutenticacaoService</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

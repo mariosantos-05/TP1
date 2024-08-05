@@ -12,13 +12,7 @@ private:
     CPF cpf_logado;
 
 public:
-    void criar_tela_investimentos() override;
     void setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos) override;
-
-
-
-
-
 
 
 
