@@ -28,11 +28,13 @@ file(GLOB SOURCES
     "Entities/Sources/*.cpp" 
     "Modules/*.cpp"
     "Modules/MAA/MAA.cpp" 
-    "Modules/MAC/MAC.cpp"
-    "Modules/MACON/MACON.cpp"
     "Modules/MSA/MSA.cpp"
+    "Modules/MAC/MAC.cpp"
+    "Modules/MSC/MSC.cpp"
+    "Modules/MACON/MACON.cpp"
     "main.cpp"
     "SGBD/Aut_Persistence_Unit.cpp"
+    "SGBD/Con_Persistence_Unit.cpp"
 
     "SGBD/Comandos.cpp"
 )

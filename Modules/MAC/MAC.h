@@ -12,21 +12,19 @@ using namespace std;
 
 class CntrIAConta:public Int_MAC {
 private:
-    ISConta *cntrISConta; 
+    ContaService *cntrISConta; 
     CPF cpf_logado;           
 public:
-    void criar_tela_inicial(CPF cpf, bool isAuthenticated);
+    CntrIAConta(const CPF& cpf) : cpf_logado(cpf), cntrISConta(nullptr) {}
+    void criar_tela_inicial(CPF& cpf, bool isAuthenticated) override;
     bool criar_conta();
     Conta acessar() ;                        
     void atualizar_conta();                       
     void deletar_conta();                        
-    void setCntrISConta(ISConta*) ;   
+    void setCntrISConta(ContaService* cntrISConta){ this->cntrISConta = cntrISConta;}   
     void Acess();  
     void deletar();
 };
 
-void inline CntrIAConta::setCntrISConta(ISConta *cntrISConta){
-        this->cntrISConta = cntrISConta;
-}
 
 #endif 

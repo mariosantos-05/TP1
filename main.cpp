@@ -4,24 +4,27 @@
 //#include "../Interfaces/Int_MAI.h" // Include this to use CntrIAInvestimentos
 #include "../Modules/MAA/MAA.h"
 #include "../Modules/MAC/MAC.h"
+#include "../Modules/MSC/MSC.h"
 //#include "../Modules/MAI/MAI.h"
 
 int main() {
+    CPF cpf("000.000.000-00");
     // Instantiate the necessary controllers
     CntrIAAutenticacao autenticacaoController;
-    //CntrIAInvestimentos investimentoController; // Instantiate the investments controller
+    CntrIAConta contaController(cpf);
+    // CntrIAInvestimentos investimentoController; // Uncomment if using investments
 
-    // Initialize the service for authentication and set it in the controller
+    // Initialize the services and set them in the controllers
     AutenticacaoService autenticacaoService;
-    autenticacaoController.setCntrISAunteticacao(&autenticacaoService);
+    contaController.setCntrISConta(new ContaService()); // Instantiate and set the ContaService
 
     // Initialize the main screen
     MainScreen mainScreen;
 
     // Set the controllers for the main screen
     mainScreen.setMAA(&autenticacaoController);
-    // mainScreen.setMAC(&contaController); // Uncomment if needed and instantiated
-    //mainScreen.setMAI(&investimentoController); // Set the investments controller
+    mainScreen.setMAC(&contaController); // Set the Conta controller
+    // mainScreen.setMAI(&investimentoController); // Uncomment if using investments
 
     // Main loop to display the screen and handle user input
     while (true) {

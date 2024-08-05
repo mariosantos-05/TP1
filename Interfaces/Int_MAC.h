@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class ISConta;
+class ContaService;
 
 /**
  * @class Int_MAC
@@ -23,7 +23,7 @@ public:
     /**
      * @brief Apresenta a tela inicial.
      */
-    virtual void criar_tela_inicial() = 0;
+    virtual void criar_tela_inicial(CPF& cpf, bool isAuthenticated) = 0;
 
     /**
      * @brief Cria uma nova conta.
@@ -58,7 +58,7 @@ public:
      * @brief Liga o MAC ao MSC.
      * @param CPF O CPF da conta a ser acessada.
      */
-    virtual void setCntrISConta(ISConta*) = 0;
+    virtual void setCntrISConta(ContaService*) = 0;
 
     /**
      * @brief Destrutor virtual.

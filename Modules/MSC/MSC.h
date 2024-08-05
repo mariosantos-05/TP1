@@ -12,9 +12,6 @@ public:
     Conta ler(CPF cpf) override;
     void atualizar(CPF cpf, Senha senha, Name nome) override;
     void deletar(CPF* cpf) override;
-    void setCntrISConta(ISConta* isConta) override;
-private:
-    ISConta* isConta;
 };
 
 #endif // CONTA_SERVICE_H

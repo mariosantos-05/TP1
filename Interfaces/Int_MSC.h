@@ -50,16 +50,9 @@ public:
     virtual void deletar(CPF*) = 0;    
 
     /**
-     * @brief Liga o MAC ao MSC.
-     * @param CPF* O CPF da conta a ser acessada.
-     */                    
-
-    virtual void setCntrISConta(ISConta*) = 0;    
-
-    /**
      * @brief Destrutor virtual.
      */
-  
+
     virtual ~Int_MSC(){}                                     
 };
 

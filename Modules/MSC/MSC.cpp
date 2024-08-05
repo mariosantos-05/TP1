@@ -51,6 +51,3 @@ void ContaService::deletar(CPF* cpf) {
     }
 }
 
-void ContaService::setCntrISConta(ISConta* isConta) {
-    this->isConta = isConta;
-}

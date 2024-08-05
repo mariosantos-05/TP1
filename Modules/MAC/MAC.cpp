@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void CntrIAConta::criar_tela_inicial(CPF logado, bool isAuthenticated) {
+void CntrIAConta::criar_tela_inicial(CPF& logado, bool isAuthenticated) {
     initscr();
     cbreak();
     noecho();
@@ -128,8 +128,8 @@ void CntrIAConta::atualizar_conta() {
     mvgetnstr(2, 6, nome_digitado, 49); 
     noecho();
     mvgetnstr(4, 7, senha_digitada, 29); 
-
-    // cntrISConta->atualizar(cpf_logado, senha, nome); // Uncomment when controller is ready
+    
+    //cntrISConta->atualizar(cpf_logado, senha_digitada, nome_digitado); // Uncomment when controller is ready
     mvprintw(6, 0, "Conta atualizada com sucesso!");
     refresh();
     getch();
