@@ -1,3 +1,4 @@
+/* 
 #ifndef AUT_PERSISTENCE_UNIT_H
 #define AUT_PERSISTENCE_UNIT_H
 
@@ -19,3 +20,20 @@ public:
 };
 
 #endif 
+*/
+
+#ifndef AUT_PERSISTENCE_UNIT_H
+#define AUT_PERSISTENCE_UNIT_H
+
+#include "Comandos.h"
+
+class TestComandoSQL : public ComandoSQL {
+public:
+    TestComandoSQL(const string& sqlCommand) {
+        comandoSQL = sqlCommand;
+    }
+    void runTest();
+    bool autenticar(const string& cpf, const string& senha);
+};
+
+#endif
