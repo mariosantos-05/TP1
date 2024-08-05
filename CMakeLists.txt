@@ -32,6 +32,7 @@ file(GLOB SOURCES
     "Modules/MAC/MAC.cpp"
     "Modules/MSC/MSC.cpp"
     "Modules/MACON/MACON.cpp"
+    "Modules/MAI/MAI.cpp"
     "main.cpp"
     "SGBD/Aut_Persistence_Unit.cpp"
     "SGBD/Con_Persistence_Unit.cpp"

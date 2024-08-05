@@ -1,31 +1,41 @@
 #ifndef MAI_INCLUDE
 #define MAI_INCLUDE
-#include "../Interfaces/Int_MAI.h"
+#include "../Interfaces/Int_MAI2.h"
 #include <ncurses.h>
+#include "../Domains/Headers/CPF.h"
+#include "../Entities/Headers/Titulo.h"
+#include "../Entities/Headers/Pagamento.h"
 
-class CntrIAInvestimentos : public Int_MAI {
+class CntrIAInvestimentos : public Int_MAI2 {
 private:
     InvestimentoService* cntrISInvestimentos;
     CPF cpf_logado;
 
 public:
-    void Criar_Titulo() override;
-    Titulo Ler_Titulo() override;
-    void Atualizar_Titulo() override;
-    std::vector<Titulo> Listar_Titulos() override;
-    void Excluir_Titulo() override;
+    void criar_tela_investimentos() override;
+    void setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos) override;
+
+
+
+
+
+
+
+
+    void Criar_Titulo();
+    Titulo Ler_Titulo();
+    void Atualizar_Titulo();
+    std::vector<Titulo> Listar_Titulos();
+    void Excluir_Titulo();
     
-    void Criar_Pagamento() override;
-    Pagamento Ler_Pagamento() override;
-    void Atualizar_Pagamento() override;
-    std::vector<Pagamento> Listar_Pagamentos() override;
-    void Excluir_Pagamento() override;
+    void Criar_Pagamento();
+    Pagamento Ler_Pagamento();
+    void Atualizar_Pagamento();
+    std::vector<Pagamento> Listar_Pagamentos();
+    void Excluir_Pagamento();
     void Tela_Titulo();
     void Tela_Pagamento();
 
-    void setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos) override;
-
-    void criar_tela_investimentos(CPF& cpf) override;
 };
 
 #endif

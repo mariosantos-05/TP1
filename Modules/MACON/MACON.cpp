@@ -1,7 +1,8 @@
 #include "MACON.h"
 #include <cstdlib>
 
-MainScreen::MainScreen() : isAuthenticated(false) {
+//TODO: Change isAutheticated to false
+MainScreen::MainScreen() : isAuthenticated(true) {
     initscr();
     cbreak();
     noecho();
@@ -80,7 +81,7 @@ void MainScreen::authenticateUser() {
 void MainScreen::Investiment() {
     clear();
     mvprintw(0, 0, "Gerenciar Investimentos:");
-    //acesso_investimento->criar_tela_investimentos(cpf);
+    acesso_investimentos->criar_tela_investimentos();
     refresh();
     getch();
 }

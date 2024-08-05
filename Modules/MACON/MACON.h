@@ -4,16 +4,14 @@
 #include "screen.h"
 #include "../Interfaces/Int_MAA.h"
 #include "../Interfaces/Int_MAC.h"
-#include "../Interfaces/Int_MAI.h" 
+#include "../Interfaces/Int_MAI2.h"
 #include "../Modules/MAA/MAA.h" 
 #include "../Modules/MAC/MAC.h" 
-#include "../Modules/MAI/MAI.h"  
-
+#include "../Modules/MAI/MAI.h"
 #include "../Domains/Headers/CPF.h"
-#include "MACON.h"
 #include <cstdlib>
 
-class MainScreen :public Screen {
+class MainScreen : public Screen {
 public:
     MainScreen();
 
@@ -22,20 +20,17 @@ public:
     void showOptions();
     void setMAC(CntrIAConta* conta) { acesso_conta = conta; }      
     void setMAA(CntrIAAutenticacao* autenticacao) { acesso_autenticacao = autenticacao; }   
-    //void setMAI(CntrIAInvestimentos* investimento) { acesso_investimento = investimento;}
-
+    void setMAI(CntrIAInvestimentos* investimentos) { acesso_investimentos = investimentos; }
 
 private:
-    //change for the actual methods in the respective module
     void Investiment(); 
     void user_manager();
     void authenticateUser();
     bool isAuthenticated;
     CntrIAAutenticacao* acesso_autenticacao;
-    CntrIAConta *acesso_conta; 
+    CntrIAConta* acesso_conta; 
+    CntrIAInvestimentos* acesso_investimentos;
     CPF cpf = CPF("000.000.000-00");
-    //CntrIAInvestimentos *acesso_investimento; 
-    
 };
 
-#endif 
+#endif

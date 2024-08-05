@@ -6,11 +6,8 @@
 
 using namespace std;
 
-void CntrIAInvestimentos::setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos){
-    this->cntrISInvestimentos = cntrISInvestimentos;
-}
 
-void CntrIAInvestimentos::criar_tela_investimentos(CPF& logado) {
+void CntrIAInvestimentos::criar_tela_investimentos() {
     initscr();
     cbreak();
     noecho();
@@ -369,4 +366,8 @@ void CntrIAInvestimentos::Excluir_Pagamento() {
     mvprintw(4, 0, "Pagamento excluído com sucesso!");
     refresh();
     getch();
+}
+
+void CntrIAInvestimentos::setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos){
+    this->cntrISInvestimentos = cntrISInvestimentos;
 }
