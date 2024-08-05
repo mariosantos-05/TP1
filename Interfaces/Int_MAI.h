@@ -10,7 +10,7 @@
 
 
 
-class ISInvestimentos;
+class InvestimentoService;
 /**
  * @class Int_MAI
  * @brief Interface para apresentação de investimentos e pagamentos.
@@ -94,7 +94,7 @@ public:
      * @brief Liga o MAI ao MSI.
      * @param msiService Ponteiro para a controladora da camada de serviço (MSI).
      */
-    virtual void setCntrISInvestimentos(Int_MSI* msiService) = 0;
+    virtual void setCntrISInvestimentos(InvestimentoService* cntrInvestimentService) = 0;
 
     /**
      * @brief Destrutor virtual.

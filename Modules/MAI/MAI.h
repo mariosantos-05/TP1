@@ -5,7 +5,7 @@
 
 class CntrIAInvestimentos : public Int_MAI {
 private:
-    ISInvestimentos* cntrISInvestimentos;
+    InvestimentoService* cntrISInvestimentos;
     CPF cpf_logado;
 
 public:
@@ -23,9 +23,9 @@ public:
     void Tela_Titulo();
     void Tela_Pagamento();
 
-    void setCntrISInvestimentos(Int_MSI* msiService) override;
+    void setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos) override;
 
-    void criar_tela_investimentos(CPF cpf);
+    void criar_tela_investimentos(CPF& cpf) override;
 };
 
 #endif

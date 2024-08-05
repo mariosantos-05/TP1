@@ -22,7 +22,8 @@ public:
     void showOptions();
     void setMAC(CntrIAConta* conta) { acesso_conta = conta; }      
     void setMAA(CntrIAAutenticacao* autenticacao) { acesso_autenticacao = autenticacao; }   
-    void setMAI(CntrIAInvestimentos* investimento) {acesso_investimento = investimento; }
+    //void setMAI(CntrIAInvestimentos* investimento) { acesso_investimento = investimento;}
+
 
 private:
     //change for the actual methods in the respective module
@@ -33,7 +34,7 @@ private:
     CntrIAAutenticacao* acesso_autenticacao;
     CntrIAConta *acesso_conta; 
     CPF cpf = CPF("000.000.000-00");
-    CntrIAInvestimentos *acesso_investimento; 
+    //CntrIAInvestimentos *acesso_investimento; 
     
 };
 

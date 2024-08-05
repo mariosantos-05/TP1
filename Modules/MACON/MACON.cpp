@@ -80,7 +80,7 @@ void MainScreen::authenticateUser() {
 void MainScreen::Investiment() {
     clear();
     mvprintw(0, 0, "Gerenciar Investimentos:");
-    acesso_investimento->criar_tela_investimentos(cpf);
+    //acesso_investimento->criar_tela_investimentos(cpf);
     refresh();
     getch();
 }

@@ -6,7 +6,11 @@
 
 using namespace std;
 
-void CntrIAInvestimentos::criar_tela_investimentos(CPF logado) {
+void CntrIAInvestimentos::setCntrISInvestimentos(InvestimentoService* cntrISInvestimentos){
+    this->cntrISInvestimentos = cntrISInvestimentos;
+}
+
+void CntrIAInvestimentos::criar_tela_investimentos(CPF& logado) {
     initscr();
     cbreak();
     noecho();
