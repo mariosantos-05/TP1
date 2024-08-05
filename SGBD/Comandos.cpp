@@ -6,13 +6,16 @@ std::list<ElementoResultado> ComandoSQL::listaResultado;
 //---------------------------------------------------------------------------
 // Implementações de métodos da classe ErroPersistencia.
 
-EErroPersistencia::EErroPersistencia(string mensagem){
-        this->mensagem = mensagem;
+// Implementações de métodos da classe ErroPersistencia.
+
+EErroPersistencia::EErroPersistencia(string mensagem) {
+    this->mensagem = mensagem;
 }
 
-string EErroPersistencia::what() {
-        return mensagem;
+string EErroPersistencia::what() const {  // Marked as const
+    return mensagem;
 }
+
 
 //---------------------------------------------------------------------------
 // Implementações de métodos da classe ElementoResultado.
