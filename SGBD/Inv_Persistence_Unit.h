@@ -4,53 +4,12 @@
 #include "../Entities/Headers/Conta.h"
 #include "../Entities/Headers/Titulo.h"
 #include "../Entities/Headers/Pagamento.h"
+#include "Comandos.h"
 #include <list>
 #include <string>
 #include <stdio.h>
 #include <sqlite3.h>
 
-class EErroPersistencia {
-private:
-        std::string mensagem;
-public:
-        EErroPersistencia(std::string);
-        std::string what();
-};
-
-class ElementoResultado {
-private:
-        std::string nomeColuna;
-        std::string valorColuna;
-public:
-        void setNomeColuna(const std::string&);
-        std::string getNomeColuna() const;
-        void setValorColuna(const std::string&);
-        std::string getValorColuna() const;
-};
-
-class ComandoSQL {
-private:
-        const char *nomeBancoDados;
-        sqlite3 *bd;
-        char *mensagem;
-        int rc;
-        void conectar();
-        void desconectar();
-        static int callback(void *, int, char **, char **);
-
-protected:
-        static std::list<ElementoResultado> listaResultado;
-        std::string comandoSQL;
-public:
-        ComandoSQL() {
-            nomeBancoDados = "Repository.db";  // Nome do banco de dados.
-        }
-        void executar();
-        static std::list<ElementoResultado>& getListaResultado();  // Add this line
-        static void clearListaResultado();  // Add this line
-};
-
-// Command classes for Title
 class Comando_Criar_Titulo: public ComandoSQL {
 public:
         Comando_Criar_Titulo(const Titulo);

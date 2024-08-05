@@ -34,6 +34,7 @@ file(GLOB SOURCES
     "Modules/MSC/MSC.cpp"
     "main.cpp"
     "SGBD/Aut_Persistence_Unit.cpp"
+    "SGBD/Con_Persistence_Unit.cpp"
 )
 
 # Add executable
