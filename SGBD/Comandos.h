@@ -20,12 +20,11 @@ using namespace std;
 
 class EErroPersistencia {
 private:
-        string mensagem;
+    string mensagem;
 public:
-        EErroPersistencia(string);
-        string what();
+    EErroPersistencia(string);
+    string what() const;  // Marked as const
 };
-
 //---------------------------------------------------------------------------
 // Declaração da classe ElementoResultado.
 
@@ -58,7 +57,7 @@ protected:
         string comandoSQL;
 public:
         ComandoSQL() {
-             nomeBancoDados = "repository.db";                             // Nome do banco de dados.
+             nomeBancoDados = "Repository.db";                             // Nome do banco de dados.
         }
         void executar();
 };
