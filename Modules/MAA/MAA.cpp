@@ -30,7 +30,7 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     noecho();
     mvgetnstr(6, 9, senha_digitada, 29); // Adjust the starting position of input
 
-    bool verificado = (strcmp(cpf_digitado, "036.403.621-44") == 0 && strcmp(senha_digitada, "232425") == 0);
+    bool verificado = (strcmp(cpf_digitado, "081.749.421-90") == 0 && strcmp(senha_digitada, "232425") == 0);
 
     clear();
     if (verificado) {

@@ -163,7 +163,7 @@ Titulo CntrIAInvestimentos::Ler_Titulo() {
 std::vector<Titulo> CntrIAInvestimentos::Listar_Titulos() {
     clear();
     mvprintw(1, 13, "Listagem de títulos");
-    Titulo titulo("CDB123456789","Lucas Adeodato","Energia","30-06-2003","30-06-2003",15.99);
+    Titulo titulo("CDB123456789","Daniel Campos","Energia","25-04-2022","05-09-2024",15.99);
 
     /*
     // std::vector<Titulo> titulos = cntrISInvestimentos->Listar_Titulos(conta);
@@ -317,6 +317,17 @@ std::vector<Pagamento> CntrIAInvestimentos::Listar_Pagamentos() {
     }
     
     */
+   Pagamento pagamento("123456789","30-06-2003", "Previsto", 30);
+
+    /*
+    // Pagamento pagamento = cntrISInvestimentos->Ler_Pagamento(CodigoPagamento(codigo_digitado));
+    */
+
+    mvprintw(4, 0, "Dados do pagamento:");
+    mvprintw(5, 0, ("Codigo: " + pagamento.getCodigo()).c_str());
+    mvprintw(6, 0, ("Data: " + pagamento.getData()).c_str());
+    mvprintw(7, 0, ("Estado: " + pagamento.getEstado()).c_str());
+    mvprintw(8, 0, ("Percentual: " + to_string(pagamento.getPercentual())).c_str());
     refresh();
     getch();
     clear();
