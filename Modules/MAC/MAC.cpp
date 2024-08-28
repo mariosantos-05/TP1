@@ -165,8 +165,8 @@ void CntrIAConta::Acess() {
     clear();
     mvprintw(0, 0, "Dados da conta:");
     // Conta conta = Conta(cntrISConta->ler(cpf_logado)); // Uncomment when controller is ready
-    CPF cpf = CPF("000.000.000-00");
-    Name name = Name("Jonas Donas");
+    CPF cpf = CPF("081.749.421-90");
+    Name name = Name("Joao Silva");
     Senha senha = Senha("093795");
 
     std::string CPF = "CPF : " + cpf.getCPF();
