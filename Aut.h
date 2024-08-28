@@ -13,7 +13,7 @@ private:
     string mensagem;
 public:
     EErroPersistencia(string mensagem) : mensagem(mensagem) {}
-    string what() const { return mensagem; }
+    string what() const { return mensagem ; }
 };
 
 class ElementoResultado {

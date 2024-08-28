@@ -5,12 +5,13 @@
 // Static member initialization
 list<ElementoResultado> ComandoSQL::listaResultado;
 
+
 int ComandoSQL::callback(void *NotUsed, int argc, char **valorColuna, char **nomeColuna) {
     NotUsed = 0;
     ElementoResultado elemento;
     for (int i = 0; i < argc; i++) {
         elemento.setNomeColuna(nomeColuna[i]);
-        elemento.setValorColuna(valorColuna[i] ? valorColuna[i] : "NULL");
+        elemento.setValorColuna(valorColuna[i] ? valorColuna[i] : "NULL ");
         listaResultado.push_back(elemento);
     }
     return 0;
