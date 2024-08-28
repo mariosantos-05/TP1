@@ -30,9 +30,27 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     noecho();
     mvgetnstr(6, 9, senha_digitada, 29); // Adjust the starting position of input
 
+<<<<<<< HEAD
     bool verificado = false;
     if(cpf_digitado == "038.397.831-98" && senha_digitada == "247398"){
         bool verificado = true;
+=======
+    bool verificado = (strcmp(cpf_digitado, "081.749.421-90") == 0 && strcmp(senha_digitada, "232425") == 0);
+
+    clear();
+    if (verificado) {
+        cpf = CPF(cpf_digitado);
+        mvprintw(LINES / 2, (COLS - strlen("Autenticação bem-sucedida!")) / 2, "Autenticação bem-sucedida!");
+        refresh();
+        sleep(3);
+        return true;
+
+    } else {
+        mvprintw(LINES / 2, (COLS - strlen("Autenticação falhou!")) / 2, "Autenticação falhou!");
+        refresh();
+        sleep(3);
+        return false;
+>>>>>>> 3f56d634ce4ad70f4d1b86f3431958ab9124275a
     }
     /*bool verificado = false;
     try {
@@ -57,6 +75,7 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
         return false;
     }
     sleep(3);*/
+<<<<<<< HEAD
 
     clear();
     if (verificado) {
@@ -66,6 +85,10 @@ bool CntrIAAutenticacao::autenticar(CPF& cpf) {
     }
     refresh();
 
+=======
+
+
+>>>>>>> 3f56d634ce4ad70f4d1b86f3431958ab9124275a
 
     
     endwin();
